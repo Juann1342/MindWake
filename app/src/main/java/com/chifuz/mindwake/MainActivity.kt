@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
-import com.chifuz.mindwake.data.model.RiddleViewModelFactory
+import com.chifuz.mindwake.viewmodel.RiddleViewModelFactory
 import com.chifuz.mindwake.ui.navigation.MindWakeNavGraph
 import com.chifuz.mindwake.viewmodel.RiddleViewModel
 import com.chifuz.mindwake.ui.theme.MindWakeTheme

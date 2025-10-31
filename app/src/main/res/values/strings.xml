@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">MindWake</string>
+
+    <!-- 🧩 Acertijos -->
+    <string name="riddle_1_text">¿Qué tiene cuello pero no cabeza?</string>
+    <string name="riddle_1_hint_1">Se puede llenar con agua.</string>
+    <string name="riddle_1_hint_2">Está en la mesa.</string>
+    <string name="riddle_1_hint_3">Sirve para beber.</string>
+    <string name="riddle_1_answer">Botella</string>
+
+    <string name="riddle_2_text">¿Qué sube pero nunca baja?</string>
+    <string name="riddle_2_hint_1">No es un objeto físico.</string>
+    <string name="riddle_2_hint_2">Aumenta con el tiempo.</string>
+    <string name="riddle_2_hint_3">Tiene que ver con la edad.</string>
+    <string name="riddle_2_answer">Edad</string>
+
+    <string name="riddle_3_text">¿Qué tiene dientes pero no muerde?</string>
+    <string name="riddle_3_hint_1">Se usa todos los días.</string>
+    <string name="riddle_3_hint_2">Está en el baño.</string>
+    <string name="riddle_3_hint_3">Sirve para el cabello.</string>
+    <string name="riddle_3_answer">Peine</string>
+
+    <string name="riddle_4_text">¿Qué palabra se escribe incorrectamente en todos los diccionarios?</string>
+    <string name="riddle_4_hint_1">Es una palabra.</string>
+    <string name="riddle_4_hint_2">No tiene que ver con ortografía.</string>
+    <string name="riddle_4_hint_3">Piensa literal.</string>
+    <string name="riddle_4_answer">Incorrectamente</string>
+
+    <string name="riddle_5_text">¿Qué es más ligero que una pluma pero ni el hombre más fuerte puede sostenerlo por mucho tiempo?</string>
+    <string name="riddle_5_hint_1">Es algo que todos tenemos.</string>
+    <string name="riddle_5_hint_2">Se necesita para vivir.</string>
+    <string name="riddle_5_hint_3">No se ve.</string>
+    <string name="riddle_5_answer">Respiración</string>
+
+    <string name="riddle_6_text">Cuanto más seco, más mojado se vuelve. ¿Qué es?</string>
+    <string name="riddle_6_hint_1">Está en el baño.</string>
+    <string name="riddle_6_hint_2">Se usa después de bañarse.</string>
+    <string name="riddle_6_hint_3">Es de tela.</string>
+    <string name="riddle_6_answer">Toalla</string>
+
+    <string name="riddle_7_text">Si me nombras, desaparezco. ¿Qué soy?</string>
+    <string name="riddle_7_hint_1">No se puede ver.</string>
+    <string name="riddle_7_hint_2">Tiene que ver con el sonido.</string>
+    <string name="riddle_7_hint_3">Se rompe fácilmente.</string>
+    <string name="riddle_7_answer">Silencio</string>
+
+    <string name="riddle_8_text">Tiene ciudades, pero no casas; montañas, pero no árboles; y agua, pero no peces. ¿Qué es?</string>
+    <string name="riddle_8_hint_1">Es plano.</string>
+    <string name="riddle_8_hint_2">Se puede doblar.</string>
+    <string name="riddle_8_hint_3">Sirve para orientarse.</string>
+    <string name="riddle_8_answer">Mapa</string>
+
+    <string name="riddle_9_text">Cuanto más le quitas, más grande se hace. ¿Qué es?</string>
+    <string name="riddle_9_hint_1">No es un objeto sólido.</string>
+    <string name="riddle_9_hint_2">Tiene que ver con el vacío.</string>
+    <string name="riddle_9_hint_3">Aparece en el suelo o una pared.</string>
+    <string name="riddle_9_answer">Agujero</string>
+
+    <string name="riddle_10_text">¿Qué palabra se vuelve más corta cuando le agregas dos letras?</string>
+    <string name="riddle_10_hint_1">Piensa en inglés.</string>
+    <string name="riddle_10_hint_2">La palabra es “short”.</string>
+    <string name="riddle_10_hint_3">Agregale “er”.</string>
+    <string name="riddle_10_answer">Shorter</string>
+
+    <!-- 💭 Ejercicios de pensamiento lateral -->
+    <string name="lateral_1_text">Un hombre entra en un bar y pide un vaso de agua. El camarero apunta con una pistola al hombre. El hombre dice “gracias” y se va. ¿Qué pasó?</string>
+    <string name="lateral_1_hint_1">El hombre tenía un problema físico.</string>
+    <string name="lateral_1_hint_2">El camarero no quería hacerle daño.</string>
+    <string name="lateral_1_hint_3">El susto fue la solución.</string>
+    <string name="lateral_1_answer">El hombre tenía hipo. El susto se lo quitó.</string>
+
+    <string name="lateral_2_text">Una mujer se ahoga en una piscina llena de personas, pero nadie intenta salvarla. ¿Por qué?</string>
+    <string name="lateral_2_hint_1">No es una situación real.</string>
+    <string name="lateral_2_hint_2">Todos están participando en algo.</string>
+    <string name="lateral_2_hint_3">Hay cámaras.</string>
+    <string name="lateral_2_answer">Estaban grabando una película.</string>
+
+    <string name="lateral_3_text">Un hombre muere un domingo por la mañana. Su esposa llama a la policía. Ellos interrogan a los empleados: el jardinero, el cocinero y la mucama. El jardinero dice que estaba podando, el cocinero preparando el desayuno, la mucama limpiando, pero arrestan a la mucama. ¿Por qué?</string>
+    <string name="lateral_3_hint_1">Fijate en el día de la semana.</string>
+    <string name="lateral_3_hint_2">Lo que hacía la mucama no tiene sentido ese día.</string>
+    <string name="lateral_3_hint_3">No se limpia ese día.</string>
+    <string name="lateral_3_answer">La mucama dijo que estaba limpiando, pero los domingos no trabaja.</string>
+
+    <string name="lateral_4_text">Un hombre mira un retrato y dice: “No tengo hermanos, pero el padre de este hombre es el hijo de mi padre”. ¿A quién mira?</string>
+    <string name="lateral_4_hint_1">Analizá la frase con calma.</string>
+    <string name="lateral_4_hint_2">“El hijo de mi padre” soy yo.</string>
+    <string name="lateral_4_hint_3">Entonces el retrato es de su hijo.</string>
+    <string name="lateral_4_answer">Mira a su hijo.</string>
+
+    <string name="lateral_5_text">Un hombre empuja su coche hasta un hotel y pierde su fortuna. ¿Qué pasó?</string>
+    <string name="lateral_5_hint_1">No es una historia real.</string>
+    <string name="lateral_5_hint_2">Hay un tablero involucrado.</string>
+    <string name="lateral_5_hint_3">Se trata de un juego.</string>
+    <string name="lateral_5_answer">Está jugando al Monopoly.</string>
+</resources>

@@ -1,47 +1,36 @@
 import android.content.Context
-import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.preferencesDataStore
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 
-val Context.dataStore by preferencesDataStore("progress")
+private val Context.dataStore by preferencesDataStore("riddle_progress")
 
 class ProgressDataStore(private val context: Context) {
 
     companion object {
-        val solvedCountKey = intPreferencesKey("solved_count")
-        val lastIndexKey = intPreferencesKey("last_index")
-        val cycleIndexKey = intPreferencesKey("cycle_index")
+        private val KEY_RIDDLE_INDEX = intPreferencesKey("next_riddle_index")
+        private val KEY_LATERAL_INDEX = intPreferencesKey("next_lateral_index")
+        private val KEY_CYCLE_STEP = intPreferencesKey("cycle_step")
     }
 
-    val solvedCount: Flow<Int> = context.dataStore.data.map { prefs ->
-        prefs[solvedCountKey] ?: 0
-    }
-
-    suspend fun incrementSolved() {
+    suspend fun saveIndexes(nextRiddle: Int, nextLateral: Int, cycleStep: Int) {
         context.dataStore.edit { prefs ->
-            val current = prefs[solvedCountKey] ?: 0
-            prefs[solvedCountKey] = current + 1
+            prefs[KEY_RIDDLE_INDEX] = nextRiddle
+            prefs[KEY_LATERAL_INDEX] = nextLateral
+            prefs[KEY_CYCLE_STEP] = cycleStep
         }
     }
 
-    suspend fun saveIndexes(index: Int, cycleIndex: Int) {
-        context.dataStore.edit { prefs ->
-            prefs[lastIndexKey] = index
-            prefs[cycleIndexKey] = cycleIndex
-        }
-    }
+    suspend fun getNextRiddleIndex(): Int =
+        context.dataStore.data.map { it[KEY_RIDDLE_INDEX] ?: 0 }.first()
 
-    val lastIndexFlow: Flow<Int> = context.dataStore.data.map { prefs ->
-        prefs[lastIndexKey] ?: 0
-    }
+    suspend fun getNextLateralIndex(): Int =
+        context.dataStore.data.map { it[KEY_LATERAL_INDEX] ?: 0 }.first()
 
-    val cycleIndexFlow: Flow<Int> = context.dataStore.data.map { prefs ->
-        prefs[cycleIndexKey] ?: 0
-    }
+    suspend fun getCycleStep(): Int =
+        context.dataStore.data.map { it[KEY_CYCLE_STEP] ?: 0 }.first()
 
-    suspend fun getLastIndex(): Int = lastIndexFlow.first()
-    suspend fun getCycleIndex(): Int = cycleIndexFlow.first()
+
 }

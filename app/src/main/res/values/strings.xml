@@ -1,95 +1,190 @@
+
 <resources>
-    <string name="app_name">MindWake</string>
+        <string name="app_name">MindWake</string>
 
-    <!-- 🧩 Acertijos -->
-    <string name="riddle_1_text">¿Qué tiene cuello pero no cabeza?</string>
-    <string name="riddle_1_hint_1">Se puede llenar con agua.</string>
-    <string name="riddle_1_hint_2">Está en la mesa.</string>
-    <string name="riddle_1_hint_3">Sirve para beber.</string>
-    <string name="riddle_1_answer">Botella</string>
+        <!-- 🧩 Textos de acertijos adicionales -->
+        <string-array name="riddles_text">
+            <item>¿Qué tiene cuello pero no cabeza?</item>
+            <item>¿Qué sube pero nunca baja?</item>
+            <item>¿Qué tiene dientes pero no muerde?</item>
+            <item>¿Qué palabra se escribe incorrectamente en todos los diccionarios?</item>
+            <item>¿Qué es más ligero que una pluma pero ni el hombre más fuerte puede sostenerlo por mucho tiempo?</item>
+            <item>Cuanto más seco, más mojado se vuelve. ¿Qué es?</item>
+            <item>Si me nombras, desaparezco. ¿Qué soy?</item>
+            <item>Tiene ciudades, pero no casas; montañas, pero no árboles; y agua, pero no peces. ¿Qué es?</item>
+            <item>Cuanto más le quitas, más grande se hace. ¿Qué es?</item>
+            <item>¿Qué palabra se vuelve más corta cuando le agregas dos letras?</item>
+            <item>¿Qué tiene agujeros pero sigue conteniendo agua?</item>
+            <item>Si me rompes, sigo funcionando. ¿Qué soy?</item>
+            <item>¿Qué se puede atrapar pero nunca lanzar?</item>
+            <item>Si me llenas, peso menos. ¿Qué soy?</item>
+            <item>Todos me llevan a la boca, pero nunca me comen. ¿Qué soy?</item>
+            <item>¿Qué corre pero nunca camina?</item>
+            <item>Cuanto más quitas de mí, más grande soy. ¿Qué soy?</item>
+            <item>¿Qué tiene un banco pero nunca sienta?</item>
+            <item>Me puedes romper sin tocarme. ¿Qué soy?</item>
+            <item>¿Qué tiene un ojo pero no puede ver?</item>
+        </string-array>
 
-    <string name="riddle_2_text">¿Qué sube pero nunca baja?</string>
-    <string name="riddle_2_hint_1">No es un objeto físico.</string>
-    <string name="riddle_2_hint_2">Aumenta con el tiempo.</string>
-    <string name="riddle_2_hint_3">Tiene que ver con la edad.</string>
-    <string name="riddle_2_answer">Edad</string>
+        <!-- 🧠 Respuestas de acertijos -->
+        <string-array name="riddles_answers">
+            <item>Botella</item>
+            <item>Edad</item>
+            <item>Peine</item>
+            <item>Incorrectamente</item>
+            <item>Respiración</item>
+            <item>Toalla</item>
+            <item>Silencio</item>
+            <item>Mapa</item>
+            <item>Agujero</item>
+            <item>Shorter</item>
+            <item>Esponja</item>
+            <item>Corazón</item>
+            <item>Resfriado</item>
+            <item>Globo</item>
+            <item>Cuchara</item>
+            <item>Agua</item>
+            <item>Agujero</item>
+            <item>Río</item>
+            <item>Promesa</item>
+            <item>Aguja</item>
+        </string-array>
 
-    <string name="riddle_3_text">¿Qué tiene dientes pero no muerde?</string>
-    <string name="riddle_3_hint_1">Se usa todos los días.</string>
-    <string name="riddle_3_hint_2">Está en el baño.</string>
-    <string name="riddle_3_hint_3">Sirve para el cabello.</string>
-    <string name="riddle_3_answer">Peine</string>
+        <!-- 💬 Pistas de acertijos -->
+        <string-array name="riddles_hints_1">
+            <item>Se puede llenar con agua.</item>
+            <item>No es un objeto físico.</item>
+            <item>Se usa todos los días.</item>
+            <item>Es una palabra.</item>
+            <item>Es algo que todos tenemos.</item>
+            <item>Está en el baño.</item>
+            <item>No se puede ver.</item>
+            <item>Es plano.</item>
+            <item>No es un objeto sólido.</item>
+            <item>Piensa en inglés.</item>
+            <item>Tiene muchos agujeros.</item>
+            <item>Late dentro de ti.</item>
+            <item>Te hace toser.</item>
+            <item>Se llena de aire.</item>
+            <item>Está en la cocina.</item>
+            <item>Se encuentra en ríos y mares.</item>
+            <item>Se forma al quitar partes.</item>
+            <item>Río o lugar para dinero.</item>
+            <item>Se da con intención.</item>
+            <item>Se usa para coser.</item>
+        </string-array>
 
-    <string name="riddle_4_text">¿Qué palabra se escribe incorrectamente en todos los diccionarios?</string>
-    <string name="riddle_4_hint_1">Es una palabra.</string>
-    <string name="riddle_4_hint_2">No tiene que ver con ortografía.</string>
-    <string name="riddle_4_hint_3">Piensa literal.</string>
-    <string name="riddle_4_answer">Incorrectamente</string>
+        <string-array name="riddles_hints_2">
+            <item>Está en la mesa.</item>
+            <item>Aumenta con el tiempo.</item>
+            <item>Está en el baño.</item>
+            <item>No tiene que ver con ortografía.</item>
+            <item>Se necesita para vivir.</item>
+            <item>Se usa después de bañarse.</item>
+            <item>Tiene que ver con el sonido.</item>
+            <item>Se puede doblar.</item>
+            <item>Tiene que ver con el vacío.</item>
+            <item>La palabra es “short”.</item>
+            <item>Se usa para limpiar líquidos.</item>
+            <item>Late todo el tiempo.</item>
+            <item>Provoca estornudos.</item>
+            <item>Se infla y flota.</item>
+            <item>No se come.</item>
+            <item>Es líquida.</item>
+            <item>Aumenta el vacío.</item>
+            <item>Se relaciona con dinero o agua.</item>
+            <item>Depende de la confianza.</item>
+            <item>Va en hilos y telas.</item>
+        </string-array>
 
-    <string name="riddle_5_text">¿Qué es más ligero que una pluma pero ni el hombre más fuerte puede sostenerlo por mucho tiempo?</string>
-    <string name="riddle_5_hint_1">Es algo que todos tenemos.</string>
-    <string name="riddle_5_hint_2">Se necesita para vivir.</string>
-    <string name="riddle_5_hint_3">No se ve.</string>
-    <string name="riddle_5_answer">Respiración</string>
+        <string-array name="riddles_hints_3">
+            <item>Sirve para beber.</item>
+            <item>Tiene que ver con la edad.</item>
+            <item>Sirve para el cabello.</item>
+            <item>Piensa literal.</item>
+            <item>No se ve.</item>
+            <item>Es de tela.</item>
+            <item>Se rompe fácilmente.</item>
+            <item>Sirve para orientarse.</item>
+            <item>Aparece en el suelo o una pared.</item>
+            <item>Agregale “er”.</item>
+            <item>Absorbe agua rápidamente.</item>
+            <item>Se contrae y expande.</item>
+            <item>Se propaga por el aire.</item>
+            <item>Puedes explotarlo.</item>
+            <item>Se usa para remover comida.</item>
+            <item>Cae en cascada.</item>
+            <item>Se hace más grande al quitarlo.</item>
+            <item>No puedes sentarte en él.</item>
+            <item>Se rompe sin tocarlo.</item>
+            <item>Tiene hilo en el centro.</item>
+        </string-array>
 
-    <string name="riddle_6_text">Cuanto más seco, más mojado se vuelve. ¿Qué es?</string>
-    <string name="riddle_6_hint_1">Está en el baño.</string>
-    <string name="riddle_6_hint_2">Se usa después de bañarse.</string>
-    <string name="riddle_6_hint_3">Es de tela.</string>
-    <string name="riddle_6_answer">Toalla</string>
+        <!-- 💭 Ejercicios de pensamiento lateral adicionales -->
+        <string-array name="lateral_text">
+            <item>Un hombre entra en un bar y pide un vaso de agua. El camarero apunta con una pistola al hombre. El hombre dice “gracias” y se va. ¿Qué pasó?</item>
+            <item>Una mujer se ahoga en una piscina llena de personas, pero nadie intenta salvarla. ¿Por qué?</item>
+            <item>Un hombre muere un domingo por la mañana. Su esposa llama a la policía. Ellos interrogan a los empleados: el jardinero, el cocinero y la mucama. El jardinero dice que estaba podando, el cocinero preparando el desayuno, la mucama limpiando, pero arrestan a la mucama. ¿Por qué?</item>
+            <item>Un hombre mira un retrato y dice: “No tengo hermanos, pero el padre de este hombre es el hijo de mi padre”. ¿A quién mira?</item>
+            <item>Un hombre empuja su coche hasta un hotel y pierde su fortuna. ¿Qué pasó?</item>
+            <item>Dos padres y dos hijos van a pescar, pero solo pescan tres peces. ¿Cómo es posible?</item>
+            <item>Un hombre camina bajo la lluvia sin sombrero ni paraguas y no se moja. ¿Por qué?</item>
+            <item>Una persona entra a un cuarto completamente oscuro y encuentra la salida sin encender la luz. ¿Cómo?</item>
+            <item>Un ladrón roba un banco y deja un mensaje diciendo “El dinero está en la nevera”. ¿Cómo lo resolvieron?</item>
+            <item>Un hombre encuentra una carta en su buzón que dice “No abras hasta mañana” y la abre. ¿Qué ocurrió?</item>
+        </string-array>
 
-    <string name="riddle_7_text">Si me nombras, desaparezco. ¿Qué soy?</string>
-    <string name="riddle_7_hint_1">No se puede ver.</string>
-    <string name="riddle_7_hint_2">Tiene que ver con el sonido.</string>
-    <string name="riddle_7_hint_3">Se rompe fácilmente.</string>
-    <string name="riddle_7_answer">Silencio</string>
+        <!-- 💭 Respuestas de pensamiento lateral adicionales -->
+        <string-array name="lateral_answers">
+            <item>El hombre tenía hipo. El susto se lo quitó.</item>
+            <item>Estaban grabando una película.</item>
+            <item>La mucama dijo que estaba limpiando, pero los domingos no trabaja.</item>
+            <item>Mira a su hijo.</item>
+            <item>Está jugando al Monopoly.</item>
+            <item>Son abuelo, padre e hijo.</item>
+            <item>Estaba bajo un techo.</item>
+            <item>El cuarto tenía una salida física que no requería luz.</item>
+            <item>El mensaje era literal y el dinero estaba en la nevera.</item>
+            <item>La carta era para otro día, no para hoy.</item>
+        </string-array>
 
-    <string name="riddle_8_text">Tiene ciudades, pero no casas; montañas, pero no árboles; y agua, pero no peces. ¿Qué es?</string>
-    <string name="riddle_8_hint_1">Es plano.</string>
-    <string name="riddle_8_hint_2">Se puede doblar.</string>
-    <string name="riddle_8_hint_3">Sirve para orientarse.</string>
-    <string name="riddle_8_answer">Mapa</string>
+        <!-- 💭 Pistas de pensamiento lateral adicionales -->
+        <string-array name="lateral_hints_1">
+            <item>El hombre tenía un problema físico.</item>
+            <item>No es una situación real.</item>
+            <item>Fijate en el día de la semana.</item>
+            <item>Analizá la frase con calma.</item>
+            <item>No es una historia real.</item>
+            <item>Hay tres personas pero solo dos generaciones visibles.</item>
+            <item>No había agua encima de él.</item>
+            <item>Observá el entorno del cuarto.</item>
+            <item>El mensaje era literal.</item>
+            <item>El remitente especificó un día.</item>
+        </string-array>
 
-    <string name="riddle_9_text">Cuanto más le quitas, más grande se hace. ¿Qué es?</string>
-    <string name="riddle_9_hint_1">No es un objeto sólido.</string>
-    <string name="riddle_9_hint_2">Tiene que ver con el vacío.</string>
-    <string name="riddle_9_hint_3">Aparece en el suelo o una pared.</string>
-    <string name="riddle_9_answer">Agujero</string>
+        <string-array name="lateral_hints_2">
+            <item>El camarero no quería hacerle daño.</item>
+            <item>Todos están participando en algo.</item>
+            <item>Lo que hacía la mucama no tiene sentido ese día.</item>
+            <item>“El hijo de mi padre” soy yo.</item>
+            <item>Hay un tablero involucrado.</item>
+            <item>Hay dos generaciones que se repiten.</item>
+            <item>Tenía un techo encima.</item>
+            <item>Hay salidas físicas en la habitación.</item>
+            <item>El dinero estaba en el refrigerador.</item>
+            <item>La carta no era de hoy.</item>
+        </string-array>
 
-    <string name="riddle_10_text">¿Qué palabra se vuelve más corta cuando le agregas dos letras?</string>
-    <string name="riddle_10_hint_1">Piensa en inglés.</string>
-    <string name="riddle_10_hint_2">La palabra es “short”.</string>
-    <string name="riddle_10_hint_3">Agregale “er”.</string>
-    <string name="riddle_10_answer">Shorter</string>
-
-    <!-- 💭 Ejercicios de pensamiento lateral -->
-    <string name="lateral_1_text">Un hombre entra en un bar y pide un vaso de agua. El camarero apunta con una pistola al hombre. El hombre dice “gracias” y se va. ¿Qué pasó?</string>
-    <string name="lateral_1_hint_1">El hombre tenía un problema físico.</string>
-    <string name="lateral_1_hint_2">El camarero no quería hacerle daño.</string>
-    <string name="lateral_1_hint_3">El susto fue la solución.</string>
-    <string name="lateral_1_answer">El hombre tenía hipo. El susto se lo quitó.</string>
-
-    <string name="lateral_2_text">Una mujer se ahoga en una piscina llena de personas, pero nadie intenta salvarla. ¿Por qué?</string>
-    <string name="lateral_2_hint_1">No es una situación real.</string>
-    <string name="lateral_2_hint_2">Todos están participando en algo.</string>
-    <string name="lateral_2_hint_3">Hay cámaras.</string>
-    <string name="lateral_2_answer">Estaban grabando una película.</string>
-
-    <string name="lateral_3_text">Un hombre muere un domingo por la mañana. Su esposa llama a la policía. Ellos interrogan a los empleados: el jardinero, el cocinero y la mucama. El jardinero dice que estaba podando, el cocinero preparando el desayuno, la mucama limpiando, pero arrestan a la mucama. ¿Por qué?</string>
-    <string name="lateral_3_hint_1">Fijate en el día de la semana.</string>
-    <string name="lateral_3_hint_2">Lo que hacía la mucama no tiene sentido ese día.</string>
-    <string name="lateral_3_hint_3">No se limpia ese día.</string>
-    <string name="lateral_3_answer">La mucama dijo que estaba limpiando, pero los domingos no trabaja.</string>
-
-    <string name="lateral_4_text">Un hombre mira un retrato y dice: “No tengo hermanos, pero el padre de este hombre es el hijo de mi padre”. ¿A quién mira?</string>
-    <string name="lateral_4_hint_1">Analizá la frase con calma.</string>
-    <string name="lateral_4_hint_2">“El hijo de mi padre” soy yo.</string>
-    <string name="lateral_4_hint_3">Entonces el retrato es de su hijo.</string>
-    <string name="lateral_4_answer">Mira a su hijo.</string>
-
-    <string name="lateral_5_text">Un hombre empuja su coche hasta un hotel y pierde su fortuna. ¿Qué pasó?</string>
-    <string name="lateral_5_hint_1">No es una historia real.</string>
-    <string name="lateral_5_hint_2">Hay un tablero involucrado.</string>
-    <string name="lateral_5_hint_3">Se trata de un juego.</string>
-    <string name="lateral_5_answer">Está jugando al Monopoly.</string>
-</resources>
+        <string-array name="lateral_hints_3">
+            <item>El susto fue la solución.</item>
+            <item>Hay cámaras.</item>
+            <item>No se limpia ese día.</item>
+            <item>Entonces el retrato es de su hijo.</item>
+            <item>Se trata de un juego.</item>
+            <item>Hay tres generaciones implicadas.</item>
+            <item>No se mojó.</item>
+            <item>Encontró la salida caminando.</item>
+            <item>Revisaron la nevera.</item>
+            <item>No debía abrirla todavía.</item>
+        </string-array>
+    </resources>

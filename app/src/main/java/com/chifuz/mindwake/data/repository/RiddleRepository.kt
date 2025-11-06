@@ -3,43 +3,55 @@ package com.chifuz.mindwake.data.repository
 import android.content.Context
 import com.chifuz.mindwake.data.model.Riddle
 
-
-
 class RiddleRepository(private val context: Context) {
 
     fun loadAll(): List<Riddle> {
+        val res = context.resources
+        val pkg = context.packageName
+
+        val riddleQuestions = res.getStringArray(res.getIdentifier("riddles_text", "array", pkg))
+        val riddleHint1 = res.getStringArray(res.getIdentifier("riddles_hints_1", "array", pkg))
+        val riddleHint2 = res.getStringArray(res.getIdentifier("riddles_hints_2", "array", pkg))
+        val riddleHint3 = res.getStringArray(res.getIdentifier("riddles_hints_3", "array", pkg))
+        val riddleAnswers = res.getStringArray(res.getIdentifier("riddles_answers", "array", pkg))
+
+        val lateralQuestions = res.getStringArray(res.getIdentifier("lateral_text", "array", pkg))
+        val lateralHint1 = res.getStringArray(res.getIdentifier("lateral_hints_1", "array", pkg))
+        val lateralHint2 = res.getStringArray(res.getIdentifier("lateral_hints_2", "array", pkg))
+        val lateralHint3 = res.getStringArray(res.getIdentifier("lateral_hints_3", "array", pkg))
+        val lateralAnswers = res.getStringArray(res.getIdentifier("lateral_answers", "array", pkg))
+
+
         val riddles = mutableListOf<Riddle>()
 
-        // 🔹 10 acertijos
-        for (i in 1..10) {
-            riddles.add(loadItem(i, RiddleType.RIDDLE))
+        // 🔹 Cargar acertijos
+        for (i in riddleQuestions.indices) {
+            riddles.add(
+                Riddle(
+                    id = i + 1,
+                    question = riddleQuestions[i],
+                    hints = listOf(riddleHint1[i], riddleHint2[i], riddleHint3[i]),
+                    answer = riddleAnswers[i],
+                    type = RiddleType.RIDDLE
+                )
+            )
         }
 
-        // 🔸 5 de pensamiento lateral
-        for (i in 1..5) {
-            riddles.add(loadItem(i + 100, RiddleType.LATERAL))
+        // 🔸 Cargar pensamiento lateral
+        for (i in lateralQuestions.indices) {
+            riddles.add(
+                Riddle(
+                    id = 100 + i + 1,
+                    question = lateralQuestions[i],
+                    hints = listOf(lateralHint1[i], lateralHint2[i], lateralHint3[i]),
+                    answer = lateralAnswers[i],
+                    type = RiddleType.LATERAL
+                )
+            )
         }
 
         return riddles
     }
 
-    private fun loadItem(id: Int, type: RiddleType): Riddle {
-        val prefix = if (type == RiddleType.RIDDLE) "riddle" else "lateral"
-        val res = context.resources
-        val index = if (type == RiddleType.RIDDLE) id else id - 100
 
-        val question = res.getString(res.getIdentifier("${prefix}_${index}_text", "string", context.packageName))
-        val hint1 = res.getString(res.getIdentifier("${prefix}_${index}_hint_1", "string", context.packageName))
-        val hint2 = res.getString(res.getIdentifier("${prefix}_${index}_hint_2", "string", context.packageName))
-        val hint3 = res.getString(res.getIdentifier("${prefix}_${index}_hint_3", "string", context.packageName))
-        val answer = res.getString(res.getIdentifier("${prefix}_${index}_answer", "string", context.packageName))
-
-        return Riddle(
-            id = id,
-            question = question,
-            hints = listOf(hint1, hint2, hint3),
-            answer = answer,
-            type = type
-        )
-    }
 }

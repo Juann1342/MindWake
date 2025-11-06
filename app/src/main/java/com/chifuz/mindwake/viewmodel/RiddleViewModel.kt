@@ -8,76 +8,136 @@ import com.chifuz.mindwake.data.model.Riddle
 import com.chifuz.mindwake.data.model.RiddleUiState
 import com.chifuz.mindwake.data.repository.RiddleRepository
 import com.chifuz.mindwake.data.repository.RiddleType
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-
 
 class RiddleViewModel(context: Context) : ViewModel() {
 
+
     private val repository = RiddleRepository(context)
     private val dataStore = ProgressDataStore(context)
+    private val allRiddles: List<Riddle> = repository.loadAll()
 
-    private val riddles: List<Riddle> = repository.loadAll()
+    private val riddleList = allRiddles.filter { it.type == RiddleType.RIDDLE }
+    private val lateralList = allRiddles.filter { it.type == RiddleType.LATERAL }
 
-    private var currentIndex = 0 // índice global en la lista completa
-    private var cycleIndex = 0 // índice dentro de la secuencia 2R + 1L
+    private var nextRiddleIndex = 0
+    private var nextLateralIndex = 0
+    private var cycleStep = 0 // 0→riddle1, 1→riddle2, 2→lateral
 
     private val _uiState = MutableStateFlow<RiddleUiState?>(null)
     val uiState: StateFlow<RiddleUiState?> = _uiState
 
+    // Inicializamos en 0, luego updateProgressFlow ajusta
+    private val _progressFlow = MutableStateFlow(0f)
+    val progressFlow: StateFlow<Float> = _progressFlow
+
     init {
         viewModelScope.launch {
-            // Recuperamos progreso guardado
-            currentIndex = dataStore.getLastIndex()
-            cycleIndex = dataStore.getCycleIndex()
+            nextRiddleIndex = dataStore.getNextRiddleIndex().coerceIn(0, riddleList.lastIndex)
+            nextLateralIndex = dataStore.getNextLateralIndex().coerceIn(0, lateralList.lastIndex)
+            cycleStep = dataStore.getCycleStep().coerceIn(0, 2)
+
+            // Primera vez que abre la app
+            if (nextRiddleIndex == 0 && nextLateralIndex == 0) {
+                cycleStep = 0
+            }
+
+            updateProgressFlow()
             loadNext(initialLoad = true)
         }
     }
 
     fun loadNext(initialLoad: Boolean = false) {
-        val next = getNextInSequence(initialLoad)
-        _uiState.value = RiddleUiState(riddle = next)
+        val riddleToShow = when {
+            initialLoad -> {
+                // Primer acertijo: lo mostramos, pero adelantamos índices para que siguiente click funcione
+                val r = riddleList[nextRiddleIndex]
+                nextRiddleIndex = (nextRiddleIndex + 1) % riddleList.size
+                cycleStep = 1 // pasamos al segundo acertijo del ciclo
+                persistProgress()
+                r
+            }
+            else -> getNextInSequence(initialLoad = false)
+        }
+
+        _uiState.value = RiddleUiState(riddle = riddleToShow)
+        updateProgressFlow()
     }
 
+
+
     private fun getNextInSequence(initialLoad: Boolean = false): Riddle {
-        val expectedType = if (cycleIndex % 3 < 2) RiddleType.RIDDLE else RiddleType.LATERAL
+        return when (cycleStep) {
+            0, 1 -> { // mostrar acertijos
+                val r = riddleList[nextRiddleIndex]
 
-        val next = if (initialLoad) {
-            // Al iniciar, buscamos el primer acertijo o lateral que corresponda según cycleIndex
-            riddles.drop(currentIndex).firstOrNull { it.type == expectedType }
-                ?: riddles.first { it.type == expectedType }
-        } else {
-            // Secuencia normal
-            riddles.drop(currentIndex).firstOrNull { it.type == expectedType }
-                ?: riddles.first { it.type == expectedType }
+                if (!initialLoad) {
+                    nextRiddleIndex = (nextRiddleIndex + 1) % riddleList.size
+                    cycleStep++
+                    persistProgress()
+                }
+
+                r
+            }
+
+            2 -> { // mostrar lateral
+                val r = lateralList[nextLateralIndex]
+
+                if (!initialLoad) {
+                    nextLateralIndex = (nextLateralIndex + 1) % lateralList.size
+
+                    // Después del lateral, avanzar a los 2 acertijos siguientes
+                    nextRiddleIndex = (nextRiddleIndex + 2) % riddleList.size
+
+                    cycleStep = 0
+                    persistProgress()
+                }
+
+                r
+            }
+
+            else -> {
+                val r = riddleList[nextRiddleIndex]
+                r
+            }
         }
+    }
 
-        // Actualizamos índices
-        currentIndex = (riddles.indexOf(next) + 1) % riddles.size
-        cycleIndex = (cycleIndex + 1) % 3
-
-        // Guardamos progreso
+    private fun persistProgress() {
         viewModelScope.launch {
-            dataStore.saveIndexes(currentIndex, cycleIndex)
+            dataStore.saveIndexes(nextRiddleIndex, nextLateralIndex, cycleStep)
         }
+    }
 
-        return next
+    private fun updateProgressFlow() {
+        _progressFlow.value = when (cycleStep) {
+            0 -> 0.3f
+            1 -> 0.6f
+            2 -> 1.0f
+            else -> 0.3f
+        }
     }
 
     fun showNextHint() {
         _uiState.update { state ->
             state?.let {
-                if (it.hintIndex < it.riddle.hints.size) it.copy(hintIndex = it.hintIndex + 1) else it
+                if (it.hintIndex < it.riddle.hints.size)
+                    it.copy(hintIndex = it.hintIndex + 1)
+                else it
             }
         }
     }
 
     fun showAnswer() {
-        _uiState.update { state -> state?.copy(isAnswerShown = true) }
+        _uiState.update { it?.copy(isAnswerShown = true) }
     }
 
-    fun isLastLateral(): Boolean {
-        val state = _uiState.value ?: return false
-        return state.riddle.type == RiddleType.LATERAL && cycleIndex == 0
+    fun debugState(): String {
+        return "nextRiddleIndex=$nextRiddleIndex nextLateralIndex=$nextLateralIndex cycleStep=$cycleStep"
     }
+
+
 }

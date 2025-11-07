@@ -114,9 +114,9 @@ class RiddleViewModel(context: Context) : ViewModel() {
 
     private fun updateProgressFlow() {
         _progressFlow.value = when (cycleStep) {
-            0 -> 0.3f
-            1 -> 0.6f
-            2 -> 1.0f
+            0 -> 1f
+            1 -> 0.3f
+            2 -> 0.6f
             else -> 0.3f
         }
     }

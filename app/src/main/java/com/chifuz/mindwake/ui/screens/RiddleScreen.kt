@@ -1,6 +1,5 @@
 package com.chifuz.mindwake.ui.screens
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -11,8 +10,15 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.TextUnit
+import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.chifuz.mindwake.R
@@ -31,20 +37,39 @@ fun RiddleScreen(
     var showFinalDialog by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
 
+    // Configuración de pantalla
+    val configuration = LocalConfiguration.current
+    val screenWidth = configuration.screenWidthDp
+    val screenHeight = configuration.screenHeightDp
+
+    // Funciones de escalado combinando ancho y alto
+    fun scaledDp(percentWidth: Float = 0f, percentHeight: Float = 0f): Dp {
+        val dpWidth = screenWidth * percentWidth
+        val dpHeight = screenHeight * percentHeight
+        return ((dpWidth + dpHeight) / 2).dp
+    }
+
+    fun scaledSp(percentWidth: Float = 0f, percentHeight: Float = 0f): TextUnit {
+        val spWidth = screenWidth * percentWidth
+        val spHeight = screenHeight * percentHeight
+        return ((spWidth + spHeight) / 2).sp
+    }
+
     state?.let { riddleState ->
 
         ConstraintLayout(
             modifier = Modifier
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.background)
-                .padding(horizontal = 16.dp, vertical = 16.dp)
-                .padding(top = 32.dp, bottom = 80.dp)
+                .padding(horizontal = scaledDp(percentWidth = 0.04f, percentHeight = 0.02f))
+                .padding(top = scaledDp(percentWidth = 0f, percentHeight = 0.06f),
+                    bottom = scaledDp(percentWidth = 0f, percentHeight = 0.18f))
         ) {
             val (
-                header, contentArea, pista, verPista, pistasRestantes, verRespuesta
+                header, contentArea, pista, verPista, pistasRestantes, verRespuesta, titleRiddle
             ) = createRefs()
 
-            // 🧭 HEADER
+            //  HEADER
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
@@ -55,12 +80,13 @@ fun RiddleScreen(
                         end.linkTo(parent.end)
                     }
             ) {
+                val iconSize = scaledDp(percentWidth = 0.12f, percentHeight = 0.08f)
                 Icon(
                     painter = painterResource(R.drawable.ic_sleepy),
                     contentDescription = null,
                     modifier = Modifier
-                        .size(36.dp)
-                        .padding(8.dp),
+                        .size(iconSize)
+                        .padding(scaledDp(percentWidth = 0.02f, percentHeight = 0.02f)),
                     tint = Color.DarkGray
                 )
 
@@ -68,7 +94,8 @@ fun RiddleScreen(
                     progress = { progress },
                     modifier = Modifier
                         .weight(1f)
-                        .height(8.dp),
+                        .height(scaledDp(percentWidth = 0f, percentHeight = 0.02f))
+                        .padding(horizontal = scaledDp(percentWidth = 0.03f, percentHeight = 0f)),
                     color = ProgressIndicatorDefaults.linearColor,
                     trackColor = ProgressIndicatorDefaults.linearTrackColor
                 )
@@ -77,22 +104,48 @@ fun RiddleScreen(
                     painter = painterResource(R.drawable.ic_smiling),
                     contentDescription = null,
                     modifier = Modifier
-                        .size(36.dp)
-                        .padding(8.dp),
+                        .size(iconSize)
+                        .padding(scaledDp(percentWidth = 0.02f, percentHeight = 0.02f)),
                     tint = Color.DarkGray
                 )
             }
 
-            // 🌌 ÁREA CENTRAL (con scroll)
+            // 🏷 Título tipo de riddle
+            Text(
+                text = if (riddleState.riddle.type == RiddleType.RIDDLE) "ACERTIJO" else "PENSAMIENTO LATERAL",
+                fontSize = scaledSp(percentWidth = 0.06f, percentHeight = 0.04f),
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.tertiary,
+                modifier = Modifier.constrainAs(titleRiddle) {
+                    top.linkTo(header.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
+                    start.linkTo(parent.start)
+                    end.linkTo(parent.end)
+                }
+            )
+
+            //  ÁREA CENTRAL (con scroll)
             val scrollState = rememberScrollState()
+            val questionTextSize = remember {
+                val scaledValue = (screenWidth * 0.060f + screenHeight * 0.040f) / 2
+                val spValue = scaledValue.sp
+                // Convertimos a Float y limitamos
+                TextUnit(
+                    value = spValue.value.coerceAtMost(45f),
+                    type = TextUnitType.Sp
+                )
+            }
+
+
+
 
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .padding(horizontal = scaledDp(percentWidth = 0.05f, percentHeight = 0f))
                     .verticalScroll(scrollState)
                     .constrainAs(contentArea) {
-                        top.linkTo(header.bottom, margin = 16.dp)
-                        bottom.linkTo(pistasRestantes.top, margin = 16.dp)
+                        top.linkTo(titleRiddle.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.03f))
+                        bottom.linkTo(pistasRestantes.top, margin = scaledDp(percentWidth = 0f, percentHeight = 0.03f))
                         start.linkTo(parent.start)
                         end.linkTo(parent.end)
                         height = Dimension.fillToConstraints
@@ -102,34 +155,37 @@ fun RiddleScreen(
             ) {
                 Text(
                     text = riddleState.riddle.question,
-                    style = MaterialTheme.typography.titleLarge
+                    fontSize = questionTextSize,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.DarkGray,
+                    textAlign = TextAlign.Center,
+                    lineHeight = questionTextSize * 1.3f, // 🔹 30% más alto que el tamaño de texto
+                    modifier = Modifier.fillMaxWidth()
                 )
+
             }
 
-            Spacer(Modifier.height(16.dp))
-
-            // 🧩 Pistas restantes
+            //  Pistas restantes
             Text(
                 "PISTAS RESTANTES: ${riddleState.riddle.hints.size - riddleState.hintIndex}",
+                fontSize = scaledSp(percentWidth = 0.03f, percentHeight = 0.025f),
                 modifier = Modifier.constrainAs(pistasRestantes) {
-                    top.linkTo(contentArea.bottom, margin = 16.dp)
-                    bottom.linkTo(verPista.top, margin = 4.dp)
+                    top.linkTo(contentArea.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
+                    bottom.linkTo(verPista.top, margin = scaledDp(percentWidth = 0f, percentHeight = 0.01f))
                     start.linkTo(parent.start)
                     end.linkTo(parent.end)
                 }
             )
-
-            Spacer(Modifier.height(8.dp))
 
             // 🔍 Botón "Ver pista"
             Button(
                 onClick = { viewModel.showNextHint() },
                 modifier = Modifier
                     .fillMaxWidth(0.7f)
-                    .height(50.dp)
+                    .height(scaledDp(percentWidth = 0f, percentHeight = 0.14f))
                     .constrainAs(verPista) {
-                        top.linkTo(pistasRestantes.bottom, margin = 8.dp)
-                        bottom.linkTo(pista.top, margin = 8.dp)
+                        top.linkTo(pistasRestantes.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
+                        bottom.linkTo(pista.top, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
                         start.linkTo(parent.start)
                         end.linkTo(parent.end)
                     },
@@ -137,20 +193,19 @@ fun RiddleScreen(
                     containerColor = MaterialTheme.colorScheme.secondaryContainer,
                     contentColor = Color.DarkGray
                 ),
-                shape = RoundedCornerShape(10.dp),
-                border = BorderStroke(1.dp, Color.DarkGray)
+                shape = RoundedCornerShape(scaledDp(percentWidth = 0.02f, percentHeight = 0.02f)),
             ) {
-                Text("Ver pista")
+                Text("Ver pista", fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f))
             }
 
-            // 💡 Pista mostrada
+            //  Pista mostrada
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .heightIn(min = 20.dp)
+                    .heightIn(min = scaledDp(percentWidth = 0f, percentHeight = 0.06f))
                     .constrainAs(pista) {
-                        top.linkTo(verPista.bottom, margin = 8.dp)
-                        bottom.linkTo(verRespuesta.top, margin = 8.dp)
+                        top.linkTo(verPista.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
+                        bottom.linkTo(verRespuesta.top, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
                         start.linkTo(parent.start)
                         end.linkTo(parent.end)
                     },
@@ -160,19 +215,19 @@ fun RiddleScreen(
                 if (riddleState.hintIndex > 0) {
                     Text(
                         riddleState.riddle.hints[riddleState.hintIndex - 1],
-                        style = MaterialTheme.typography.bodyLarge
+                        fontSize = scaledSp(percentWidth = 0.05f, percentHeight = 0.04f),
+                        fontWeight = FontWeight.Bold,
+                        color = Color.DarkGray
                     )
                 }
             }
 
-            // 💬 Botón "Ver respuesta"
+            //  Botón "Ver respuesta"
             Button(
-                onClick = {
-                    viewModel.showAnswer()
-                },
+                onClick = { viewModel.showAnswer() },
                 modifier = Modifier
                     .fillMaxWidth(0.7f)
-                    .height(50.dp)
+                    .height(scaledDp(percentWidth = 0f, percentHeight = 0.14f))
                     .constrainAs(verRespuesta) {
                         top.linkTo(pista.bottom)
                         start.linkTo(parent.start)
@@ -180,15 +235,15 @@ fun RiddleScreen(
                         bottom.linkTo(parent.bottom)
                     },
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = MaterialTheme.colorScheme.primary,
-                    contentColor = MaterialTheme.colorScheme.onPrimary
+                    containerColor = MaterialTheme.colorScheme.tertiary,
+                    contentColor = Color.DarkGray
                 ),
-                shape = RoundedCornerShape(10.dp)
+                shape = RoundedCornerShape(scaledDp(percentWidth = 0.02f, percentHeight = 0.02f))
             ) {
-                Text("Ver respuesta")
+                Text("Ver respuesta", fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f))
             }
 
-            // 🧠 Efecto que abre el diálogo cuando cambia el estado
+            //  Efecto que abre el diálogo cuando cambia el estado
             LaunchedEffect(riddleState.isAnswerShown) {
                 if (riddleState.isAnswerShown) {
                     showAnswerDialog = true
@@ -196,61 +251,124 @@ fun RiddleScreen(
             }
         }
 
-        // 💬 DIÁLOGO DE RESPUESTA
+//  DIÁLOGO DE RESPUESTA
         if (showAnswerDialog && riddleState.isAnswerShown) {
             AlertDialog(
-                onDismissRequest = { showAnswerDialog = false },
-                title = { Text("Respuesta") },
+                onDismissRequest = {},
+                confirmButton = {},
                 text = {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(
-                            text = riddleState.riddle.answer,
-                            style = MaterialTheme.typography.bodyLarge
-                        )
-                    }
-                },
-                confirmButton = {
-                    Button(
-                        onClick = {
-                            showAnswerDialog = false
-                            if (riddleState.riddle.type == RiddleType.LATERAL) {
-                                showFinalDialog = true
-                            } else {
-                                scope.launch { viewModel.loadNext() }
-                            }
-                        },
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = MaterialTheme.colorScheme.primary,
-                            contentColor = MaterialTheme.colorScheme.onPrimary
-                        )
+                    Surface(
+                        shape = RoundedCornerShape(20.dp),
+                        color = MaterialTheme.colorScheme.surface,
+                        tonalElevation = 6.dp
                     ) {
-                        Text(
-                            if (riddleState.riddle.type == RiddleType.LATERAL)
-                                "Finalizar"
-                            else
-                                "Siguiente"
-                        )
+                        Column(
+                            modifier = Modifier
+                                .padding(24.dp)
+                                .fillMaxWidth(),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.Center
+                        ) {
+                            Text(
+                                "Respuesta",
+                                fontSize = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f),
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.tertiary,
+                                textAlign = TextAlign.Center
+                            )
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(
+                                text = riddleState.riddle.answer,
+                                fontSize = scaledSp(percentWidth = 0.04f, percentHeight = 0.03f),
+                                color = Color.DarkGray,
+                                textAlign = TextAlign.Center,
+                                lineHeight = scaledSp(percentWidth = 0.05f, percentHeight = 0.04f)
+                            )
+                            Spacer(modifier = Modifier.height(24.dp))
+                            Button(
+                                onClick = {
+                                    showAnswerDialog = false
+                                    if (riddleState.riddle.type == RiddleType.LATERAL) {
+                                        showFinalDialog = true
+                                    } else {
+                                        scope.launch { viewModel.loadNext() }
+                                    }
+                                },
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = MaterialTheme.colorScheme.primary,
+                                    contentColor = MaterialTheme.colorScheme.onPrimary
+                                ),
+                                shape = RoundedCornerShape(12.dp)
+                            ) {
+                                Text(
+                                    if (riddleState.riddle.type == RiddleType.LATERAL) "Finalizar" else "Siguiente",
+                                    fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f)
+                                )
+                            }
+                        }
                     }
                 }
             )
         }
 
-        // 🌅 DIÁLOGO FINAL
+
+
+//  DIÁLOGO FINAL
         if (showFinalDialog) {
             AlertDialog(
                 onDismissRequest = {},
-                title = { Text("¡Listo para comenzar!") },
-                text = { Text("Ya estás listo para comenzar el día con la mente despierta!") },
-                confirmButton = {
-                    Button(onClick = {
-                        showFinalDialog = false
-                        onFinishSession()
-                        scope.launch { viewModel.loadNext() }
-                    }) {
-                        Text("Volver al inicio")
+                confirmButton = {},
+                text = {
+                    Surface(
+                        shape = RoundedCornerShape(20.dp),
+                        color = MaterialTheme.colorScheme.surface,
+                        tonalElevation = 6.dp
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .padding(24.dp)
+                                .fillMaxWidth(),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.Center
+                        ) {
+                            Text(
+                                "¡Listo para comenzar!",
+                                fontSize = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f),
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.tertiary,
+                                textAlign = TextAlign.Center
+                            )
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(
+                                "Ya estás listo para comenzar el día con la mente despierta!",
+                                fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f),
+                                color = Color.DarkGray,
+                                textAlign = TextAlign.Center,
+                                lineHeight = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f)
+                            )
+                            Spacer(modifier = Modifier.height(24.dp))
+                            Button(
+                                onClick = {
+                                    showFinalDialog = false
+                                    onFinishSession()
+                                    scope.launch { viewModel.loadNext() }
+                                },
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = MaterialTheme.colorScheme.primary,
+                                    contentColor = MaterialTheme.colorScheme.onPrimary
+                                ),
+                                shape = RoundedCornerShape(12.dp)
+                            ) {
+                                Text(
+                                    "Volver al inicio",
+                                    fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f)
+                                )
+                            }
+                        }
                     }
                 }
             )
         }
+
     }
 }

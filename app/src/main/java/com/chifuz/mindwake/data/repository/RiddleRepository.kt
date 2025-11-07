@@ -24,7 +24,7 @@ class RiddleRepository(private val context: Context) {
 
         val riddles = mutableListOf<Riddle>()
 
-        // 🔹 Cargar acertijos
+        //  Cargar acertijos
         for (i in riddleQuestions.indices) {
             riddles.add(
                 Riddle(
@@ -37,7 +37,7 @@ class RiddleRepository(private val context: Context) {
             )
         }
 
-        // 🔸 Cargar pensamiento lateral
+        //  Cargar pensamiento lateral
         for (i in lateralQuestions.indices) {
             riddles.add(
                 Riddle(

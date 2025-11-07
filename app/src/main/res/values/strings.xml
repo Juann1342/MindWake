@@ -231,7 +231,7 @@
         <item>En una carrera, alguien adelanta al segundo. ¿En qué puesto queda?</item>
         <item>Un hombre empuja su coche hasta un burdel y pierde. ¿Qué sucedió?</item>
         <item>Un padre muere en un accidente; el cirujano dice "No puedo operarlo: es mi hijo". ¿Cómo?</item>
-        <item>Un hombre oye un disparo, entra a la casa y encuentra a una mujer muerta con una pistola a su lado; la policía no arresta. ¿Por qué?</item>
+        <item>Un hombre oye un fuerte ruido, entra a la casa y encuentra a una mujer inmóvil junto a un objeto metálico; la policía no arresta. ¿Por qué?</item>
         <item>Un vendedor ambulante vende paraguas en un desierto y tiene éxito. ¿Cómo?</item>
     </string-array>
 
@@ -255,7 +255,7 @@
         <item>Quedó en segundo lugar (adelantó al segundo).</item>
         <item>Jugaba al Monopoly (versión clásica).</item>
         <item>El cirujano es la madre del niño.</item>
-        <item>Fue un suicidio o escenario claro; la escena no señalaba a un tercero.</item>
+        <item>Fue una acción autoinfligida o una escena evidente; no había participación de otra persona.</item>
         <item>Vende a turistas (o en un oasis turístico); demanda por sombra o recuerdo.</item>
     </string-array>
 

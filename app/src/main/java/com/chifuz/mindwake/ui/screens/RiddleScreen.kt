@@ -217,8 +217,10 @@ fun RiddleScreen(
                         riddleState.riddle.hints[riddleState.hintIndex - 1],
                         fontSize = scaledSp(percentWidth = 0.05f, percentHeight = 0.04f),
                         fontWeight = FontWeight.Bold,
-                        color = Color.DarkGray
-                    )
+                        color = Color.DarkGray,
+                        textAlign = TextAlign.Center,
+
+                        )
                 }
             }
 
@@ -279,7 +281,8 @@ fun RiddleScreen(
                             Spacer(modifier = Modifier.height(16.dp))
                             Text(
                                 text = riddleState.riddle.answer,
-                                fontSize = scaledSp(percentWidth = 0.04f, percentHeight = 0.03f),
+                                fontSize = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f),
+                                fontWeight = FontWeight.Bold,
                                 color = Color.DarkGray,
                                 textAlign = TextAlign.Center,
                                 lineHeight = scaledSp(percentWidth = 0.05f, percentHeight = 0.04f)
@@ -341,7 +344,7 @@ fun RiddleScreen(
                             Spacer(modifier = Modifier.height(16.dp))
                             Text(
                                 "Ya estás listo para comenzar el día con la mente despierta!",
-                                fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f),
+                                fontSize = scaledSp(percentWidth = 0.04f, percentHeight = 0.035f),
                                 color = Color.DarkGray,
                                 textAlign = TextAlign.Center,
                                 lineHeight = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f)
@@ -369,6 +372,5 @@ fun RiddleScreen(
                 }
             )
         }
-
     }
 }

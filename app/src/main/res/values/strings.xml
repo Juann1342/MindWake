@@ -1,190 +1,334 @@
-
 <resources>
-        <string name="app_name">MindWake</string>
+    <string name="app_name">MindWake</string>
 
-        <!-- 🧩 Textos de acertijos adicionales -->
-        <string-array name="riddles_text">
-            <item>¿Qué tiene cuello pero no cabeza?</item>
-            <item>¿Qué sube pero nunca baja?</item>
-            <item>¿Qué tiene dientes pero no muerde?</item>
-            <item>¿Qué palabra se escribe incorrectamente en todos los diccionarios?</item>
-            <item>¿Qué es más ligero que una pluma pero ni el hombre más fuerte puede sostenerlo por mucho tiempo?</item>
-            <item>Cuanto más seco, más mojado se vuelve. ¿Qué es?</item>
-            <item>Si me nombras, desaparezco. ¿Qué soy?</item>
-            <item>Tiene ciudades, pero no casas; montañas, pero no árboles; y agua, pero no peces. ¿Qué es?</item>
-            <item>Cuanto más le quitas, más grande se hace. ¿Qué es?</item>
-            <item>¿Qué palabra se vuelve más corta cuando le agregas dos letras?</item>
-            <item>¿Qué tiene agujeros pero sigue conteniendo agua?</item>
-            <item>Si me rompes, sigo funcionando. ¿Qué soy?</item>
-            <item>¿Qué se puede atrapar pero nunca lanzar?</item>
-            <item>Si me llenas, peso menos. ¿Qué soy?</item>
-            <item>Todos me llevan a la boca, pero nunca me comen. ¿Qué soy?</item>
-            <item>¿Qué corre pero nunca camina?</item>
-            <item>Cuanto más quitas de mí, más grande soy. ¿Qué soy?</item>
-            <item>¿Qué tiene un banco pero nunca sienta?</item>
-            <item>Me puedes romper sin tocarme. ¿Qué soy?</item>
-            <item>¿Qué tiene un ojo pero no puede ver?</item>
-        </string-array>
+    <!-- Textos de acertijos (40) -->
+    <string-array name="riddles_text">
+        <item>¿Qué tiene cuello pero no cabeza?</item>
+        <item>¿Qué sube pero nunca baja?</item>
+        <item>¿Qué tiene dientes pero no muerde?</item>
+        <item>¿Qué palabra se escribe “incorrectamente” en todos los diccionarios?</item>
+        <item>Es más ligero que una pluma pero nadie puede sostenerlo mucho tiempo. ¿Qué es?</item>
+        <item>Cuanto más seco, más mojado se vuelve. ¿Qué es?</item>
+        <item>Si me nombras, desaparezco. ¿Qué soy?</item>
+        <item>Tiene ciudades pero no casas; montañas pero no árboles. ¿Qué es?</item>
+        <item>Cuanto más le quitas, más grande se vuelve. ¿Qué es?</item>
+        <item>¿Qué palabra se vuelve más corta al añadirle dos letras?</item>
+        <item>¿Qué tiene agujeros y aun así contiene agua?</item>
+        <item>Si me rompes, sigo funcionando. ¿Qué soy?</item>
+        <item>¿Qué se puede atrapar pero no lanzar?</item>
+        <item>Si me llenas, peso menos. ¿Qué soy?</item>
+        <item>Todos me llevan a la boca, pero nadie me come. ¿Qué soy?</item>
+        <item>¿Qué corre sin tener piernas?</item>
+        <item>¿Qué tiene un banco pero nunca se sienta?</item>
+        <item>Me puedes romper sin tocarme. ¿Qué soy?</item>
+        <item>¿Qué tiene un ojo pero no puede ver?</item>
+        <item>Vivo sin respirar y puedo morir sin beber. ¿Qué soy?</item>
+        <item>¿Qué viaja por el mundo pero siempre permanece en una esquina?</item>
+        <item>Siempre presente en el pasado, pero nunca en el futuro. ¿Qué es?</item>
+        <item>Cuanto más lo usas, más corto se vuelve. ¿Qué es?</item>
+        <item>¿Qué sube y baja las escaleras sin moverse?</item>
+        <item>Te sigo donde vayas y me muero si te paras. ¿Qué soy?</item>
+        <item>Es tuyo pero lo usan más otros. ¿Qué es?</item>
+        <item>Cruza el agua sin mojarse. ¿Qué es?</item>
+        <item>Sólo puede moverse hacia adelante y mide toda una vida. ¿Qué es?</item>
+        <item>Cuanto más miras, menos ves. ¿Qué es?</item>
+        <item>¿Qué se llena pero nunca se vacía?</item>
+        <item>¿Qué siempre viene pero nunca llega?</item>
+        <item>Tiene una llave pero no cerradura, espacio pero no habitación. ¿Qué es?</item>
+        <item>Puede sostener una casa pero no pesa nada. ¿Qué es?</item>
+        <item>Entra en agua y no se moja. ¿Qué es?</item>
+        <item>Cuanto más compartes, más tienes. ¿Qué es?</item>
+        <item>Puede romperse sin tocarse y darse sin manos. ¿Qué es?</item>
+        <item>Si me usas me consumes; cuanto más me consumes, más grande soy. ¿Qué soy?</item>
+        <item>¿Qué tiene una cama pero nunca duerme?</item>
+    </string-array>
 
-        <!-- 🧠 Respuestas de acertijos -->
-        <string-array name="riddles_answers">
-            <item>Botella</item>
-            <item>Edad</item>
-            <item>Peine</item>
-            <item>Incorrectamente</item>
-            <item>Respiración</item>
-            <item>Toalla</item>
-            <item>Silencio</item>
-            <item>Mapa</item>
-            <item>Agujero</item>
-            <item>Shorter</item>
-            <item>Esponja</item>
-            <item>Corazón</item>
-            <item>Resfriado</item>
-            <item>Globo</item>
-            <item>Cuchara</item>
-            <item>Agua</item>
-            <item>Agujero</item>
-            <item>Río</item>
-            <item>Promesa</item>
-            <item>Aguja</item>
-        </string-array>
+    <!--  Respuestas de acertijos (40) -->
+    <string-array name="riddles_answers">
+        <item>Botella</item>
+        <item>Edad</item>
+        <item>Peine</item>
+        <item>Incorrectamente</item>
+        <item>Respiración</item>
+        <item>Toalla</item>
+        <item>Silencio</item>
+        <item>Mapa</item>
+        <item>Agujero</item>
+        <item>Short (juego de palabras)</item>
+        <item>Esponja</item>
+        <item>Corazón</item>
+        <item>Resfriado</item>
+        <item>Globo</item>
+        <item>Cuchara</item>
+        <item>Agua</item>
+        <item>Banco de un río / banco</item>
+        <item>Promesa</item>
+        <item>Aguja</item>
+        <item>Fuego</item>
+        <item>Estampilla / sello</item>
+        <item>Historia</item>
+        <item>Lápiz</item>
+        <item>Alfombra</item>
+        <item>Sombra</item>
+        <item>Tu nombre</item>
+        <item>Paso peatonal / puente</item>
+        <item>Tiempo</item>
+        <item>Oscuridad</item>
+        <item>Un balde con agujero / recipiente (según versión)</item>
+        <item>Mañana</item>
+        <item>Piano</item>
+        <item>Techo</item>
+        <item>Sombrero</item>
+        <item>Conocimiento</item>
+        <item>Confianza / promesa</item>
+        <item>Vela</item>
+        <item>Río</item>
+    </string-array>
 
-        <!-- 💬 Pistas de acertijos -->
-        <string-array name="riddles_hints_1">
-            <item>Se puede llenar con agua.</item>
-            <item>No es un objeto físico.</item>
-            <item>Se usa todos los días.</item>
-            <item>Es una palabra.</item>
-            <item>Es algo que todos tenemos.</item>
-            <item>Está en el baño.</item>
-            <item>No se puede ver.</item>
-            <item>Es plano.</item>
-            <item>No es un objeto sólido.</item>
-            <item>Piensa en inglés.</item>
-            <item>Tiene muchos agujeros.</item>
-            <item>Late dentro de ti.</item>
-            <item>Te hace toser.</item>
-            <item>Se llena de aire.</item>
-            <item>Está en la cocina.</item>
-            <item>Se encuentra en ríos y mares.</item>
-            <item>Se forma al quitar partes.</item>
-            <item>Río o lugar para dinero.</item>
-            <item>Se da con intención.</item>
-            <item>Se usa para coser.</item>
-        </string-array>
+    <!--  Pistas de acertijos — set 1 (40 items) -->
+    <string-array name="riddles_hints_1">
+        <item>Usado para contener líquido.</item>
+        <item>Crece con cada año.</item>
+        <item>Se usa sobre el cabello.</item>
+        <item>Es una trampa lingüística.</item>
+        <item>Es esencial y silencioso.</item>
+        <item>Lo usas después de ducharte.</item>
+        <item>No hace ruido pero lo notas.</item>
+        <item>Te dice dónde ir sin moverte.</item>
+        <item>Está donde falta materia.</item>
+        <item>Piénsalo en inglés.</item>
+        <item>Absorbe sin disolver.</item>
+        <item>Late sin manos.</item>
+        <item>Se propaga por el aire.</item>
+        <item>Se infla con aire.</item>
+        <item>Va con la cuchara en la mesa.</item>
+        <item>Fluye sin piernas.</item>
+        <item>Puede ser un lugar de dinero.</item>
+        <item>Se ofrece y puede romperse.</item>
+        <item>Pequeña y con un orificio.</item>
+        <item>Consume lo que mantiene su llama.</item>
+        <item>Se pega a sobres y recuerdos.</item>
+        <item>Se aprende revisando lo ocurrido.</item>
+        <item>Deja marca al escribir.</item>
+        <item>Protege el suelo de la escalera.</item>
+        <item>Depende de la luz para formarse.</item>
+        <item>Te identifica ante otros.</item>
+        <item>Une dos orillas sin mover agua.</item>
+        <item>Mide lo que vivimos.</item>
+        <item>Apaga la vista cuando falta luz.</item>
+        <item>Puede contener sin vaciarse.</item>
+        <item>Se usa en expresiones de espera.</item>
+        <item>Tiene teclas pero no puertas.</item>
+        <item>Sostiene techo y paredes sin pesar.</item>
+        <item>No se humedece aunque esté dentro del agua.</item>
+        <item>Se incrementa al compartirlo.</item>
+        <item>Puede romperse con una palabra.</item>
+        <item>Consume para mantenerse vivo.</item>
+        <item>Fluye por valles y cauces.</item>
+    </string-array>
 
-        <string-array name="riddles_hints_2">
-            <item>Está en la mesa.</item>
-            <item>Aumenta con el tiempo.</item>
-            <item>Está en el baño.</item>
-            <item>No tiene que ver con ortografía.</item>
-            <item>Se necesita para vivir.</item>
-            <item>Se usa después de bañarse.</item>
-            <item>Tiene que ver con el sonido.</item>
-            <item>Se puede doblar.</item>
-            <item>Tiene que ver con el vacío.</item>
-            <item>La palabra es “short”.</item>
-            <item>Se usa para limpiar líquidos.</item>
-            <item>Late todo el tiempo.</item>
-            <item>Provoca estornudos.</item>
-            <item>Se infla y flota.</item>
-            <item>No se come.</item>
-            <item>Es líquida.</item>
-            <item>Aumenta el vacío.</item>
-            <item>Se relaciona con dinero o agua.</item>
-            <item>Depende de la confianza.</item>
-            <item>Va en hilos y telas.</item>
-        </string-array>
+    <!--  Pistas de acertijos — set 2 (40 items) -->
+    <string-array name="riddles_hints_2">
+        <item>Lo encuentras en la cocina o bar.</item>
+        <item>Un número que suma días.</item>
+        <item>Puede ser de plástico o madera.</item>
+        <item>La ortografía no es la clave real.</item>
+        <item>Sin ello la vida sería imposible.</item>
+        <item>Se seca en el aire.</item>
+        <item>Se pierde si lo pronuncias.</item>
+        <item>Se pliega y se lleva en bolsillo.</item>
+        <item>Más vacío significa más grande.</item>
+        <item>Agrega una terminación en inglés.</item>
+        <item>Tiene poros que retienen líquido.</item>
+        <item>Funciona desde antes de nacer.</item>
+        <item>Suele causar estornudos.</item>
+        <item>Puede explotar en fiestas.</item>
+        <item>No forma parte de la comida.</item>
+        <item>Va siempre por cauces definidos.</item>
+        <item>Puedes quitar partes y aumentará.</item>
+        <item>Relacionado a ubicaciones financieras.</item>
+        <item>Se confía y se rompe si no se cuida.</item>
+        <item>Se usa en costura y tiene ojo.</item>
+        <item>Pequeño, con adhesivo en la espalda.</item>
+        <item>Relatos lo alimentan y lo transforman.</item>
+        <item>Se usa para escribir y dibujar.</item>
+        <item>Evita desgaste en las escaleras.</item>
+        <item>Nace donde incide la luz.</item>
+        <item>Actúa como documento de identidad.</item>
+        <item>Permite cruzar sin tocar el agua.</item>
+        <item>Nacíste y comienza a contar.</item>
+        <item>Se asocia a la ausencia de brillo.</item>
+        <item>Su volumen puede ser infinito en teoría.</item>
+        <item>Se usa en frases idiomáticas.</item>
+        <item>Produce sonidos con presión.</item>
+        <item>Se percibe sin necesidad de tocarlo.</item>
+        <item>Flota si desplaza suficiente agua.</item>
+        <item>Crecimiento no ligado a posesión.</item>
+        <item>Palabras pueden dañarlo.</item>
+        <item>Alimenta su propia continuación.</item>
+        <item>Forma parte del paisaje fluvial.</item>
+    </string-array>
 
-        <string-array name="riddles_hints_3">
-            <item>Sirve para beber.</item>
-            <item>Tiene que ver con la edad.</item>
-            <item>Sirve para el cabello.</item>
-            <item>Piensa literal.</item>
-            <item>No se ve.</item>
-            <item>Es de tela.</item>
-            <item>Se rompe fácilmente.</item>
-            <item>Sirve para orientarse.</item>
-            <item>Aparece en el suelo o una pared.</item>
-            <item>Agregale “er”.</item>
-            <item>Absorbe agua rápidamente.</item>
-            <item>Se contrae y expande.</item>
-            <item>Se propaga por el aire.</item>
-            <item>Puedes explotarlo.</item>
-            <item>Se usa para remover comida.</item>
-            <item>Cae en cascada.</item>
-            <item>Se hace más grande al quitarlo.</item>
-            <item>No puedes sentarte en él.</item>
-            <item>Se rompe sin tocarlo.</item>
-            <item>Tiene hilo en el centro.</item>
-        </string-array>
+    <!--  Pistas de acertijos — set 3 (40 items) -->
+    <string-array name="riddles_hints_3">
+        <item>Puede llevar etiqueta con marca.</item>
+        <item>Cuenta aniversarios y etapas.</item>
+        <item>Se usa para separar mechones.</item>
+        <item>Lee la frase literalmente.</item>
+        <item>Existe pero no se ve.</item>
+        <item>Suele colgarse tras el baño.</item>
+        <item>Se extingue si se le corta la base.</item>
+        <item>Lo usas para ubicarte en un mapa físico.</item>
+        <item>Al quitarle partes aparece más vacío.</item>
+        <item>Piensa en la formación de comparativos.</item>
+        <item>Seca y luego vuelve a usar.</item>
+        <item>Marca el ritmo vital.</item>
+        <item>Se transmite sin contacto.</item>
+        <item>Lo usas para decorar una fiesta.</item>
+        <item>Acompaña al tenedor y plato.</item>
+        <item>Corre siguiendo la pendiente.</item>
+        <item>Va aumentando al remover elementos.</item>
+        <item>Se entrega con solemnidad.</item>
+        <item>Su punta atraviesa tela y piel.</item>
+        <item>Necesita oxígeno para existir.</item>
+        <item>Puedes coleccionarlas por país o época.</item>
+        <item>La memoria histórica le da sentido.</item>
+        <item>Se afila para escribir mejor.</item>
+        <item>Se coloca para seguridad al caminar.</item>
+        <item>Cambia según la posición del sol.</item>
+        <item>Usada como prueba de identidad.</item>
+        <item>Suele estar en planos y guías.</item>
+        <item>Mide segundos, minutos y horas.</item>
+        <item>Oculta cuando sobra claridad.</item>
+        <item>Puede ser teórico y eterno.</item>
+        <item>Forma parte de frases populares.</item>
+        <item>Puede sonar al presionarlo.</item>
+        <item>Su presencia es apenas perceptible.</item>
+        <item>Desplaza, por ejemplo, a un flotador.</item>
+        <item>Se multiplica cuando lo compartes.</item>
+        <item>Una palabra puede fracturarlo.</item>
+        <item>Se alimenta de uso y experiencia.</item>
+        <item>Dibuja cursos en la geografía.</item>
+    </string-array>
 
-        <!-- 💭 Ejercicios de pensamiento lateral adicionales -->
-        <string-array name="lateral_text">
-            <item>Un hombre entra en un bar y pide un vaso de agua. El camarero apunta con una pistola al hombre. El hombre dice “gracias” y se va. ¿Qué pasó?</item>
-            <item>Una mujer se ahoga en una piscina llena de personas, pero nadie intenta salvarla. ¿Por qué?</item>
-            <item>Un hombre muere un domingo por la mañana. Su esposa llama a la policía. Ellos interrogan a los empleados: el jardinero, el cocinero y la mucama. El jardinero dice que estaba podando, el cocinero preparando el desayuno, la mucama limpiando, pero arrestan a la mucama. ¿Por qué?</item>
-            <item>Un hombre mira un retrato y dice: “No tengo hermanos, pero el padre de este hombre es el hijo de mi padre”. ¿A quién mira?</item>
-            <item>Un hombre empuja su coche hasta un hotel y pierde su fortuna. ¿Qué pasó?</item>
-            <item>Dos padres y dos hijos van a pescar, pero solo pescan tres peces. ¿Cómo es posible?</item>
-            <item>Un hombre camina bajo la lluvia sin sombrero ni paraguas y no se moja. ¿Por qué?</item>
-            <item>Una persona entra a un cuarto completamente oscuro y encuentra la salida sin encender la luz. ¿Cómo?</item>
-            <item>Un ladrón roba un banco y deja un mensaje diciendo “El dinero está en la nevera”. ¿Cómo lo resolvieron?</item>
-            <item>Un hombre encuentra una carta en su buzón que dice “No abras hasta mañana” y la abre. ¿Qué ocurrió?</item>
-        </string-array>
+    <!--  Ejercicios de pensamiento lateral (20) -->
+    <string-array name="lateral_text">
+        <item>Un hombre entra a un bar y pide un vaso de agua. El camarero apunta con una pistola; el hombre dice "gracias" y se va. ¿Qué pasó?</item>
+        <item>En una piscina llena de gente, una mujer parece ahogarse pero nadie la salva. ¿Por qué?</item>
+        <item>Interrogan al jardinero, cocinero y mucama; la mucama miente y la arrestan. ¿Qué la delata?</item>
+        <item>“No tengo hermanos, pero el padre de este hombre es el hijo de mi padre.” ¿A quién ve el hablante?</item>
+        <item>Un hombre empuja su coche hasta un hotel y pierde su fortuna. ¿Qué ocurrió?</item>
+        <item>Dos padres y dos hijos pescan y traen tres peces. ¿Cómo es posible?</item>
+        <item>Un hombre camina bajo la lluvia sin sombrero y no se moja. ¿Por qué?</item>
+        <item>Entras a una habitación en completa oscuridad y encuentras la salida sin encender la luz. ¿Cómo?</item>
+        <item>Un ladrón deja el mensaje "El dinero está en la nevera". ¿Cómo lo resolvieron?</item>
+        <item>Encuentran una carta que dice "No abras hasta mañana" y la abren. ¿Por qué?</item>
+        <item>Un hombre despierta y su habitación está llena de agua hasta el techo, pero sale seco. ¿Cómo?</item>
+        <item>Un niño pide dinero por un juguete, lo recibe y lo devuelve enfadado. ¿Por qué?</item>
+        <item>Hay tres interruptores fuera y tres bombillas dentro; sin ver las bombillas, ¿cómo averiguas cuál enciende cada una?</item>
+        <item>Un granjero tenía quince ovejas; "todas menos ocho se escaparon". ¿Cuántas quedan?</item>
+        <item>Un huésped paga con una moneda antigua y no es arrestado. ¿Por qué?</item>
+        <item>En una carrera, alguien adelanta al segundo. ¿En qué puesto queda?</item>
+        <item>Un hombre empuja su coche hasta un burdel y pierde. ¿Qué sucedió?</item>
+        <item>Un padre muere en un accidente; el cirujano dice "No puedo operarlo: es mi hijo". ¿Cómo?</item>
+        <item>Un hombre oye un disparo, entra a la casa y encuentra a una mujer muerta con una pistola a su lado; la policía no arresta. ¿Por qué?</item>
+        <item>Un vendedor ambulante vende paraguas en un desierto y tiene éxito. ¿Cómo?</item>
+    </string-array>
 
-        <!-- 💭 Respuestas de pensamiento lateral adicionales -->
-        <string-array name="lateral_answers">
-            <item>El hombre tenía hipo. El susto se lo quitó.</item>
-            <item>Estaban grabando una película.</item>
-            <item>La mucama dijo que estaba limpiando, pero los domingos no trabaja.</item>
-            <item>Mira a su hijo.</item>
-            <item>Está jugando al Monopoly.</item>
-            <item>Son abuelo, padre e hijo.</item>
-            <item>Estaba bajo un techo.</item>
-            <item>El cuarto tenía una salida física que no requería luz.</item>
-            <item>El mensaje era literal y el dinero estaba en la nevera.</item>
-            <item>La carta era para otro día, no para hoy.</item>
-        </string-array>
+    <!--  Respuestas de pensamiento lateral (20) -->
+    <string-array name="lateral_answers">
+        <item>Tenía hipo; el susto del arma se lo quitó.</item>
+        <item>Era una filmación o ensayo; no era real.</item>
+        <item>La mucama dijo que trabajaba ese día cuando en realidad no, la incoherencia la delató.</item>
+        <item>Mira a su hijo.</item>
+        <item>Jugaba al Monopoly y cayó en una casilla que lo arruinó.</item>
+        <item>Son abuelo, padre e hijo (tres generaciones, tres personas).</item>
+        <item>Estaba bajo un techo o toldo; no recibió lluvia.</item>
+        <item>Conocía la habitación o la salida estaba por memoria o roce.</item>
+        <item>Buscaron literalmente en la nevera y encontraron el dinero.</item>
+        <item>La carta era para abrir en otro día; hubo confusión de fechas.</item>
+        <item>Fue un sueño o una ilusión; al despertarse no había agua.</item>
+        <item>Ya tenía el juguete y lo devolvió por enojo o castigo.</item>
+        <item>Enciende uno, deja que caliente, lo apaga; la caliente identifica cuál bombillo.</item>
+        <item>Quedaron ocho.</item>
+        <item>Era una ficha o moneda con curso en ese contexto.</item>
+        <item>Quedó en segundo lugar (adelantó al segundo).</item>
+        <item>Jugaba al Monopoly (versión clásica).</item>
+        <item>El cirujano es la madre del niño.</item>
+        <item>Fue un suicidio o escenario claro; la escena no señalaba a un tercero.</item>
+        <item>Vende a turistas (o en un oasis turístico); demanda por sombra o recuerdo.</item>
+    </string-array>
 
-        <!-- 💭 Pistas de pensamiento lateral adicionales -->
-        <string-array name="lateral_hints_1">
-            <item>El hombre tenía un problema físico.</item>
-            <item>No es una situación real.</item>
-            <item>Fijate en el día de la semana.</item>
-            <item>Analizá la frase con calma.</item>
-            <item>No es una historia real.</item>
-            <item>Hay tres personas pero solo dos generaciones visibles.</item>
-            <item>No había agua encima de él.</item>
-            <item>Observá el entorno del cuarto.</item>
-            <item>El mensaje era literal.</item>
-            <item>El remitente especificó un día.</item>
-        </string-array>
+    <!--  Pistas de pensamiento lateral — set 1 (20) -->
+    <string-array name="lateral_hints_1">
+        <item>El gesto buscaba una reacción física.</item>
+        <item>Busca cámaras, luz o público.</item>
+        <item>Fíjate en qué día se desarrolla la historia.</item>
+        <item>Descompón la frase para ver la identidad.</item>
+        <item>Piénsalo como un juego de tablero.</item>
+        <item>Cuenta generaciones, no individuos.</item>
+        <item>Un techo basta para no mojarse.</item>
+        <item>La salida puede hallarse sin ver.</item>
+        <item>La instrucción fue literal y concreta.</item>
+        <item>La fecha indicada no coincidía con la apertura.</item>
+        <item>La experiencia podía ser onírica.</item>
+        <item>La reacción del niño indica ya poseer el objeto.</item>
+        <item>Usa calor y tiempo como pista.</item>
+        <item>Lee con cuidado "todas menos ocho".</item>
+        <item>Monedas pueden tener uso simbólico o local.</item>
+        <item>Si adelantas a alguien, ocupas su lugar.</item>
+        <item>Es una historia clásica reescrita.</item>
+        <item>Revisa roles familiares inesperados.</item>
+        <item>La escena puede ser concluyente sin intrusos.</item>
+        <item>Piensa en demanda turística o necesidad.</item>
+    </string-array>
 
-        <string-array name="lateral_hints_2">
-            <item>El camarero no quería hacerle daño.</item>
-            <item>Todos están participando en algo.</item>
-            <item>Lo que hacía la mucama no tiene sentido ese día.</item>
-            <item>“El hijo de mi padre” soy yo.</item>
-            <item>Hay un tablero involucrado.</item>
-            <item>Hay dos generaciones que se repiten.</item>
-            <item>Tenía un techo encima.</item>
-            <item>Hay salidas físicas en la habitación.</item>
-            <item>El dinero estaba en el refrigerador.</item>
-            <item>La carta no era de hoy.</item>
-        </string-array>
+    <!--  Pistas de pensamiento lateral — set 2 (20) -->
+    <string-array name="lateral_hints_2">
+        <item>El susto cura problemas breves.</item>
+        <item>Si hay público, puede ser actuación.</item>
+        <item>Los días feriados cambian rutinas.</item>
+        <item>“El hijo de mi padre” = yo o mi hermano.</item>
+        <item>Revisa reglas y casillas.</item>
+        <item>Generaciones solapadas explican el número.</item>
+        <item>Algo simple impidió mojarse.</item>
+        <item>El tacto o memoria bastan para orientarse.</item>
+        <item>Revisaron el electrodoméstico señalado.</item>
+        <item>La carta apuntaba a otra fecha.</item>
+        <item>La experiencia pudo no ser real.</item>
+        <item>La frustración es motivo de devolverlo.</item>
+        <item>Calor al tacto identifica la bombilla correcta.</item>
+        <item>Responde literalmente la frase clave.</item>
+        <item>Una ficha puede circular como moneda en contextos específicos.</item>
+        <item>Piénsalo en posiciones, no en nombres.</item>
+        <item>Reinventa la anécdota de forma clásica.</item>
+        <item>El parentesco puede confundirse por lenguaje.</item>
+        <item>La escena forense guía la conclusión.</item>
+        <item>El producto cubre una necesidad concreta allí.</item>
+    </string-array>
 
-        <string-array name="lateral_hints_3">
-            <item>El susto fue la solución.</item>
-            <item>Hay cámaras.</item>
-            <item>No se limpia ese día.</item>
-            <item>Entonces el retrato es de su hijo.</item>
-            <item>Se trata de un juego.</item>
-            <item>Hay tres generaciones implicadas.</item>
-            <item>No se mojó.</item>
-            <item>Encontró la salida caminando.</item>
-            <item>Revisaron la nevera.</item>
-            <item>No debía abrirla todavía.</item>
-        </string-array>
-    </resources>
+    <!--  Pistas de pensamiento lateral — set 3 (20) -->
+    <string-array name="lateral_hints_3">
+        <item>Observa reacciones físicas súbitas.</item>
+        <item>Busca señales de rodaje.</item>
+        <item>Domingos y feriados son excepciones laborales.</item>
+        <item>El retrato puede ser de un descendiente directo.</item>
+        <item>El tablero cambia el significado de "perder la fortuna".</item>
+        <item>Tres personas pueden representar dos roles repetidos.</item>
+        <item>Un toldo, pérgola o balcón bastan.</item>
+        <item>El recuerdo del plano ayuda a escapar de la oscuridad.</item>
+        <item>La nevera fue el lugar literal del mensaje.</item>
+        <item>Hubo confusión en la fecha de apertura.</item>
+        <item>La sensación puede no corresponder a la realidad.</item>
+        <item>La devolución fue por emoción, no por dinero.</item>
+        <item>Calor y apagado son la técnica.</item>
+        <item>La frase "todas menos ocho" da la cuenta inmediata.</item>
+        <item>Una ficha con valor aceptado explica la situación.</item>
+        <item>El resultado es segundo puesto.</item>
+        <item>Es una variación clásica del mismo enigma.</item>
+        <item>El cirujano puede ser madre o progenitor no esperado.</item>
+        <item>La evidencia no apuntaba a un tercero.</item>
+        <item>La oferta satisface una necesidad local del lugar.</item>
+    </string-array>
+
+</resources>

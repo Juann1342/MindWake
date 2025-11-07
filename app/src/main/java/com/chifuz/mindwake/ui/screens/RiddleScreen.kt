@@ -25,6 +25,11 @@ import com.chifuz.mindwake.R
 import com.chifuz.mindwake.data.repository.RiddleType
 import com.chifuz.mindwake.viewmodel.RiddleViewModel
 import kotlinx.coroutines.launch
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.togetherWith
 
 @Composable
 fun RiddleScreen(
@@ -62,8 +67,10 @@ fun RiddleScreen(
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.background)
                 .padding(horizontal = scaledDp(percentWidth = 0.04f, percentHeight = 0.02f))
-                .padding(top = scaledDp(percentWidth = 0f, percentHeight = 0.06f),
-                    bottom = scaledDp(percentWidth = 0f, percentHeight = 0.18f))
+                .padding(
+                    top = scaledDp(percentWidth = 0f, percentHeight = 0.06f),
+                    bottom = scaledDp(percentWidth = 0f, percentHeight = 0.18f)
+                )
         ) {
             val (
                 header, contentArea, pista, verPista, pistasRestantes, verRespuesta, titleRiddle
@@ -117,7 +124,10 @@ fun RiddleScreen(
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.tertiary,
                 modifier = Modifier.constrainAs(titleRiddle) {
-                    top.linkTo(header.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
+                    top.linkTo(
+                        header.bottom,
+                        margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f)
+                    )
                     start.linkTo(parent.start)
                     end.linkTo(parent.end)
                 }
@@ -126,7 +136,7 @@ fun RiddleScreen(
             //  ÁREA CENTRAL (con scroll)
             val scrollState = rememberScrollState()
             val questionTextSize = remember {
-                val scaledValue = (screenWidth * 0.060f + screenHeight * 0.040f) / 2
+                val scaledValue = (screenWidth * 0.062f + screenHeight * 0.042f) / 2
                 val spValue = scaledValue.sp
                 // Convertimos a Float y limitamos
                 TextUnit(
@@ -144,8 +154,14 @@ fun RiddleScreen(
                     .padding(horizontal = scaledDp(percentWidth = 0.05f, percentHeight = 0f))
                     .verticalScroll(scrollState)
                     .constrainAs(contentArea) {
-                        top.linkTo(titleRiddle.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.03f))
-                        bottom.linkTo(pistasRestantes.top, margin = scaledDp(percentWidth = 0f, percentHeight = 0.03f))
+                        top.linkTo(
+                            titleRiddle.bottom,
+                            margin = scaledDp(percentWidth = 0f, percentHeight = 0.03f)
+                        )
+                        bottom.linkTo(
+                            pistasRestantes.top,
+                            margin = scaledDp(percentWidth = 0f, percentHeight = 0.03f)
+                        )
                         start.linkTo(parent.start)
                         end.linkTo(parent.end)
                         height = Dimension.fillToConstraints
@@ -153,15 +169,30 @@ fun RiddleScreen(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                Text(
-                    text = riddleState.riddle.question,
-                    fontSize = questionTextSize,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.DarkGray,
-                    textAlign = TextAlign.Center,
-                    lineHeight = questionTextSize * 1.3f, // 🔹 30% más alto que el tamaño de texto
-                    modifier = Modifier.fillMaxWidth()
-                )
+
+
+                AnimatedContent(
+                    targetState = riddleState.riddle.question,
+                    transitionSpec = {
+                        fadeIn(animationSpec = tween(1500)) togetherWith fadeOut(
+                            animationSpec = tween(
+                                1000
+                            )
+                        )
+                    },
+                    label = "riddleTextAnimation"
+                ) { question ->
+                    Text(
+                        text = question,
+                        fontSize = questionTextSize,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.DarkGray,
+                        textAlign = TextAlign.Center,
+                        lineHeight = questionTextSize * 1.3f, // 🔹 30% más alto que el tamaño de texto
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
+
 
             }
 
@@ -170,8 +201,14 @@ fun RiddleScreen(
                 "PISTAS RESTANTES: ${riddleState.riddle.hints.size - riddleState.hintIndex}",
                 fontSize = scaledSp(percentWidth = 0.03f, percentHeight = 0.025f),
                 modifier = Modifier.constrainAs(pistasRestantes) {
-                    top.linkTo(contentArea.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
-                    bottom.linkTo(verPista.top, margin = scaledDp(percentWidth = 0f, percentHeight = 0.01f))
+                    top.linkTo(
+                        contentArea.bottom,
+                        margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f)
+                    )
+                    bottom.linkTo(
+                        verPista.top,
+                        margin = scaledDp(percentWidth = 0f, percentHeight = 0.01f)
+                    )
                     start.linkTo(parent.start)
                     end.linkTo(parent.end)
                 }
@@ -184,8 +221,14 @@ fun RiddleScreen(
                     .fillMaxWidth(0.7f)
                     .height(scaledDp(percentWidth = 0f, percentHeight = 0.14f))
                     .constrainAs(verPista) {
-                        top.linkTo(pistasRestantes.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
-                        bottom.linkTo(pista.top, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
+                        top.linkTo(
+                            pistasRestantes.bottom,
+                            margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f)
+                        )
+                        bottom.linkTo(
+                            pista.top,
+                            margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f)
+                        )
                         start.linkTo(parent.start)
                         end.linkTo(parent.end)
                     },
@@ -204,8 +247,14 @@ fun RiddleScreen(
                     .fillMaxWidth()
                     .heightIn(min = scaledDp(percentWidth = 0f, percentHeight = 0.06f))
                     .constrainAs(pista) {
-                        top.linkTo(verPista.bottom, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
-                        bottom.linkTo(verRespuesta.top, margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f))
+                        top.linkTo(
+                            verPista.bottom,
+                            margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f)
+                        )
+                        bottom.linkTo(
+                            verRespuesta.top,
+                            margin = scaledDp(percentWidth = 0f, percentHeight = 0.02f)
+                        )
                         start.linkTo(parent.start)
                         end.linkTo(parent.end)
                     },
@@ -242,7 +291,10 @@ fun RiddleScreen(
                 ),
                 shape = RoundedCornerShape(scaledDp(percentWidth = 0.02f, percentHeight = 0.02f))
             ) {
-                Text("Ver respuesta", fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f))
+                Text(
+                    "Ver respuesta",
+                    fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f)
+                )
             }
 
             //  Efecto que abre el diálogo cuando cambia el estado
@@ -305,7 +357,10 @@ fun RiddleScreen(
                             ) {
                                 Text(
                                     if (riddleState.riddle.type == RiddleType.LATERAL) "Finalizar" else "Siguiente",
-                                    fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f)
+                                    fontSize = scaledSp(
+                                        percentWidth = 0.035f,
+                                        percentHeight = 0.03f
+                                    )
                                 )
                             }
                         }
@@ -313,7 +368,6 @@ fun RiddleScreen(
                 }
             )
         }
-
 
 
 //  DIÁLOGO FINAL
@@ -364,7 +418,10 @@ fun RiddleScreen(
                             ) {
                                 Text(
                                     "Volver al inicio",
-                                    fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f)
+                                    fontSize = scaledSp(
+                                        percentWidth = 0.035f,
+                                        percentHeight = 0.03f
+                                    )
                                 )
                             }
                         }

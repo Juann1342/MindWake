@@ -9,11 +9,11 @@ class RiddleRepository(private val context: Context) {
         val res = context.resources
         val pkg = context.packageName
 
-        val riddleQuestions = res.getStringArray(res.getIdentifier("riddles_text", "array", pkg))
-        val riddleHint1 = res.getStringArray(res.getIdentifier("riddles_hints_1", "array", pkg))
-        val riddleHint2 = res.getStringArray(res.getIdentifier("riddles_hints_2", "array", pkg))
-        val riddleHint3 = res.getStringArray(res.getIdentifier("riddles_hints_3", "array", pkg))
-        val riddleAnswers = res.getStringArray(res.getIdentifier("riddles_answers", "array", pkg))
+        val riddleQuestions = res.getStringArray(res.getIdentifier("riddle_text", "array", pkg))
+        val riddleHint1 = res.getStringArray(res.getIdentifier("riddle_hints_1", "array", pkg))
+        val riddleHint2 = res.getStringArray(res.getIdentifier("riddle_hints_2", "array", pkg))
+        val riddleHint3 = res.getStringArray(res.getIdentifier("riddle_hints_3", "array", pkg))
+        val riddleAnswers = res.getStringArray(res.getIdentifier("riddle_answers", "array", pkg))
 
         val lateralQuestions = res.getStringArray(res.getIdentifier("lateral_text", "array", pkg))
         val lateralHint1 = res.getStringArray(res.getIdentifier("lateral_hints_1", "array", pkg))

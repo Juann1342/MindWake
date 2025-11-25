@@ -15,8 +15,34 @@
     <string name="btn_finish">Finish</string>
     <string name="btn_next">Next</string>
 
+    <string name="welcome_title">Wake Up Your Mind</string>
+    <string name="welcome_body">Your brain works like a muscle: it needs a warm-up.\n\nThe goal isn\'t just to get it right, but to make an effort. Try to solve each riddle on your own before seeing the answer.\n\nThat small mental effort takes your brain out of \'autopilot\' and prepares you for a productive day.</string>
+    <string name="welcome_btn_accept">I accept the challenge!</string>
+
     <string name="dialog_title_ready">Ready to start!</string>
     <string name="dialog_msg_ready">You are now ready to start the day with a sharp mind!</string>
+    <string-array name="motivational_phrases">
+        <item>Your mind is activated!</item>
+        <item>Better than a cup of coffee!</item>
+        <item>Neurons awake. Seize the day!</item>
+        <item>Nothing will stop you today.</item>
+        <item>Morning brilliance unlocked.</item>
+        <item>Your brain is in shape.</item>
+        <item>What mental agility!</item>
+        <item>Ready to conquer the world.</item>
+        <item>Laser focus activated.</item>
+        <item>Today will be a great day.</item>
+        <item>Sharp mind, guaranteed success.</item>
+        <item>You are a waking genius!</item>
+        <item>Creativity at 100%.</item>
+        <item>Challenge accepted. Keep it up!</item>
+        <item>Your potential is infinite.</item>
+        <item>That\'s the spirit!</item>
+        <item>Clear mind, strong decisions.</item>
+        <item>Victory is yours today.</item>
+        <item>You are unstoppable!</item>
+        <item>Go out and shine.</item>
+    </string-array>
     <string name="btn_back_home">Back to home</string>
 
     <string-array name="riddle_text">
@@ -39,7 +65,9 @@
         <item>I have a neck but no head, I have a body but no arms. What am I?</item>
         <item>Two sisters, it is no lie, one is my aunt, the other is not. Who is she?</item>
         <item>What is something that, the bigger it is, the less you see?</item>
-        <item>It goes in hard and big, and comes out soft and small. What is it?</item>
+
+        <item>Water flows past my home, look carefully, my heart. He who fails to guess me, has no pardon for their part.</item>
+
         <item>I am in the water and do not get wet, I am in the fire and do not burn. What am I?</item>
         <item>I have keys but no locks, I have space but no rooms. What am I?</item>
         <item>Which weighs more, a pound of lead or a pound of feathers?</item>
@@ -70,7 +98,7 @@
         <item>I am not a bird, but I can fly. I carry people in my belly. What am I?</item>
         <item>Only once a year do you celebrate me, with cake and candles, and the number grows at last. What is it?</item>
         <item>I have fingers but no flesh, bone, or blood. What am I?</item>
-        <item>I tear when I fall on the ground, but I bounce on the water. What am I not?</item>
+        <item>To use me you must throw me, to keep me you must pull me in. What am I?</item>
         <item>What has a heart that doesn\'t beat, leaves that don\'t fall, and a spine that doesn\'t hurt?</item>
         <item>I fly at night, sleep by day, and you will never see feathers on my wing. What am I?</item>
         <item>It has been in the sea for years and still doesn\'t know how to swim. What is it?</item>
@@ -78,7 +106,7 @@
         <item>I have roots that nobody sees, I am taller than a tree, and I never move. What am I?</item>
         <item>A small box, white as lime, that everyone knows how to open and no one knows how to close. What is it?</item>
         <item>Which word contains 26 letters but has only three syllables?</item>
-        <item>It goes in dry and arrogant, comes out wet and dripping. What is it?</item>
+        <item>I am black when I am clean, and white when I am dirty. What am I?</item>
         <item>Falls from the tower and doesn\'t die, falls in the water and dissolves. What is it?</item>
     </string-array>
 
@@ -102,7 +130,9 @@
         <item>It is a container.</item>
         <item>Think about the family.</item>
         <item>It is the absence of light.</item>
-        <item>It is something you chew.</item>
+
+        <item>It’s green on the outside and has one large pit/seed in the center.</item>
+
         <item>It is something immaterial related to light.</item>
         <item>It is a musical instrument.</item>
         <item>It is a trick question about physics.</item>
@@ -133,7 +163,7 @@
         <item>It is a mode of transport.</item>
         <item>It is a special date for you.</item>
         <item>It is an article of clothing.</item>
-        <item>It is a trick question about the material.</item>
+        <item>I am made of metal and very heavy.</item>
         <item>It is a reading object.</item>
         <item>It is a flying mammal.</item>
         <item>It is a heavy material.</item>
@@ -141,7 +171,7 @@
         <item>It is part of the natural landscape.</item>
         <item>It is a fragile food.</item>
         <item>It is a word game about letters.</item>
-        <item>It is a utensil (or cookie in milk).</item>
+        <item>They clean me with an eraser.</item>
         <item>It is a daily material.</item>
     </string-array>
 
@@ -165,7 +195,9 @@
         <item>Usually made of glass or plastic.</item>
         <item>Starts with M.</item>
         <item>Does not let you see anything.</item>
-        <item>It dissolves in the mouth.</item>
+
+        <item>It is the main ingredient of guacamole.</item>
+
         <item>You can see something in it.</item>
         <item>It has white and black keys.</item>
         <item>The mass is identical in both.</item>
@@ -204,7 +236,7 @@
         <item>It is a mountain.</item>
         <item>Impossible to close once opened.</item>
         <item>The set of all letters.</item>
-        <item>It is a spoon.</item>
+        <item>You write on me with chalk.</item>
         <item>It is paper.</item>
     </string-array>
 
@@ -228,7 +260,9 @@
         <item>I have a mouth but cannot speak.</item>
         <item>She gave me life.</item>
         <item>Without light, I am the absolute queen.</item>
-        <item>I trick the stomach with flavor, but do not feed.</item>
+
+        <item>It is highly valued for its healthy fats and creamy texture, often called green gold.</item>
+
         <item>I am your double, but I cannot speak.</item>
         <item>My strings are not for tying.</item>
         <item>Gravity does not distinguish material.</item>
@@ -259,7 +293,7 @@
         <item>Metal bird crossing clouds.</item>
         <item>You add one more to your life count.</item>
         <item>I am a second skin for your hands.</item>
-        <item>I endure ink but not water.</item>
+        <item>I stop the ship from moving.</item>
         <item>I keep whole worlds in my pages.</item>
         <item>I see with my ears in the dark.</item>
         <item>I count time grain by grain.</item>
@@ -267,7 +301,7 @@
         <item>I touch the sky without lifting my feet.</item>
         <item>I close life inside.</item>
         <item>I contain all written language.</item>
-        <item>I bring the soup to your mouth.</item>
+        <item>You find me in a classroom.</item>
         <item>I am the support of written ideas.</item>
     </string-array>
 
@@ -291,7 +325,9 @@
         <item>A bottle.</item>
         <item>Your mother.</item>
         <item>Darkness.</item>
-        <item>Chewing gum.</item>
+
+        <item>The avocado.</item>
+
         <item>A reflection.</item>
         <item>A piano.</item>
         <item>They weigh the same.</item>
@@ -322,7 +358,7 @@
         <item>An airplane.</item>
         <item>Your birthday.</item>
         <item>A glove.</item>
-        <item>Paper.</item>
+        <item>The anchor.</item>
         <item>A book.</item>
         <item>A bat.</item>
         <item>Sand.</item>
@@ -330,7 +366,7 @@
         <item>A mountain.</item>
         <item>An egg.</item>
         <item>The Alphabet.</item>
-        <item>A spoon.</item>
+        <item>The blackboard.</item>
         <item>Paper.</item>
     </string-array>
 

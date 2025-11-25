@@ -1,5 +1,4 @@
 package com.chifuz.mindwake.ui.screens
-
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -30,6 +29,9 @@ import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.togetherWith
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Info
+import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 
 @Composable
@@ -39,16 +41,17 @@ fun RiddleScreen(
 ) {
     val state by viewModel.uiState.collectAsState()
     val progress by viewModel.progressFlow.collectAsState(initial = 0.3f)
+
+    val showWelcome by viewModel.showWelcomeDialog.collectAsState()
+
     var showAnswerDialog by remember { mutableStateOf(false) }
     var showFinalDialog by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
 
-    // Configuración de pantalla
     val configuration = LocalConfiguration.current
     val screenWidth = configuration.screenWidthDp
     val screenHeight = configuration.screenHeightDp
 
-    // Funciones de escalado combinando ancho y alto
     fun scaledDp(percentWidth: Float = 0f, percentHeight: Float = 0f): Dp {
         val dpWidth = screenWidth * percentWidth
         val dpHeight = screenHeight * percentHeight
@@ -77,7 +80,6 @@ fun RiddleScreen(
                 header, contentArea, pista, verPista, pistasRestantes, verRespuesta, titleRiddle
             ) = createRefs()
 
-            //  HEADER
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
@@ -88,6 +90,18 @@ fun RiddleScreen(
                         end.linkTo(parent.end)
                     }
             ) {
+                // ✅ TRUCO DE UI: Botón "Fantasma" invisible a la izquierda.
+                // Ocupa el mismo espacio que el botón de ayuda real para equilibrar el layout
+                // y que la barra de progreso quede perfectamente centrada.
+                IconButton(onClick = {}, enabled = false) {
+                    Icon(
+                        imageVector = Icons.Outlined.Info,
+                        contentDescription = null,
+                        tint = Color.Transparent, // Invisible
+                        modifier = Modifier.size(scaledDp(percentWidth = 0.08f, percentHeight = 0.05f))
+                    )
+                }
+
                 val iconSize = scaledDp(percentWidth = 0.12f, percentHeight = 0.08f)
                 Icon(
                     painter = painterResource(R.drawable.ic_sleepy),
@@ -116,9 +130,18 @@ fun RiddleScreen(
                         .padding(scaledDp(percentWidth = 0.02f, percentHeight = 0.02f)),
                     tint = Color.DarkGray
                 )
+
+                // ✅ Botón REAL de ayuda a la derecha
+                IconButton(onClick = { viewModel.showWelcomeDialog() }) {
+                    Icon(
+                        imageVector = Icons.Outlined.Info,
+                        contentDescription = "Ayuda",
+                        tint = Color.Gray,
+                        modifier = Modifier.size(scaledDp(percentWidth = 0.08f, percentHeight = 0.05f))
+                    )
+                }
             }
 
-            // 🏷 Título tipo de riddle
             Text(
                 text = if (riddleState.riddle.type == RiddleType.RIDDLE) stringResource(R.string.type_riddle) else stringResource(R.string.type_lateral),
                 fontSize = scaledSp(percentWidth = 0.06f, percentHeight = 0.04f),
@@ -134,20 +157,15 @@ fun RiddleScreen(
                 }
             )
 
-            //  ÁREA CENTRAL (con scroll)
             val scrollState = rememberScrollState()
             val questionTextSize = remember {
                 val scaledValue = (screenWidth * 0.062f + screenHeight * 0.042f) / 2
                 val spValue = scaledValue.sp
-                // Convertimos a Float y limitamos
                 TextUnit(
                     value = spValue.value.coerceAtMost(45f),
                     type = TextUnitType.Sp
                 )
             }
-
-
-
 
             Column(
                 modifier = Modifier
@@ -170,8 +188,6 @@ fun RiddleScreen(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-
-
                 AnimatedContent(
                     targetState = riddleState.riddle.question,
                     transitionSpec = {
@@ -189,15 +205,12 @@ fun RiddleScreen(
                         fontWeight = FontWeight.Bold,
                         color = Color.DarkGray,
                         textAlign = TextAlign.Center,
-                        lineHeight = questionTextSize * 1.3f, // 🔹 30% más alto que el tamaño de texto
+                        lineHeight = questionTextSize * 1.3f,
                         modifier = Modifier.fillMaxWidth()
                     )
                 }
-
-
             }
 
-            //  Pistas restantes
             Text(
                 stringResource(R.string.label_hints_remaining, riddleState.riddle.hints.size - riddleState.hintIndex),
                 fontSize = scaledSp(percentWidth = 0.03f, percentHeight = 0.025f),
@@ -215,7 +228,6 @@ fun RiddleScreen(
                 }
             )
 
-            // 🔍 Botón "Ver pista"
             Button(
                 onClick = { viewModel.showNextHint() },
                 modifier = Modifier
@@ -242,7 +254,6 @@ fun RiddleScreen(
                 Text(stringResource(R.string.btn_view_hint), fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f))
             }
 
-            //  Pista mostrada
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -269,12 +280,10 @@ fun RiddleScreen(
                         fontWeight = FontWeight.Bold,
                         color = Color.DarkGray,
                         textAlign = TextAlign.Center,
-
-                        )
+                    )
                 }
             }
 
-            //  Botón "Ver respuesta"
             Button(
                 onClick = { viewModel.showAnswer() },
                 modifier = Modifier
@@ -298,7 +307,6 @@ fun RiddleScreen(
                 )
             }
 
-            //  Efecto que abre el diálogo cuando cambia el estado
             LaunchedEffect(riddleState.isAnswerShown) {
                 if (riddleState.isAnswerShown) {
                     showAnswerDialog = true
@@ -306,7 +314,60 @@ fun RiddleScreen(
             }
         }
 
-//  DIÁLOGO DE RESPUESTA
+        if (showWelcome) {
+            AlertDialog(
+                onDismissRequest = {},
+                confirmButton = {},
+                text = {
+                    Surface(
+                        shape = RoundedCornerShape(20.dp),
+                        color = MaterialTheme.colorScheme.surface,
+                        tonalElevation = 6.dp
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .padding(24.dp)
+                                .fillMaxWidth(),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.Center
+                        ) {
+                            Text(
+                                stringResource(R.string.welcome_title),
+                                fontSize = scaledSp(percentWidth = 0.05f, percentHeight = 0.035f),
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.primary,
+                                textAlign = TextAlign.Center
+                            )
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(
+                                text = stringResource(R.string.welcome_body),
+                                fontSize = scaledSp(percentWidth = 0.04f, percentHeight = 0.03f),
+                                color = Color.DarkGray,
+                                textAlign = TextAlign.Center,
+                                lineHeight = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f)
+                            )
+                            Spacer(modifier = Modifier.height(24.dp))
+                            Button(
+                                onClick = { viewModel.dismissWelcomeDialog() },
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = MaterialTheme.colorScheme.primary,
+                                    contentColor = MaterialTheme.colorScheme.onPrimary
+                                ),
+                                shape = RoundedCornerShape(12.dp)
+                            ) {
+                                Text(
+                                    stringResource(R.string.welcome_btn_accept),
+                                    fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f),
+                                    textAlign = TextAlign.Center,
+                                    modifier = Modifier.fillMaxWidth()
+                                )
+                            }
+                        }
+                    }
+                }
+            )
+        }
+
         if (showAnswerDialog && riddleState.isAnswerShown) {
             AlertDialog(
                 onDismissRequest = {},
@@ -370,9 +431,10 @@ fun RiddleScreen(
             )
         }
 
-
-//  DIÁLOGO FINAL
         if (showFinalDialog) {
+            val phrases = stringArrayResource(R.array.motivational_phrases)
+            val randomPhrase = remember { phrases.random() }
+
             AlertDialog(
                 onDismissRequest = {},
                 confirmButton = {},
@@ -390,20 +452,22 @@ fun RiddleScreen(
                             verticalArrangement = Arrangement.Center
                         ) {
                             Text(
-                                stringResource(R.string.dialog_title_ready),
+                                text = stringResource(R.string.dialog_title_ready),
                                 fontSize = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f),
                                 fontWeight = FontWeight.Bold,
                                 color = MaterialTheme.colorScheme.tertiary,
                                 textAlign = TextAlign.Center
                             )
                             Spacer(modifier = Modifier.height(16.dp))
+
                             Text(
-                                stringResource(R.string.dialog_msg_ready),
+                                text = randomPhrase,
                                 fontSize = scaledSp(percentWidth = 0.04f, percentHeight = 0.035f),
                                 color = Color.DarkGray,
                                 textAlign = TextAlign.Center,
                                 lineHeight = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f)
                             )
+
                             Spacer(modifier = Modifier.height(24.dp))
                             Button(
                                 onClick = {
@@ -418,7 +482,7 @@ fun RiddleScreen(
                                 shape = RoundedCornerShape(12.dp)
                             ) {
                                 Text(
-                                    stringResource(R.string.btn_back_home),
+                                    text = stringResource(R.string.btn_back_home),
                                     fontSize = scaledSp(
                                         percentWidth = 0.035f,
                                         percentHeight = 0.03f

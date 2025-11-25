@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">MindWake</string>
 
-
     <string name="content_desc_logo">Logótipo da app</string>
     <string name="home_subtitle">A tua dose matinal de agudeza mental.</string>
     <string name="btn_start">Começar</string>
@@ -16,8 +15,34 @@
     <string name="btn_finish">Finalizar</string>
     <string name="btn_next">Seguinte</string>
 
+    <string name="welcome_title">Desperta a tua Mente</string>
+    <string name="welcome_body">O teu cérebro funciona como um músculo: precisa de aquecimento.\n\nO objetivo não é apenas acertar, mas esforçares-te. Tenta resolver cada enigma por conta própria antes de ver a resposta.\n\nEsse pequeno esforço mental tira o teu cérebro do \'piloto automático\' e prepara-te para um dia produtivo.</string>
+    <string name="welcome_btn_accept">Aceito o desafio!</string>
+
     <string name="dialog_title_ready">Pronto para começar!</string>
     <string name="dialog_msg_ready">Já estás pronto para começar o dia com a mente desperta!</string>
+    <string-array name="motivational_phrases">
+        <item>A tua mente está ativada!</item>
+        <item>Melhor que uma chávena de café!</item>
+        <item>Neurónios despertos. Aproveita o dia!</item>
+        <item>Nada te vai parar hoje.</item>
+        <item>Brilhantismo matinal desbloqueado.</item>
+        <item>O teu cérebro está em forma.</item>
+        <item>Que agilidade mental!</item>
+        <item>Pronto para conquistar o mundo.</item>
+        <item>Foco laser ativado.</item>
+        <item>Hoje será um grande dia.</item>
+        <item>Mente afiada, sucesso garantido.</item>
+        <item>És um génio desperto!</item>
+        <item>Criatividade a 100%.</item>
+        <item>Desafio superado. Continua assim!</item>
+        <item>O teu potencial é infinito.</item>
+        <item>Essa é a atitude!</item>
+        <item>Mente clara, decisões firmes.</item>
+        <item>A vitória é tua hoje.</item>
+        <item>Estás imparável!</item>
+        <item>Sai e brilha.</item>
+    </string-array>
     <string name="btn_back_home">Voltar ao início</string>
 
     <string-array name="riddle_text">
@@ -40,7 +65,9 @@
         <item>Tenho gargalo mas não cabeça, tenho corpo mas não tenho braços. O que sou?</item>
         <item>Duas irmãs, mentira não é, uma é minha tia, a outra não é. Quem é?</item>
         <item>O que é algo que, quanto maior é, menos se vê?</item>
-        <item>Entra duro e grande, e sai mole e pequeno. O que é?</item>
+
+        <item>Água passa pela minha casa, olha com atenção, meu coração. Quem não me adivinhar, não tem perdão.</item>
+
         <item>Estou na água e não me molho, estou no fogo e não me queimo. O que sou?</item>
         <item>Tenho teclas mas não abro portas, tenho espaço mas não quartos. O que sou?</item>
         <item>O que pesa mais, um quilo de chumbo ou um quilo de penas?</item>
@@ -71,7 +98,7 @@
         <item>Não sou pássaro, mas posso voar. Levo gente na minha barriga. O que sou?</item>
         <item>Só uma vez ao ano me celebras, com bolo e com velas, e o número cresce ao fim. O que é?</item>
         <item>Tenho dedos mas não tenho carne, osso, nem sangue. O que sou?</item>
-        <item>Quebra ao cair no chão, mas flutua na água. O que não é?</item>
+        <item>Para me usares tens de me atirar, e para me guardares tens de me recolher. O que sou?</item>
         <item>O que tem coração que não bate, folhas que não caem e lombada que não dói?</item>
         <item>Voo de noite, durmo de dia e nunca verás penas na asa minha. O que sou?</item>
         <item>Leva anos no mar e ainda não sabe nadar. O que é?</item>
@@ -79,7 +106,7 @@
         <item>Tenho raízes que ninguém vê, sou mais alta que uma árvore e nunca me movo. O que sou?</item>
         <item>Caixa pequena, branca como a cal, que todos sabem abrir e ninguém sabe fechar. O que é?</item>
         <item>Qual a palavra que tem 26 letras mas apenas 3 sílabas?</item>
-        <item>Entra seca e arrogante, sai molhada e a pingar. O que é?</item>
+        <item>Sou preto quando estou limpo, e branco quando estou sujo. O que sou?</item>
         <item>Cai da torre e não se mata, cai na água e desfaz-se. O que é?</item>
     </string-array>
 
@@ -103,7 +130,7 @@
         <item>É um recipiente.</item>
         <item>Pensa na família.</item>
         <item>É a ausência de luz.</item>
-        <item>É algo que se mastiga.</item>
+        <item>É verde por fora e tem uma semente grande no centro.</item>
         <item>É algo imaterial relacionado com a luz.</item>
         <item>É um instrumento musical.</item>
         <item>É uma rasteira sobre física.</item>
@@ -134,7 +161,7 @@
         <item>É um meio de transporte.</item>
         <item>É uma data especial para ti.</item>
         <item>É uma peça de vestuário.</item>
-        <item>É uma rasteira sobre o material.</item>
+        <item>Vivo no mar mas não sou peixe.</item>
         <item>É um objeto de leitura.</item>
         <item>É um mamífero voador.</item>
         <item>É um material pesado.</item>
@@ -142,7 +169,7 @@
         <item>É parte da paisagem natural.</item>
         <item>É um alimento frágil.</item>
         <item>Refere-se ao conjunto de letras.</item>
-        <item>É um utensílio de comida.</item>
+        <item>Encontras-me numa sala de aula.</item>
         <item>É um material quotidiano.</item>
     </string-array>
 
@@ -166,7 +193,7 @@
         <item>Costuma ser de vidro ou plástico.</item>
         <item>Começa com M.</item>
         <item>Não te deixa ver nada.</item>
-        <item>Desfaz-se na boca.</item>
+        <item>É a base do guacamole.</item>
         <item>Podes ver algo nele.</item>
         <item>Tem teclas brancas e pretas.</item>
         <item>A massa é idêntica em ambos.</item>
@@ -197,7 +224,7 @@
         <item>Tem asas de metal.</item>
         <item>Celebras ter nascido.</item>
         <item>Põe-se nas mãos.</item>
-        <item>Não estamos a falar de vidro.</item>
+        <item>Sou de metal e muito pesada.</item>
         <item>É um livro.</item>
         <item>Dorme pendurado de cabeça para baixo.</item>
         <item>Escorre entre as mãos.</item>
@@ -205,7 +232,7 @@
         <item>É uma montanha.</item>
         <item>É impossível fechar uma vez aberto.</item>
         <item>É a palavra que contém letras.</item>
-        <item>É uma colher.</item>
+        <item>Sou o suporte das ideias escritas.</item>
         <item>É o papel.</item>
     </string-array>
 
@@ -229,7 +256,7 @@
         <item>Tenho boca mas não posso falar.</item>
         <item>Deu-me a vida.</item>
         <item>Sem luz, sou a rainha absoluta.</item>
-        <item>Engano o estômago com sabor, mas não alimento.</item>
+        <item>Sou conhecido por ter um caroço grande no centro e ser muito versátil.</item>
         <item>Sou o teu duplo, mas não posso falar.</item>
         <item>As minhas cordas não servem para amarrar.</item>
         <item>A gravidade não distingue o material.</item>
@@ -260,7 +287,7 @@
         <item>Pássaro de metal que cruza nuvens.</item>
         <item>Somas mais um à tua conta vital.</item>
         <item>Sou uma segunda pele para as tuas mãos.</item>
-        <item>Suporto a tinta mas não a água.</item>
+        <item>Impeço o navio de se mover.</item>
         <item>Guardo mundos inteiros nas minhas páginas.</item>
         <item>Vejo com os meus ouvidos na escuridão.</item>
         <item>Conto o tempo grão a grão.</item>
@@ -268,7 +295,7 @@
         <item>Toco o céu sem tirar os pés do chão.</item>
         <item>Fecho a vida dentro.</item>
         <item>Contenho toda a linguagem escrita.</item>
-        <item>Levo a sopa à tua boca.</item>
+        <item>Escreves em mim com giz.</item>
         <item>Sou o suporte das ideias escritas.</item>
     </string-array>
 
@@ -292,7 +319,7 @@
         <item>A garrafa.</item>
         <item>A tua mãe.</item>
         <item>A escuridão.</item>
-        <item>A pastilha elástica.</item>
+        <item>O abacate.</item>
         <item>O reflexo.</item>
         <item>O piano.</item>
         <item>Pesam o mesmo.</item>
@@ -323,7 +350,7 @@
         <item>O avião.</item>
         <item>O teu aniversário.</item>
         <item>A luva.</item>
-        <item>O papel.</item>
+        <item>A âncora.</item>
         <item>O livro.</item>
         <item>O morcego.</item>
         <item>A areia.</item>
@@ -331,18 +358,18 @@
         <item>A montanha.</item>
         <item>O ovo.</item>
         <item>O Alfabeto.</item>
-        <item>A colher.</item>
+        <item>O quadro.</item>
         <item>O papel.</item>
     </string-array>
 
     <string-array name="lateral_text">
-        <item>Um homem entra num bar e pede um copo de água. O empregado saca de uma arma falsa e aponta para ele; o homem diz "obrigado" e vai-se embora. O que ele tinha?</item>
-        <item>"Não tenho irmãos, mas o pai deste homem é o filho do meu pai." Quem o falante vê no retrato?</item>
+        <item>Um homem entra num bar e pede um copo de água. O empregado saca de uma arma falsa e aponta para ele; o homem diz \"obrigado\" e vai-se embora. O que ele tinha?</item>
+        <item>\"Não tenho irmãos, mas o pai deste homem é o filho do meu pai.\" Quem o falante vê no retrato?</item>
         <item>Um homem empurra o seu carro até um hotel e ao chegar percebe que está falido. O que aconteceu?</item>
         <item>Dois pais e dois filhos vão à pesca. Pescam três peixes e toca um inteiro para cada um. Como é possível?</item>
         <item>Um agricultor tinha 15 ovelhas e todas fugiram menos 9. Quantas lhe restam?</item>
         <item>Há três interruptores fora e três lâmpadas dentro de uma sala fechada. Só podes entrar uma vez. Como sabes qual é qual?</item>
-        <item>Um menino sofre um acidente; o cirurgião diz "Não posso operá-lo: é meu filho", mas o cirurgião não é o pai. Quem é?</item>
+        <item>Um menino sofre um acidente; o cirurgião diz \"Não posso operá-lo: é meu filho\", mas o cirurgião não é o pai. Quem é?</item>
         <item>Numa corrida, ultrapassas o segundo classificado. Em que posição ficas?</item>
         <item>Um homem mora no 10º andar. Desce de elevador, mas ao subir, se está sozinho, sobe até ao 7º e caminha o resto. Se chove ou está acompanhado, sobe até ao 10º. Porquê?</item>
         <item>Um homem sai da sua casa (que tem 4 paredes viradas para o sul), vê um urso. De que cor é o urso?</item>
@@ -360,7 +387,7 @@
         <item>Estás a correr uma corrida e ultrapassas o último. Em que posição estás?</item>
         <item>Um agricultor deve atravessar um rio com uma raposa, uma galinha e milho. Só pode levar um. Se deixa a raposa com a galinha, ela come-a. Se deixa galinha com milho, ela come-o. Como atravessa?</item>
         <item>António e Cleópatra são encontrados mortos no chão de uma vila no Egito. Perto há vidros partidos e água. Não têm feridas. Quem são?</item>
-        <item>Um homem olha um retrato e diz: "Irmãos e irmãs não tenho, mas o pai desse homem é o filho do meu pai". De quem é o retrato?</item>
+        <item>Um homem olha um retrato e diz: \"Irmãos e irmãs não tenho, mas o pai desse homem é o filho do meu pai\". De quem é o retrato?</item>
         <item>Há um gato num túnel. O comboio vem e o gato não tem escapatória, mas não morre. Porquê?</item>
         <item>Um relógio digital marca 12:00 e não avança, não é a pilha nem está partido. O que se passa?</item>
         <item>Com 6 palitos, forma 4 triângulos equiláteros sem parti-los.</item>
@@ -370,7 +397,7 @@
 
     <string-array name="lateral_hints_1">
         <item>O homem não tinha sede, tinha um problema físico incómodo.</item>
-        <item>Analisa bem quem é "o filho do meu pai".</item>
+        <item>Analisa bem quem é \"o filho do meu pai\".</item>
         <item>Não é um carro real.</item>
         <item>Pensa na árvore genealógica, não em quatro pessoas diferentes.</item>
         <item>É um jogo de palavras, lê literalmente.</item>
@@ -379,7 +406,7 @@
         <item>Visualiza a corrida mentalmente.</item>
         <item>Não é superstição nem exercício, é uma limitação física.</item>
         <item>Só há um lugar na Terra onde todas as paredes olham para o Sul.</item>
-        <item>Lê a pergunta literalmente, não perguntamos qual tem "apenas" 28.</item>
+        <item>Lê a pergunta literalmente, não perguntamos qual tem \"apenas\" 28.</item>
         <item>O problema assume que é de noite, será que é?</item>
         <item>Se fossem só dois, seriam gémeos.</item>
         <item>O betão é muito duro.</item>
@@ -403,7 +430,7 @@
 
     <string-array name="lateral_hints_2">
         <item>O susto da arma serviu como remédio.</item>
-        <item>O filho do meu pai sou "Eu".</item>
+        <item>O filho do meu pai sou \"Eu\".</item>
         <item>Estão a jogar algo.</item>
         <item>São avô... O que mais?.</item>
         <item>Se fogem todas menos 9, quantas ficam?</item>
@@ -426,7 +453,7 @@
         <item>Não podes ultrapassar o último, se o fazes, tu eras o último.</item>
         <item>Leva galinha. Volta. Leva raposa. Traz galinha. Leva milho...</item>
         <item>Viviam num aquário que se partiu.</item>
-        <item>O pai desse homem é "Eu".</item>
+        <item>O pai desse homem é \"Eu\".</item>
         <item>O gato está em cima do comboio.</item>
         <item>Acabou a luz (eletricidade).</item>
         <item>Forma uma pirâmide (tetraedro).</item>

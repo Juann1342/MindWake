@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">MindWake</string>
 
+    <string name="content_desc_logo">Logo de la aplicación</string>
+    <string name="home_subtitle">Tu dosis matutina de agudeza mental.</string>
+    <string name="btn_start">Comenzar</string>
+
+    <string name="type_riddle">ACERTIJO</string>
+    <string name="type_lateral">PENSAMIENTO LATERAL</string>
+    <string name="label_hints_remaining">PISTAS RESTANTES: %1$d</string>
+    <string name="btn_view_hint">Ver pista</string>
+    <string name="btn_view_answer">Ver respuesta</string>
+
+    <string name="dialog_title_answer">Respuesta</string>
+    <string name="btn_finish">Finalizar</string>
+    <string name="btn_next">Siguiente</string>
+
+    <string name="dialog_title_ready">¡Listo para comenzar!</string>
+    <string name="dialog_msg_ready">¡Ya estás listo para comenzar el día con la mente despierta!</string>
+    <string name="btn_back_home">Volver al inicio</string>
     <!-- TOTAL: 60 ACERTIJOS (RIDDLES) -->
     <string-array name="riddle_text">
         <!-- 1-10 -->
@@ -72,7 +89,7 @@
     </string-array>
 
     <!-- PISTAS NIVEL 1: Contexto general (Vago) -->
-    <string-array name="riddle_hints_1">
+    <string-array name="riddle_hints_2">
         <!-- 1-10 -->
         <item>Fíjate en la forma de la letra, no en el objeto.</item>
         <item>Es un alimento muy común en la cocina.</item>
@@ -142,7 +159,7 @@
     </string-array>
 
     <!-- PISTAS NIVEL 2: Función o Característica Física (Más claro) -->
-    <string-array name="riddle_hints_2">
+    <string-array name="riddle_hints_3">
         <!-- 1-10 -->
         <item>Es una vocal.</item>
         <item>Te hace llorar al cortarla.</item>
@@ -212,7 +229,7 @@
     </string-array>
 
     <!-- PISTAS NIVEL 3: Asociación Directa (Misma dificultad que 1 y 2) -->
-    <string-array name="riddle_hints_3">
+    <string-array name="riddle_hints_1">
         <!-- 1-10 -->
         <item>Soy el final del "todo" y el principio del "ocio".</item>
         <item>Tengo mil pieles pero no tengo cuerpo.</item>
@@ -438,7 +455,7 @@
         <item>Es una persona de baja estatura (un niño o enano).</item>
         <item>Estás en un polo.</item>
         <!-- 11-20 -->
-        <item>Todos los meses tienen al menos 28 días.</item>
+        <item>Tal vez no sea solo uno.</item>
         <item>No tiene que ver con el vehículo.</item>
         <item>Se puede tener más de 2 hijos a la vez.</item>
         <item>El suelo de hormigón no se romperá con un huevo.</item>
@@ -509,12 +526,12 @@
         <item>Es su madre.</item>
         <item>Segundo lugar.</item>
         <item>Es demasiado bajo para alcanzar el botón del 10.</item>
-        <item>Estás en el Polo Norte</item>
+        <item>Blanco, es un oso polar.</item>
         <!-- 11-20 -->
         <item>Los 12 meses.</item>
         <item>Era de día.</item>
         <item>Son trillizos.</item>
-        <item>Tiras el huevo, se rompe el huevo, no el suelo.</item>
+        <item>Se refería no romper el hormigón, así que simplemente tira arroja el huevo.</item>
         <item>Son números de habitación de hospital, no fechas.</item>
         <item>El último se llevó la canasta con el huevo.</item>
         <item>Iba a pie.</item>

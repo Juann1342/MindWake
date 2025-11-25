@@ -30,6 +30,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.togetherWith
+import androidx.compose.ui.res.stringResource
 
 @Composable
 fun RiddleScreen(
@@ -119,7 +120,7 @@ fun RiddleScreen(
 
             // 🏷 Título tipo de riddle
             Text(
-                text = if (riddleState.riddle.type == RiddleType.RIDDLE) "ACERTIJO" else "PENSAMIENTO LATERAL",
+                text = if (riddleState.riddle.type == RiddleType.RIDDLE) stringResource(R.string.type_riddle) else stringResource(R.string.type_lateral),
                 fontSize = scaledSp(percentWidth = 0.06f, percentHeight = 0.04f),
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.tertiary,
@@ -198,7 +199,7 @@ fun RiddleScreen(
 
             //  Pistas restantes
             Text(
-                "PISTAS RESTANTES: ${riddleState.riddle.hints.size - riddleState.hintIndex}",
+                stringResource(R.string.label_hints_remaining, riddleState.riddle.hints.size - riddleState.hintIndex),
                 fontSize = scaledSp(percentWidth = 0.03f, percentHeight = 0.025f),
                 modifier = Modifier.constrainAs(pistasRestantes) {
                     top.linkTo(
@@ -238,7 +239,7 @@ fun RiddleScreen(
                 ),
                 shape = RoundedCornerShape(scaledDp(percentWidth = 0.02f, percentHeight = 0.02f)),
             ) {
-                Text("Ver pista", fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f))
+                Text(stringResource(R.string.btn_view_hint), fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f))
             }
 
             //  Pista mostrada
@@ -292,7 +293,7 @@ fun RiddleScreen(
                 shape = RoundedCornerShape(scaledDp(percentWidth = 0.02f, percentHeight = 0.02f))
             ) {
                 Text(
-                    "Ver respuesta",
+                    stringResource(R.string.btn_view_answer),
                     fontSize = scaledSp(percentWidth = 0.035f, percentHeight = 0.03f)
                 )
             }
@@ -356,7 +357,7 @@ fun RiddleScreen(
                                 shape = RoundedCornerShape(12.dp)
                             ) {
                                 Text(
-                                    if (riddleState.riddle.type == RiddleType.LATERAL) "Finalizar" else "Siguiente",
+                                    if (riddleState.riddle.type == RiddleType.LATERAL) stringResource(R.string.btn_finish) else stringResource(R.string.btn_next),
                                     fontSize = scaledSp(
                                         percentWidth = 0.035f,
                                         percentHeight = 0.03f
@@ -389,7 +390,7 @@ fun RiddleScreen(
                             verticalArrangement = Arrangement.Center
                         ) {
                             Text(
-                                "¡Listo para comenzar!",
+                                stringResource(R.string.dialog_title_ready),
                                 fontSize = scaledSp(percentWidth = 0.045f, percentHeight = 0.035f),
                                 fontWeight = FontWeight.Bold,
                                 color = MaterialTheme.colorScheme.tertiary,
@@ -397,7 +398,7 @@ fun RiddleScreen(
                             )
                             Spacer(modifier = Modifier.height(16.dp))
                             Text(
-                                "Ya estás listo para comenzar el día con la mente despierta!",
+                                stringResource(R.string.dialog_msg_ready),
                                 fontSize = scaledSp(percentWidth = 0.04f, percentHeight = 0.035f),
                                 color = Color.DarkGray,
                                 textAlign = TextAlign.Center,
@@ -417,7 +418,7 @@ fun RiddleScreen(
                                 shape = RoundedCornerShape(12.dp)
                             ) {
                                 Text(
-                                    "Volver al inicio",
+                                    stringResource(R.string.btn_back_home),
                                     fontSize = scaledSp(
                                         percentWidth = 0.035f,
                                         percentHeight = 0.03f

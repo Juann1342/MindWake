@@ -1,0 +1,501 @@
+<resources>
+    <string name="app_name">MindWake</string>
+
+    <string name="content_desc_logo">Logo de l\'application</string>
+    <string name="home_subtitle">Votre dose matinale d\'acuité mentale.</string>
+    <string name="btn_start">Commencer</string>
+
+    <string name="type_riddle">ÉNIGME</string>
+    <string name="type_lateral">PENSÉE LATÉRALE</string>
+    <string name="label_hints_remaining">INDICES RESTANTS : %1$d</string>
+    <string name="btn_view_hint">Voir l\'indice</string>
+    <string name="btn_view_answer">Voir la réponse</string>
+
+    <string name="dialog_title_answer">Réponse</string>
+    <string name="btn_finish">Terminer</string>
+    <string name="btn_next">Suivant</string>
+
+    <string name="dialog_title_ready">Prêt à commencer !</string>
+    <string name="dialog_msg_ready">Vous êtes maintenant prêt à commencer la journée avec l\'esprit vif !</string>
+    <string name="btn_back_home">Retour à l\'accueil</string>
+
+    <string-array name="riddle_text">
+        <item>Je suis au début de l\'éternité, à la fin de l\'espace et du temps, au commencement de chaque fin, et à la fin de chaque lieu. Que suis-je ?</item>
+        <item>J\'ai des couches et des couches. Si tu me les enlèves, tu pleureras, même si je ne te fais pas de mal. Que suis-je ?</item>
+        <item>Je vole sans ailes, je siffle sans bouche, je frappe sans mains et tu ne peux pas me toucher. Que suis-je ?</item>
+        <item>J\'ai des aiguilles mais je ne sais pas coudre, j\'ai des chiffres mais je ne sais pas lire. Que suis-je ?</item>
+        <item>Elle monte toujours et ne descend jamais, c\'est la seule chose que nous partageons tous sans le vouloir. Qu\'est-ce que c\'est ?</item>
+        <item>Rond, rond, un tonneau sans fond. Qu\'est-ce que c\'est ?</item>
+        <item>J\'ai un visage et une pile, mais pas de corps. Que suis-je ?</item>
+        <item>Je te suis partout, je copie tes mouvements, mais s\'il n\'y a pas de lumière, je meurs. Que suis-je ?</item>
+        <item>J\'ai des villes mais pas de maisons, des montagnes mais pas d\'arbres, et de l\'eau mais pas de poissons. Que suis-je ?</item>
+        <item>Je suis si fragile que si tu dis mon nom, tu me brises. Que suis-je ?</item>
+        <item>Plus je sèche, plus je me mouille. Que suis-je ?</item>
+        <item>J\'ai des dents et je ne mords pas, je démêle mais je n\'existe pas sans cheveux. Que suis-je ?</item>
+        <item>Jaune à l\'extérieur, blanc à l\'intérieur. Si tu marches sur ma peau, tu peux glisser. Qu\'est-ce que c\'est ?</item>
+        <item>J\'ai des feuilles mais je ne suis pas un arbre, j\'ai un dos mais je ne suis pas un animal, je te raconte des histoires sans parler. Que suis-je ?</item>
+        <item>Il est à toi, mais les autres l\'utilisent plus que toi. Qu\'est-ce que c\'est ?</item>
+        <item>Je nais dans la montagne, je meurs dans la mer, et je ne cesse jamais de marcher. Que suis-je ?</item>
+        <item>J\'ai un goulot mais pas de tête, j\'ai un corps mais pas de bras. Que suis-je ?</item>
+        <item>Deux sœurs, ce n\'est pas un mensonge, l\'une est ma tante, l\'autre ne l\'est pas. Qui est-elle ?</item>
+        <item>Qu\'est-ce qui, plus il est grand, moins on le voit ?</item>
+        <item>Ça rentre dur et grand, et ça ressort mou et petit. Qu\'est-ce que c\'est ?</item>
+        <item>Je suis dans l\'eau et je ne me mouille pas, je suis dans le feu et je ne brûle pas. Que suis-je ?</item>
+        <item>J\'ai des touches mais pas de serrures, j\'ai de l\'espace mais pas de chambres. Que suis-je ?</item>
+        <item>Qu\'est-ce qui pèse le plus lourd, un kilo de plomb ou un kilo de plumes ?</item>
+        <item>On me sort de la mine, on m\'enferme dans du bois, et je pleure noir sur du papier blanc. Que suis-je ?</item>
+        <item>J\'ai de longues oreilles, une queue courte, je cours et saute très légèrement. Que suis-je ?</item>
+        <item>Je n\'ai qu\'une couleur, mais je peux avoir plusieurs tailles. Je colle au soleil, mais je disparais avec la pluie. Que suis-je ?</item>
+        <item>Sans être vivant je grandis, sans poumons je respire, et sans bouche je mange. Que suis-je ?</item>
+        <item>Je sors tous les matins et je me cache le soir. Je donne lumière et chaleur, et je suis rond. Que suis-je ?</item>
+        <item>Je suis toujours devant toi, mais tu ne peux pas me voir. Que suis-je ?</item>
+        <item>Cinq frères très unis qui ne peuvent pas se regarder. Que sont-ils ?</item>
+        <item>Il a des yeux et ne voit pas, il a une couronne et n\'est pas roi, il a des écailles et n\'est pas poisson. Qu\'est-ce que c\'est ?</item>
+        <item>Je suis grande quand je suis jeune et petite quand je suis vieille. J\'illumine ta vie et je pleure de la cire. Que suis-je ?</item>
+        <item>Tu me vois dans l\'eau, mais si tu essaies de m\'attraper, je disparais. Que suis-je ?</item>
+        <item>Je passe par l\'eau et je ne me mouille pas, je passe par le feu et je ne brûle pas. Que suis-je ?</item>
+        <item>Qu\'est-ce qui a des pattes et ne marche pas, a des ailes et ne vole pas, a des yeux et ne voit pas ?</item>
+        <item>Plus on le lave, plus il a l\'air sale. Qu\'est-ce que c\'est ?</item>
+        <item>Je parle sans bouche et j\'entends sans oreilles. Je n\'ai pas de corps, mais je prends vie avec le vent. Que suis-je ?</item>
+        <item>Si tu m\'as, tu veux me partager ; si tu me partages, tu ne m\'as plus. Que suis-je ?</item>
+        <item>Qu\'est-ce qui a quatre pattes le matin, deux à midi et trois le soir ?</item>
+        <item>Tu peux me voir une fois dans une minute, deux fois dans un moment, et jamais en mille ans. Que suis-je ?</item>
+        <item>Je suis beau devant et plutôt laid derrière. Je me transforme à chaque instant car j\'imite les autres. Que suis-je ?</item>
+        <item>Qu\'est-ce qui court mais n\'a pas de pieds, et murmure mais n\'a pas de bouche ?</item>
+        <item>Si tu me donnes à manger je vis, si tu me donnes à boire je meurs. Que suis-je ?</item>
+        <item>Qu\'est-ce qui monte et descend mais ne bouge jamais ?</item>
+        <item>Je suis plein de trous, et pourtant je retiens l\'eau. Que suis-je ?</item>
+        <item>J\'ai une tête en fer et un corps en bois. Si je tape sur ton doigt, tu cries de douleur. Que suis-je ?</item>
+        <item>Qui va de lit en lit mais ne dort jamais, et parfois te pique ?</item>
+        <item>Je ne suis pas un oiseau, mais je peux voler. Je porte des gens dans mon ventre. Que suis-je ?</item>
+        <item>Une seule fois par an tu me célèbres, avec gâteau et bougies, et le nombre grandit à la fin. Qu\'est-ce que c\'est ?</item>
+        <item>J\'ai des doigts mais pas de chair, d\'os, ni de sang. Que suis-je ?</item>
+        <item>Je me déchire en tombant par terre, mais je rebondis sur l\'eau. Que ne suis-je pas ?</item>
+        <item>Qu\'est-ce qui a un cœur qui ne bat pas, des feuilles qui ne tombent pas et un dos qui ne fait pas mal ?</item>
+        <item>Je vole la nuit, je dors le jour et tu ne verras jamais de plumes sur mon aile. Que suis-je ?</item>
+        <item>Il est dans la mer depuis des années et ne sait toujours pas nager. Qu\'est-ce que c\'est ?</item>
+        <item>Je voyage partout dans le monde mais je reste toujours dans le coin. Que suis-je ?</item>
+        <item>J\'ai des racines que personne ne voit, je suis plus grand qu\'un arbre et je ne bouge jamais. Que suis-je ?</item>
+        <item>Une petite boîte, blanche comme la chaux, que tout le monde sait ouvrir et personne ne sait fermer. Qu\'est-ce que c\'est ?</item>
+        <item>Quel mot contient 26 lettres mais n\'a que trois syllabes ?</item>
+        <item>Il entre sec et arrogant, sort mouillé et dégoulinant. Qu\'est-ce que c\'est ?</item>
+        <item>Il tombe de la tour et ne se tue pas, il tombe dans l\'eau et se dissout. Qu\'est-ce que c\'est ?</item>
+    </string-array>
+
+    <string-array name="riddle_hints_2">
+        <item>Regarde l\'orthographe des mots.</item>
+        <item>C\'est un aliment très courant dans la cuisine.</item>
+        <item>C\'est un phénomène météorologique.</item>
+        <item>C\'est un objet mécanique ou numérique.</item>
+        <item>Accumule de l\'expérience, pas des objets.</item>
+        <item>C\'est souvent en métal brillant.</item>
+        <item>C\'est un petit objet métallique.</item>
+        <item>C\'est une projection sombre.</item>
+        <item>C\'est une représentation graphique.</item>
+        <item>C\'est l\'absence de quelque chose.</item>
+        <item>S\'utilise dans la salle de bain.</item>
+        <item>C\'est un objet de toilette personnelle.</item>
+        <item>Les singes adorent ce fruit.</item>
+        <item>C\'est un objet en papier.</item>
+        <item>C\'est un mot qui t\'identifie.</item>
+        <item>C\'est un corps d\'eau en mouvement.</item>
+        <item>C\'est un récipient.</item>
+        <item>Pense à la famille.</item>
+        <item>C\'est l\'absence de lumière.</item>
+        <item>C\'est quelque chose qu\'on mâche.</item>
+        <item>C\'est quelque chose d\'immatériel lié à la lumière.</item>
+        <item>C\'est un instrument de musique.</item>
+        <item>C\'est une question piège sur la physique.</item>
+        <item>Utilisé pour créer de l\'art ou du texte.</item>
+        <item>C\'est un animal de ferme ou de champ.</item>
+        <item>Apparaît quand il y a un obstacle et de la lumière.</item>
+        <item>C\'est une réaction chimique énergétique.</item>
+        <item>C\'est une étoile.</item>
+        <item>C\'est un concept temporel.</item>
+        <item>Ils font partie de ton corps.</item>
+        <item>Il est jaune à l\'intérieur et a des feuilles au-dessus.</item>
+        <item>Utilisé pour éclairer ou parfumer.</item>
+        <item>C\'est un phénomène optique.</item>
+        <item>Tu le vois mais tu ne le touches pas.</item>
+        <item>C\'est un animal, mais pas vivant dans ce contexte.</item>
+        <item>C\'est l\'élément liquide lui-même.</item>
+        <item>C\'est un son répété.</item>
+        <item>C\'est une information cachée.</item>
+        <item>C\'est une énigme classique de la mythologie.</item>
+        <item>C\'est une lettre de l\'alphabet.</item>
+        <item>C\'est un objet domestique.</item>
+        <item>C\'est un courant naturel.</item>
+        <item>C\'est un élément dangereux mais utile.</item>
+        <item>C\'est une construction architecturale.</item>
+        <item>C\'est un objet de nettoyage.</item>
+        <item>C\'est un outil de construction.</item>
+        <item>C\'est un professionnel de santé.</item>
+        <item>C\'est un moyen de transport.</item>
+        <item>C\'est une date spéciale pour toi.</item>
+        <item>C\'est un vêtement.</item>
+        <item>C\'est une question piège sur la matière.</item>
+        <item>C\'est un objet de lecture.</item>
+        <item>C\'est un mammifère volant.</item>
+        <item>C\'est un matériau lourd.</item>
+        <item>Utilisé dans le courrier postal.</item>
+        <item>C\'est une partie du paysage naturel.</item>
+        <item>C\'est un aliment fragile.</item>
+        <item>Cela fait référence à l\'ensemble des lettres.</item>
+        <item>C\'est un ustensile de cuisine.</item>
+        <item>C\'est un matériau quotidien.</item>
+    </string-array>
+
+    <string-array name="riddle_hints_3">
+        <item>C\'est une voyelle.</item>
+        <item>Il te fait pleurer quand tu le coupes.</item>
+        <item>Bouge les arbres mais ne se voit pas.</item>
+        <item>Elle marque les heures.</item>
+        <item>Ce sont les années que tu as.</item>
+        <item>Se trouve dans des coffres ou sur la main.</item>
+        <item>Sert à payer.</item>
+        <item>N\'apparaît que quand il y a du soleil ou de la lumière artificielle.</item>
+        <item>Sert à s\'orienter.</item>
+        <item>Se brise avec le son.</item>
+        <item>Absorbe l\'eau de ta peau.</item>
+        <item>Range tes cheveux.</item>
+        <item>Il est long et courbé.</item>
+        <item>Il a une couverture et une quatrième de couverture.</item>
+        <item>Les gens l\'utilisent pour t\'appeler.</item>
+        <item>Il se jette dans l\'océan.</item>
+        <item>Est souvent en verre ou en plastique.</item>
+        <item>Commence par M.</item>
+        <item>Ne te laisse rien voir.</item>
+        <item>Il fond dans la bouche.</item>
+        <item>Tu peux voir quelque chose dedans.</item>
+        <item>Il a des touches blanches et noires.</item>
+        <item>La masse est identique pour les deux.</item>
+        <item>Il a du graphite à l\'intérieur.</item>
+        <item>Il aime les carottes.</item>
+        <item>C\'est ta silhouette sombre.</item>
+        <item>Produit chaleur et lumière, mais s\'éteint avec de l\'eau.</item>
+        <item>Nous donne de la chaleur pendant la journée.</item>
+        <item>C\'est ce qui viendra demain.</item>
+        <item>Ils sont sur tes mains.</item>
+        <item>C\'est un fruit tropical.</item>
+        <item>Il a une mèche qu\'on allume.</item>
+        <item>C\'est ta propre image renvoyée.</item>
+        <item>Ça commence par S.</item>
+        <item>C\'est un poulet rôti.</item>
+        <item>C\'est l\'eau elle-même.</item>
+        <item>Rebondit sur les parois d\'une grotte.</item>
+        <item>Cesse de l\'être si tu le dis à quelqu\'un.</item>
+        <item>Rampe, marche et utilise une canne.</item>
+        <item>Compte les lettres dans les mots.</item>
+        <item>Tu te regardes dedans chaque matin.</item>
+        <item>Porte l\'eau à la mer.</item>
+        <item>A besoin d\'oxygène pour brûler.</item>
+        <item>Elle a des marches.</item>
+        <item>Absorbe les liquides.</item>
+        <item>Sert à planter des clous.</item>
+        <item>Te fait des piqûres.</item>
+        <item>A des ailes en métal.</item>
+        <item>Tu fêtes ta naissance.</item>
+        <item>On le met sur les mains.</item>
+        <item>Nous ne parlons pas de verre.</item>
+        <item>C\'est un livre.</item>
+        <item>Dort suspendu la tête en bas.</item>
+        <item>Glisse entre tes mains.</item>
+        <item>Se colle sur l\'enveloppe.</item>
+        <item>C\'est une montagne.</item>
+        <item>Impossible à fermer une fois ouvert.</item>
+        <item>L\'ensemble de toutes les lettres.</item>
+        <item>C\'est une cuillère.</item>
+        <item>C\'est du papier.</item>
+    </string-array>
+
+    <string-array name="riddle_hints_1">
+        <item>Pense à la lettre \'E\'.</item>
+        <item>J\'ai mille peaux mais pas de corps.</item>
+        <item>Je déplace les bateaux sans mains.</item>
+        <item>Je marche sans bouger de place.</item>
+        <item>Je ne sais qu\'avancer, jamais reculer.</item>
+        <item>Je symbolise une union éternelle sans début ni fin.</item>
+        <item>J\'ai une face, mais pas de visage.</item>
+        <item>Je n\'existe que là où la lumière ne va pas.</item>
+        <item>Je guide les perdus sans dire un mot.</item>
+        <item>Je suis le son du néant.</item>
+        <item>Je me sacrifie pour ta sécheresse.</item>
+        <item>Je passe dans les cheveux mais je n\'ai pas de cerveau.</item>
+        <item>Un fruit jaune.</item>
+        <item>Mes feuilles n\'ont pas besoin de l\'automne pour tomber.</item>
+        <item>On te le donne à la naissance et il t\'accompagne jusqu\'à la fin.</item>
+        <item>Je cours vite mais je n\'ai pas de pieds.</item>
+        <item>J\'ai une bouche mais je ne peux pas parler.</item>
+        <item>Elle m\'a donné la vie.</item>
+        <item>Sans lumière, je suis la reine absolue.</item>
+        <item>Je trompe l\'estomac avec du goût, mais je ne nourris pas.</item>
+        <item>Je suis ton double, mais je ne peux pas parler.</item>
+        <item>Mes cordes ne servent pas à attacher.</item>
+        <item>La gravité ne distingue pas la matière.</item>
+        <item>Mon cœur est en charbon et mon corps en bois.</item>
+        <item>Mes oreilles entendent le danger avant qu\'il n\'arrive.</item>
+        <item>Je m\'étire à l\'infini au coucher du soleil.</item>
+        <item>Nourris-moi, je vis ; donne-moi de l\'eau, je meurs.</item>
+        <item>Je suis l\'œil chaud du ciel.</item>
+        <item>Je suis l\'espoir de ce qui n\'est pas encore.</item>
+        <item>Sans nous, tu ne pourrais rien saisir.</item>
+        <item>Je porte une couronne mais je vis dans la terre.</item>
+        <item>Ma larme crée une montagne solide.</item>
+        <item>Je suis la vérité inversée dans le lac.</item>
+        <item>Je suis une projection immatérielle.</item>
+        <item>Mes ailes ne battent plus, mais mon goût s\'améliore.</item>
+        <item>Je nettoie le monde mais pas moi-même.</item>
+        <item>Je suis la voix de la montagne.</item>
+        <item>Sur les lèvres de beaucoup, je perds ma valeur.</item>
+        <item>Je résous l\'énigme du Sphinx.</item>
+        <item>Je suis au centre du "moment".</item>
+        <item>Je te renvoie ton regard sans juger.</item>
+        <item>J\'ai un lit mais je ne me repose jamais.</item>
+        <item>L\'air est ma vie, l\'eau est ma mort.</item>
+        <item>Je suis le chemin vers le haut et le bas.</item>
+        <item>Je vis dans la mer ou dans ta cuisine.</item>
+        <item>Ma tête est dure, mais mon manche est doux.</item>
+        <item>Je m\'habille en blanc et je soigne la douleur.</item>
+        <item>Oiseau de métal qui traverse les nuages.</item>
+        <item>Tu ajoutes un de plus à ton compte vital.</item>
+        <item>Je suis une seconde peau pour tes mains.</item>
+        <item>Je supporte l\'encre mais pas l\'eau.</item>
+        <item>Je garde des mondes entiers dans mes pages.</item>
+        <item>Je vois avec mes oreilles dans le noir.</item>
+        <item>Je compte le temps grain par grain.</item>
+        <item>Je paie le voyage sans bouger.</item>
+        <item>Je touche le ciel sans lever les pieds.</item>
+        <item>J\'enferme la vie à l\'intérieur.</item>
+        <item>Je contiens tout le langage écrit.</item>
+        <item>J\'apporte la soupe à ta bouche.</item>
+        <item>Je suis le support des idées écrites.</item>
+    </string-array>
+
+    <string-array name="riddle_answers">
+        <item>La lettre E.</item>
+        <item>L\'oignon.</item>
+        <item>Le vent.</item>
+        <item>Une montre / horloge.</item>
+        <item>L\'âge.</item>
+        <item>Une bague.</item>
+        <item>Une pièce de monnaie.</item>
+        <item>L\'ombre.</item>
+        <item>Une carte.</item>
+        <item>Le silence.</item>
+        <item>Une serviette.</item>
+        <item>Un peigne.</item>
+        <item>Une banane.</item>
+        <item>Un livre.</item>
+        <item>Ton nom.</item>
+        <item>Une rivière.</item>
+        <item>Une bouteille.</item>
+        <item>Ta mère.</item>
+        <item>L\'obscurité.</item>
+        <item>Le chewing-gum.</item>
+        <item>Le reflet.</item>
+        <item>Un piano.</item>
+        <item>Ils pèsent le même poids.</item>
+        <item>Un crayon.</item>
+        <item>Un lapin.</item>
+        <item>L\'ombre.</item>
+        <item>Le feu.</item>
+        <item>Le Soleil.</item>
+        <item>Le futur.</item>
+        <item>Les doigts.</item>
+        <item>Un ananas.</item>
+        <item>Une bougie.</item>
+        <item>Un reflet.</item>
+        <item>L\'ombre.</item>
+        <item>Un poulet rôti.</item>
+        <item>L\'eau.</item>
+        <item>L\'écho.</item>
+        <item>Un secret.</item>
+        <item>L\'être humain.</item>
+        <item>La lettre M.</item>
+        <item>Un miroir.</item>
+        <item>Une rivière.</item>
+        <item>Le feu.</item>
+        <item>Un escalier.</item>
+        <item>Une éponge.</item>
+        <item>Un marteau.</item>
+        <item>Une infirmière / Un infirmier.</item>
+        <item>Un avion.</item>
+        <item>Ton anniversaire.</item>
+        <item>Un gant.</item>
+        <item>Le papier.</item>
+        <item>Un livre.</item>
+        <item>Une chauve-souris.</item>
+        <item>Le sable.</item>
+        <item>Un timbre.</item>
+        <item>Une montagne.</item>
+        <item>Un œuf.</item>
+        <item>L\'Alphabet.</item>
+        <item>Une cuillère.</item>
+        <item>Le papier.</item>
+    </string-array>
+
+    <string-array name="lateral_text">
+        <item>Un homme entre dans un bar et demande un verre d\'eau. Le barman sort une fausse arme et la pointe sur lui ; l\'homme dit "merci" et s\'en va. Qu\'est-ce qui n\'allait pas ?</item>
+        <item>"Je n\'ai ni frères ni sœurs, mais le père de cet homme est le fils de mon père." Qui l\'orateur voit-il sur le portrait ?</item>
+        <item>Un homme pousse sa voiture jusqu\'à un hôtel et en arrivant se rend compte qu\'il est ruiné. Que s\'est-il passé ?</item>
+        <item>Deux pères et deux fils vont à la pêche. Ils pêchent trois poissons et chacun en a un entier. Comment est-ce possible ?</item>
+        <item>Un fermier avait 15 moutons et tous sauf 9 se sont enfuis. Combien lui en reste-t-il ?</item>
+        <item>Il y a trois interrupteurs à l\'extérieur et trois ampoules à l\'intérieur d\'une pièce fermée. Tu ne peux entrer qu\'une fois. Comment sais-tu lequel est lequel ?</item>
+        <item>Un garçon a un accident ; le chirurgien dit "Je ne peux pas l\'opérer : c\'est mon fils", mais le chirurgien n\'est pas le père. Qui est-ce ?</item>
+        <item>Dans une course, tu dépasses le deuxième. À quelle place es-tu ?</item>
+        <item>Un homme habite au 10ème étage. Il descend en ascenseur, mais en montant, s\'il est seul, il monte au 7ème et marche le reste. S\'il pleut ou s\'il est accompagné, il monte au 10ème. Pourquoi ?</item>
+        <item>Un homme sort de sa maison (qui a 4 murs orientés au sud), voit un ours. De quelle couleur est l\'ours ?</item>
+        <item>Certains mois ont 31 jours, d\'autres en ont 30. Combien en ont 28 ?</item>
+        <item>Un homme conduit un camion noir, feux éteints et sans lune. Une dame traverse la rue et il freine juste à temps. Comment l\'a-t-il vue ?</item>
+        <item>Une femme a deux enfants nés à la même heure, le même jour de la même année, mais ce ne sont pas des jumeaux. Comment est-ce possible ?</item>
+        <item>Comment peux-tu jeter un œuf cru contre un sol en béton et ne pas le casser ?</item>
+        <item>Un homme naît en 1995 et meurt en 1950. Comment est-ce possible ?</item>
+        <item>Il y a 6 œufs dans un panier. 6 personnes prennent un œuf chacune. Comment se fait-il qu\'il reste encore un œuf dans le panier ?</item>
+        <item>Un chauffeur de bus descend une rue à sens unique en sens inverse et passe devant un policier. Le policier ne lui met pas d\'amende. Pourquoi ?</item>
+        <item>Quel animal marche avec les pieds sur la tête ?</item>
+        <item>Un chien est attaché par le cou à une corde de 2 mètres. Pourtant, il parvient à atteindre un os qui est à 4 mètres. Comment ?</item>
+        <item>Tu as deux carafes : une de 3 litres et une de 5 litres. Comment mesures-tu exactement 4 litres avec de l\'eau illimitée ?</item>
+        <item>Combien de temps nous faudrait-il pour couper une bûche de bois en 10 morceaux si nous mettons 1 minute par coupe ?</item>
+        <item>Tu cours une course et tu dépasses le dernier. À quelle position es-tu ?</item>
+        <item>Un fermier doit traverser une rivière avec un renard, une poule et du maïs. Il ne peut en transporter qu\'un seul. S\'il laisse le renard avec la poule, il la mange. S\'il laisse la poule avec le maïs, elle le mange. Comment traverse-t-il ?</item>
+        <item>Antoine et Cléopâtre sont trouvés morts sur le sol d\'une villa en Égypte. Près d\'eux, il y a du verre brisé et de l\'eau. Ils n\'ont pas de blessures. Qui sont-ils ?</item>
+        <item>Un homme regarde un portrait et dit : "Je n\'ai ni frères ni sœurs, mais le père de cet homme est le fils de mon père". De qui est le portrait ?</item>
+        <item>Il y a un chat dans un tunnel. Le train arrive et le chat n\'a pas d\'échappatoire, mais il ne meurt pas. Pourquoi ?</item>
+        <item>Une horloge numérique indique 12:00 et n\'avance pas, ce n\'est pas la pile et elle n\'est pas cassée. Que se passe-t-il ?</item>
+        <item>Avec 6 allumettes, forme 4 triangles équilatéraux sans les casser.</item>
+        <item>Au milieu d\'un champ enneigé apparaissent une carotte, un tas de charbon et une vieille écharpe. Personne ne les a mis là récemment. Que s\'est-il passé ?</item>
+        <item>Un homme entre dans une pièce pleine de gaz, avec une allumette allumée, et il n\'y a pas d\'explosion. Pourquoi ?</item>
+    </string-array>
+
+    <string-array name="lateral_hints_1">
+        <item>L\'homme n\'avait pas soif, il avait un problème physique gênant.</item>
+        <item>Analyse bien qui est "le fils de mon père".</item>
+        <item>Ce n\'est pas une vraie voiture.</item>
+        <item>Pense à l\'arbre généalogique, pas à quatre personnes différentes.</item>
+        <item>C\'est un jeu de mots, lis littéralement.</item>
+        <item>Les ampoules émettent de la lumière, mais aussi autre chose.</item>
+        <item>Ce n\'est peut-être pas le père.</item>
+        <item>Visualise la course mentalement.</item>
+        <item>Ce n\'est pas de la superstition ni de l\'exercice, c\'est une limitation physique.</item>
+        <item>Il n\'y a qu\'un seul endroit sur Terre où tous les murs sont orientés au Sud.</item>
+        <item>Lis la question littéralement, on ne demande pas lequel a "seulement" 28.</item>
+        <item>Le problème suppose qu\'il fait nuit, est-ce le cas ?</item>
+        <item>S\'ils n\'étaient que deux, ce seraient des jumeaux.</item>
+        <item>Le béton est très dur.</item>
+        <item>1995 et 1950 ne sont pas des années.</item>
+        <item>La dernière personne a fait quelque chose de différent en prenant son œuf.</item>
+        <item>Qu\'il soit chauffeur ne veut pas dire grand-chose.</item>
+        <item>Ce n\'est pas un animal rare, c\'est un animal très commun et petit.</item>
+        <item>Il n\'a fait aucun effort.</item>
+        <item>Utilise les carafes pour soustraire des quantités.</item>
+        <item>Compte les coupes nécessaires pour obtenir 10 morceaux, pas les morceaux.</item>
+        <item>C\'est une question piège logique. Est-ce possible ?</item>
+        <item>La clé est d\'emmener la poule d\'abord et ensuite de faire un échange.</item>
+        <item>Ce ne sont pas des êtres humains.</item>
+        <item>C\'est la même énigme que la #2, mais formulée différemment.</item>
+        <item>Le train n\'est pas en mouvement vers le chat de façon dangereuse.</item>
+        <item>L\'horloge a perdu sa source d\'énergie principale.</item>
+        <item>Tu dois penser en 3 dimensions.</item>
+        <item>Ils étaient là avant, formant quelque chose.</item>
+        <item>L\'allumette n\'avait plus de flamme.</item>
+    </string-array>
+
+    <string-array name="lateral_hints_2">
+        <item>La frayeur de l\'arme a servi de remède.</item>
+        <item>Le fils de mon père, c\'est "Moi".</item>
+        <item>Ils jouent à un jeu.</item>
+        <item>Ils sont grand-père… Quoi d\'autre ?</item>
+        <item>S\'ils s\'enfuient tous sauf 9, combien en reste-t-il ?</item>
+        <item>La chaleur résiduelle t\'indique laquelle était allumée.</item>
+        <item>Les femmes sont aussi chirurgiennes.</item>
+        <item>Si tu passes le deuxième, tu prends sa place.</item>
+        <item>C\'est une personne de petite taille (un enfant ou un nain).</item>
+        <item>Tu es à un pôle.</item>
+        <item>Peut-être que ce n\'est pas juste un seul.</item>
+        <item>Ça n\'a rien à voir avec le véhicule.</item>
+        <item>On peut avoir plus de 2 enfants à la fois.</item>
+        <item>Le sol en béton ne se cassera pas avec un œuf.</item>
+        <item>Cela concerne un hôpital.</item>
+        <item>La dernière personne a pris le panier avec l\'œuf dedans.</item>
+        <item>Il n\'utilisait pas les commandes de son véhicule.</item>
+        <item>Le pou.</item>
+        <item>La corde était robuste.</item>
+        <item>Remplis celle de 5, verse dans celle de 3. Il te reste 2 dans celle de 5.</item>
+        <item>Pour avoir 2 morceaux tu fais 1 coupe. Pour 10 morceaux…</item>
+        <item>Tu ne peux pas dépasser le dernier, si tu le fais, tu étais le dernier.</item>
+        <item>Emmène poule. Reviens. Emmène renard. Ramène poule. Emmène maïs…</item>
+        <item>Ils vivaient dans un bocal qui s\'est cassé.</item>
+        <item>Le père de cet homme est "Moi".</item>
+        <item>Le chat est sur le toit du train.</item>
+        <item>Il y a une coupure de courant (électricité).</item>
+        <item>Forme une pyramide (tétraèdre).</item>
+        <item>C\'était un bonhomme de neige qui a fondu.</item>
+        <item>L\'allumette était allumée avant d\'entrer, mais elle s\'est éteinte.</item>
+    </string-array>
+
+    <string-array name="lateral_hints_3">
+        <item>Il cherchait une frayeur soudaine, pas une boisson.</item>
+        <item>Le père du garçon est l\'orateur.</item>
+        <item>La voiture est une petite pièce de métal sur un plateau de jeu.</item>
+        <item>L\'un des pères est aussi le fils de l\'un des présents.</item>
+        <item>Ceux qui s\'enfuient sont considérés comme perdus.</item>
+        <item>Le toucher révèle ce que la vue ne voit pas.</item>
+        <item>Ce n\'est pas le père, mais c\'est un parent.</item>
+        <item>Tu occupes la place exacte de la personne que tu as dépassée.</item>
+        <item>Il n\'atteint pas les boutons hauts sans aide.</item>
+        <item>La boussole pointe bizarrement ici.</item>
+        <item>C\'est une question d\'inclusion, pas d\'exclusivité.</item>
+        <item>Le compagnon diurne était là.</item>
+        <item>Il manque la mention de quelqu\'un.</item>
+        <item>La chute de l\'œuf ne suffit pas à endommager le ciment.</item>
+        <item>Les nombres identifient quelque chose.</item>
+        <item>Le dernier a pris le contenant avec l\'objet.</item>
+        <item>Beaucoup peuvent être chauffeurs à différents moments.</item>
+        <item>C\'est un parasite courant chez les enfants.</item>
+        <item>L\'attache n\'était fixée à aucun mur ou poteau.</item>
+        <item>Transvase et vide pour obtenir la différence d\'un litre.</item>
+        <item>La dernière coupe sépare deux pièces simultanément.</item>
+        <item>Personne ne court derrière le dernier dans une course.</item>
+        <item>La poule voyage plusieurs fois d\'un côté à l\'autre.</item>
+        <item>L\'eau sur le sol était leur habitat vital.</item>
+        <item>L\'orateur est le père de la personne sur l\'image.</item>
+        <item>Il était sur le toit, pas sur la voie.</item>
+        <item>Il y a eu une coupure générale de courant dans le bâtiment.</item>
+        <item>Construis vers le haut, pas seulement à plat.</item>
+        <item>La chaleur du soleil a défait la structure.</item>
+        <item>Il manquait un élément du triangle du feu pour l\'explosion.</item>
+    </string-array>
+
+    <string-array name="lateral_answers">
+        <item>Il avait le hoquet ; la frayeur l\'a guéri.</item>
+        <item>Son fils.</item>
+        <item>Il jouait au Monopoly.</item>
+        <item>Ce sont le grand-père, le père et le fils (3 personnes).</item>
+        <item>Neuf moutons.</item>
+        <item>Allumes-en une un moment et éteins-la. Entre : la chaude est celle-là, l\'allumée est une autre.</item>
+        <item>C\'est sa mère.</item>
+        <item>Deuxième place.</item>
+        <item>Il est trop petit pour atteindre le bouton du 10ème étage.</item>
+        <item>Blanc, c\'est un ours polaire.</item>
+        <item>Tous les 12 mois.</item>
+        <item>Il faisait jour.</item>
+        <item>Ce sont des triplés.</item>
+        <item>Il voulait dire ne pas casser le béton, alors jette simplement l\'œuf.</item>
+        <item>Ce sont des numéros de chambre d\'hôpital, pas des années.</item>
+        <item>La dernière personne a pris le panier avec l\'œuf.</item>
+        <item>Il était à pied.</item>
+        <item>Le pou.</item>
+        <item>La corde n\'était pas attachée au mur.</item>
+        <item>En combinant les volumes : 5–3=2 ; passe 2 dans celle de 3 ; remplis 5 ; remplis le 1 qui manque dans celle de 3. Il reste 4 dans celle de 5.</item>
+        <item>9 minutes (la dernière coupe sépare deux morceaux).</item>
+        <item>Impossible, tu ne peux pas dépasser le dernier.</item>
+        <item>Emmène poule, reviens, emmène renard, reviens avec poule, emmène maïs, reviens, emmène poule.</item>
+        <item>Ce sont des poissons (poissons rouges).</item>
+        <item>C\'est son fils.</item>
+        <item>Le chat est sur le toit du train.</item>
+        <item>L\'électricité est coupée.</item>
+        <item>En formant un tétraèdre (pyramide).</item>
+        <item>Un bonhomme de neige a fondu.</item>
+        <item>Il n\'y avait pas d\'oxygène ou l\'allumette s\'est éteinte.</item>
+    </string-array>
+</resources>

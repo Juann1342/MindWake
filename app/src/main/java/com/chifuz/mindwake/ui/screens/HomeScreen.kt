@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -54,7 +55,7 @@ fun HomeScreen(onStartClick: () -> Unit) {
             //  Logo
             Image(
                 painter = painterResource(R.drawable.logo),
-                contentDescription = "Logo app",
+                contentDescription = stringResource(R.string.content_desc_logo),
                 modifier = Modifier.size(scaledDp(percentWidth = 0.45f, percentHeight = 0.35f))
             )
 
@@ -62,7 +63,7 @@ fun HomeScreen(onStartClick: () -> Unit) {
 
             //  Título principal
             Text(
-                text = "MindWake",
+                stringResource(R.string.app_name),
                 style = MaterialTheme.typography.headlineLarge,
                 fontFamily = FontFamily.Serif,
                 fontSize = scaledSp(percentWidth = 0.09f, percentHeight = 0.06f),
@@ -74,7 +75,7 @@ fun HomeScreen(onStartClick: () -> Unit) {
 
             //  Subtítulo
             Text(
-                text = "Tu dosis matutina de agudeza mental.",
+                text = stringResource(R.string.home_subtitle),
                 textAlign = TextAlign.Center,
                 color = Color.DarkGray,
                 fontSize = scaledSp(percentWidth = 0.04f, percentHeight = 0.03f)
@@ -95,7 +96,7 @@ fun HomeScreen(onStartClick: () -> Unit) {
                 shape = RoundedCornerShape(scaledDp(percentWidth = 0.035f, percentHeight = 0.025f))
             ) {
                 Text(
-                    text = "Comenzar",
+                    text = stringResource(R.string.btn_start),
                     fontSize = scaledSp(percentWidth = 0.04f, percentHeight = 0.03f),
                     fontWeight = FontWeight.SemiBold
                 )

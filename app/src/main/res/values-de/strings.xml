@@ -1,0 +1,502 @@
+<resources>
+    <string name="app_name">MindWake</string>
+
+
+    <string name="content_desc_logo">App-Logo</string>
+    <string name="home_subtitle">Deine morgendliche Dosis geistiger Schärfe.</string>
+    <string name="btn_start">Starten</string>
+
+    <string name="type_riddle">RÄTSEL</string>
+    <string name="type_lateral">LATERALES DENKEN</string>
+    <string name="label_hints_remaining">VERBLEIBENDE HINWEISE: %1$d</string>
+    <string name="btn_view_hint">Hinweis anzeigen</string>
+    <string name="btn_view_answer">Antwort anzeigen</string>
+
+    <string name="dialog_title_answer">Antwort</string>
+    <string name="btn_finish">Beenden</string>
+    <string name="btn_next">Weiter</string>
+
+    <string name="dialog_title_ready">Bereit zum Start!</string>
+    <string name="dialog_msg_ready">Du bist jetzt bereit, den Tag mit einem wachen Geist zu beginnen!</string>
+    <string name="btn_back_home">Zurück zum Start</string>
+
+    <string-array name="riddle_text">
+        <item>Ich bin der Anfang der Ewigkeit, das Ende von Raum und Zeit, der Beginn jedes Endes und das Ende jedes Ortes. Was bin ich?</item>
+        <item>Ich habe Schicht um Schicht. Wenn du sie mir nimmst, wirst du weinen, obwohl ich dir nicht weh tue. Was bin ich?</item>
+        <item>Ich fliege ohne Flügel, ich pfeife ohne Mund, ich schlage ohne Hände und du kannst mich nicht berühren. Was bin ich?</item>
+        <item>Ich habe Zeiger, kann aber nicht nähen; ich habe Ziffern, kann aber nicht lesen. Was bin ich?</item>
+        <item>Es geht immer hinauf und niemals hinunter. Es ist das Einzige, was wir alle ungewollt teilen. Was ist es?</item>
+        <item>Rund, rund, ein Fass ohne Boden. Was ist es?</item>
+        <item>Ich habe einen Kopf und eine Zahl, aber keinen Körper. Was bin ich?</item>
+        <item>Ich folge dir überallhin, kopiere deine Bewegungen, aber wenn kein Licht da ist, sterbe ich. Was bin ich?</item>
+        <item>Ich habe Städte, aber keine Häuser; Berge, aber keine Bäume; und Wasser, aber keine Fische. Was bin ich?</item>
+        <item>Ich bin so zerbrechlich, dass ich zerbreche, wenn du meinen Namen sagst. Was bin ich?</item>
+        <item>Je mehr ich trockne, desto nasser werde ich. Was bin ich?</item>
+        <item>Ich habe Zähne, beiße aber nicht. Ich entwirre, existiere aber nicht ohne Haar. Was bin ich?</item>
+        <item>Gelb an der Außenseite, weiß an der Innenseite. Wenn du auf meine Schale trittst, rutschst du aus. Was bin ich?</item>
+        <item>Ich habe Blätter, bin aber kein Baum; ich habe einen Rücken, bin aber kein Tier; ich erzähle Geschichten, ohne zu sprechen. Was bin ich?</item>
+        <item>Es gehört dir, aber andere benutzen es öfter als du. Was ist es?</item>
+        <item>Ich werde im Gebirge geboren, sterbe im Meer und höre nie auf zu laufen. Was bin ich?</item>
+        <item>Ich habe einen Hals, aber keinen Kopf; ich habe einen Körper, aber keine Arme. Was bin ich?</item>
+        <item>Zwei Schwestern, es ist keine Lüge: Die eine ist meine Tante, die andere nicht. Wer ist sie?</item>
+        <item>Was ist etwas, das man weniger sieht, je größer es ist?</item>
+        <item>Es geht hart und groß hinein und kommt weich und klein heraus. Was ist es?</item>
+        <item>Ich bin im Wasser und werde nicht nass, ich bin im Feuer und verbrenne nicht. Was bin ich?</item>
+        <item>Ich habe Tasten, aber keine Schlösser; ich habe Raum, aber keine Zimmer. Was bin ich?</item>
+        <item>Was ist schwerer: ein Kilo Blei oder ein Kilo Federn?</item>
+        <item>Ich werde aus der Mine geholt, in Holz gesperrt und weine schwarz auf weißem Papier. Was bin ich?</item>
+        <item>Ich habe lange Ohren, einen kurzen Schwanz, ich laufe und springe sehr leichtfüßig. Was bin ich?</item>
+        <item>Ich habe nur eine Farbe, kann aber viele Größen haben. Ich klebe an der Sonne, verschwinde aber bei Regen. Was bin ich?</item>
+        <item>Ohne lebendig zu sein, wachse ich; ohne Lungen atme ich; und ohne Mund fresse ich. Was bin ich?</item>
+        <item>Ich komme jeden Morgen heraus und verstecke mich am Abend. Ich gebe Licht und Wärme und bin rund. Was bin ich?</item>
+        <item>Ich bin immer vor dir, aber du kannst mich nicht sehen. Was bin ich?</item>
+        <item>Fünf Brüder, sehr eng verbunden, die sich nicht ansehen können. Was sind sie?</item>
+        <item>Es hat Augen und sieht nicht, es hat eine Krone und ist kein König, es hat Schuppen und ist kein Fisch. Was ist es?</item>
+        <item>Ich bin groß, wenn ich jung bin, und klein, wenn ich alt bin. Ich erhellen dein Leben und weine Wachs. Was bin ich?</item>
+        <item>Du siehst mich im Wasser, aber wenn du versuchst, mich zu fangen, verschwinde ich. Was bin ich?</item>
+        <item>Ich gehe durch Wasser und werde nicht nass, ich gehe durch Feuer und verbrenne nicht. Was bin ich?</item>
+        <item>Was hat Beine und läuft nicht, hat Flügel und fliegt nicht, hat Augen und sieht nicht?</item>
+        <item>Je mehr man es wäscht, desto schmutziger sieht es aus. Was ist es?</item>
+        <item>Ich spreche ohne Mund und höre ohne Ohren. Ich habe keinen Körper, werde aber durch den Wind lebendig. Was bin ich?</item>
+        <item>Wenn du mich hast, willst du mich teilen; wenn du mich teilst, hast du mich nicht mehr. Was bin ich?</item>
+        <item>Was hat am Morgen vier Beine, am Mittag zwei und am Abend drei?</item>
+        <item>Du kannst mich einmal in einer Minute sehen, zweimal in einem Moment, aber nie in tausend Jahren. Was bin ich?</item>
+        <item>Vorne bin ich schön, hinten eher hässlich. Ich verwandle mich jeden Augenblick, da ich andere nachahme. Was bin ich?</item>
+        <item>Was läuft, hat aber keine Füße, und murmelt, hat aber keinen Mund?</item>
+        <item>Gibst du mir zu essen, lebe ich; gibst du mir zu trinken, sterbe ich. Was bin ich?</item>
+        <item>Was geht hoch und runter, bewegt sich aber nie?</item>
+        <item>Ich bin voller Löcher und halte dennoch Wasser. Was bin ich?</item>
+        <item>Ich habe einen Kopf aus Eisen und einen Körper aus Holz. Wenn ich deinen Finger treffe, schreist du vor Schmerz. Was bin ich?</item>
+        <item>Wer geht von Bett zu Bett, schläft aber nie und sticht dich manchmal?</item>
+        <item>Ich bin kein Vogel, kann aber fliegen. Ich trage Menschen in meinem Bauch. Was bin ich?</item>
+        <item>Nur einmal im Jahr feierst du mich, mit Kuchen und Kerzen, und die Zahl wächst am Ende. Was ist es?</item>
+        <item>Ich habe Finger, aber kein Fleisch, keine Knochen und kein Blut. Was bin ich?</item>
+        <item>Ich zerreiße, wenn ich auf den Boden falle, aber ich pralle im Wasser ab. Was bin ich nicht?</item>
+        <item>Was hat ein Herz, das nicht schlägt, Blätter, die nicht fallen, und einen Rücken, der nicht schmerzt?</item>
+        <item>Ich fliege bei Nacht, schlafe bei Tag und du wirst niemals Federn an meinem Flügel sehen. Was bin ich?</item>
+        <item>Es ist seit Jahren im Meer und kann immer noch nicht schwimmen. Was ist es?</item>
+        <item>Ich reise um die ganze Welt, bleibe aber immer in der Ecke. Was bin ich?</item>
+        <item>Ich habe Wurzeln, die niemand sieht, bin größer als ein Baum und bewege mich nie. Was bin ich?</item>
+        <item>Eine kleine Schachtel, weiß wie Kalk, die jeder öffnen kann, aber niemand schließen. Was ist es?</item>
+        <item>Welches Wort enthält 26 Buchstaben, hat aber nur drei Silben?</item>
+        <item>Es geht trocken und arrogant hinein und kommt nass und triefend heraus. Was ist es?</item>
+        <item>Es fällt vom Turm und stirbt nicht, es fällt ins Wasser und löst sich auf. Was ist es?</item>
+    </string-array>
+
+    <string-array name="riddle_hints_2">
+        <item>Achte auf die Rechtschreibung der Wörter.</item>
+        <item>Es ist ein sehr häufiges Lebensmittel in der Küche.</item>
+        <item>Es ist ein Wetterphänomen.</item>
+        <item>Es ist ein mechanischer oder digitaler Gegenstand.</item>
+        <item>Sammelt Erfahrung, keine Objekte.</item>
+        <item>Ist meist aus glänzendem Metall.</item>
+        <item>Es ist ein kleiner Metallgegenstand.</item>
+        <item>Es ist eine dunkle Projektion.</item>
+        <item>Es ist eine grafische Darstellung.</item>
+        <item>Es ist die Abwesenheit von etwas.</item>
+        <item>Wird im Badezimmer benutzt.</item>
+        <item>Es ist ein Gegenstand zur Körperpflege.</item>
+        <item>Affen lieben diese Frucht.</item>
+        <item>Es ist ein Gegenstand aus Papier.</item>
+        <item>Es ist ein Wort, das dich identifiziert.</item>
+        <item>Es ist ein fließendes Gewässer.</item>
+        <item>Es ist ein Behälter.</item>
+        <item>Denk an die Familie.</item>
+        <item>Es ist die Abwesenheit von Licht.</item>
+        <item>Es ist etwas, das man kaut.</item>
+        <item>Es ist etwas Immaterielles im Zusammenhang mit Licht.</item>
+        <item>Es ist ein Musikinstrument.</item>
+        <item>Es ist eine Fangfrage zur Physik.</item>
+        <item>Wird verwendet, um Kunst oder Text zu erstellen.</item>
+        <item>Es ist ein Bauernhof- oder Feldtier.</item>
+        <item>Erscheint, wenn es ein Hindernis und Licht gibt.</item>
+        <item>Es ist eine energetische chemische Reaktion.</item>
+        <item>Es ist ein Stern.</item>
+        <item>Es ist ein zeitliches Konzept.</item>
+        <item>Sie sind Teil deines Körpers.</item>
+        <item>Sie ist innen gelb und hat oben Blätter.</item>
+        <item>Wird zur Beleuchtung oder für den Duft verwendet.</item>
+        <item>Es ist ein optisches Phänomen.</item>
+        <item>Du siehst es, kannst es aber nicht berühren.</item>
+        <item>Es ist ein Tier, aber in diesem Kontext nicht lebendig.</item>
+        <item>Es ist das flüssige Element selbst.</item>
+        <item>Es ist ein wiederholter Klang.</item>
+        <item>Es ist verborgene Information.</item>
+        <item>Es ist ein klassisches Rätsel der Mythologie.</item>
+        <item>Es ist ein Buchstabe des Alphabets.</item>
+        <item>Es ist ein Haushaltsgegenstand.</item>
+        <item>Es ist eine natürliche Strömung.</item>
+        <item>Es ist ein gefährliches, aber nützliches Element.</item>
+        <item>Es ist eine architektonische Konstruktion.</item>
+        <item>Es ist ein Reinigungsgegenstand.</item>
+        <item>Es ist ein Bauwerkzeug.</item>
+        <item>Es ist ein Gesundheitsberuf.</item>
+        <item>Es ist ein Transportmittel.</item>
+        <item>Es ist ein besonderes Datum für dich.</item>
+        <item>Es ist ein Kleidungsstück.</item>
+        <item>Es ist eine Fangfrage über das Material.</item>
+        <item>Es ist ein Gegenstand zum Lesen.</item>
+        <item>Es ist ein fliegendes Säugetier.</item>
+        <item>Es ist ein schweres Material.</item>
+        <item>Wird bei der Post verwendet.</item>
+        <item>Es ist Teil der natürlichen Landschaft.</item>
+        <item>Es ist ein zerbrechliches Lebensmittel.</item>
+        <item>Es bezieht sich auf die Gesamtheit der Buchstaben.</item>
+        <item>Es ist ein Essbesteck.</item>
+        <item>Es ist ein alltägliches Material.</item>
+    </string-array>
+
+    <string-array name="riddle_hints_3">
+        <item>Es ist ein Buchstabe.</item>
+        <item>Es bringt dich beim Schneiden zum Weinen.</item>
+        <item>Bewegt Bäume, ist aber nicht zu sehen.</item>
+        <item>Es zeigt die Stunden an.</item>
+        <item>Es sind die Jahre, die du hast.</item>
+        <item>Findet man in Truhen oder an der Hand.</item>
+        <item>Dient zum Bezahlen.</item>
+        <item>Erscheint nur bei Sonne oder künstlichem Licht.</item>
+        <item>Dient der Orientierung.</item>
+        <item>Zerbricht durch Schall.</item>
+        <item>Absorbiert das Wasser von deiner Haut.</item>
+        <item>Ordnet dein Haar.</item>
+        <item>Sie ist lang und gebogen.</item>
+        <item>Es hat einen Einband und einen Rückendeckel.</item>
+        <item>Leute benutzen es, um dich zu rufen.</item>
+        <item>Es mündet in den Ozean.</item>
+        <item>Ist meist aus Glas oder Plastik.</item>
+        <item>Fängt mit M an.</item>
+        <item>Lässt dich nichts sehen.</item>
+        <item>Löst sich im Mund auf.</item>
+        <item>Du kannst etwas darin sehen.</item>
+        <item>Es hat weiße und schwarze Tasten.</item>
+        <item>Die Masse ist bei beiden identisch.</item>
+        <item>Es hat Graphit im Inneren.</item>
+        <item>Es mag Karotten.</item>
+        <item>Es ist deine dunkle Silhouette.</item>
+        <item>Erzeugt Wärme und Licht, wird aber durch Wasser gelöscht.</item>
+        <item>Gibt uns tagsüber Wärme.</item>
+        <item>Es ist das, was morgen kommen wird.</item>
+        <item>Sie sind an deinen Händen.</item>
+        <item>Es ist eine tropische Frucht.</item>
+        <item>Es hat einen Docht, der angezündet wird.</item>
+        <item>Es ist dein eigenes zurückgeworfenes Bild.</item>
+        <item>Es fängt mit S an.</item>
+        <item>Es ist ein Brathähnchen.</item>
+        <item>Es ist das Wasser selbst.</item>
+        <item>Prallt von den Wänden einer Höhle ab.</item>
+        <item>Hört auf, eins zu sein, wenn du es jemandem erzählst.</item>
+        <item>Krabbelt, geht und benutzt einen Stock.</item>
+        <item>Zähl die Buchstaben in den Wörtern.</item>
+        <item>Du schaust jeden Morgen hinein.</item>
+        <item>Trägt Wasser zum Meer.</item>
+        <item>Braucht Sauerstoff zum Brennen.</item>
+        <item>Es hat Stufen.</item>
+        <item>Saugt Flüssigkeiten auf.</item>
+        <item>Dient dazu, Nägel einzuschlagen.</item>
+        <item>Gibt dir Spritzen.</item>
+        <item>Hat Flügel aus Metall.</item>
+        <item>Du feierst deine Geburt.</item>
+        <item>Man zieht es über die Hände.</item>
+        <item>Wir sprechen nicht von Glas.</item>
+        <item>Es ist ein Buch.</item>
+        <item>Schläft kopfüber hängend.</item>
+        <item>Rinnt durch deine Hände.</item>
+        <item>Klebt auf dem Umschlag.</item>
+        <item>Es ist ein Berg.</item>
+        <item>Unmöglich zu schließen, wenn einmal geöffnet.</item>
+        <item>Die Menge aller Buchstaben.</item>
+        <item>Es ist ein Löffel.</item>
+        <item>Es ist Papier.</item>
+    </string-array>
+
+    <string-array name="riddle_hints_1">
+        <item>Denk an den Buchstaben \'E\'.</item>
+        <item>Ich habe tausend Häute, aber keinen Körper.</item>
+        <item>Ich bewege Schiffe ohne Hände.</item>
+        <item>Ich laufe, ohne mich von der Stelle zu bewegen.</item>
+        <item>Ich kann nur vorwärts gehen, niemals rückwärts.</item>
+        <item>Ich symbolisiere eine ewige Verbindung ohne Anfang und Ende.</item>
+        <item>Ich habe einen Kopf, aber kein Gehirn.</item>
+        <item>Ich existiere nur, wo das Licht nicht hinkommt.</item>
+        <item>Ich führe die Verlorenen, ohne ein Wort zu sagen.</item>
+        <item>Ich bin der Klang des Nichts.</item>
+        <item>Ich opfere mich für deine Trockenheit.</item>
+        <item>Ich gehe durch Haare, habe aber kein Gehirn.</item>
+        <item>Eine gelbe Frucht.</item>
+        <item>Meine Blätter brauchen keinen Herbst zum Fallen.</item>
+        <item>Wird dir bei der Geburt gegeben und begleitet dich bis zum Ende.</item>
+        <item>Ich renne schnell, habe aber keine Füße.</item>
+        <item>Ich habe einen Mund, kann aber nicht sprechen.</item>
+        <item>Sie hat mir das Leben geschenkt.</item>
+        <item>Ohne Licht bin ich die absolute Königin.</item>
+        <item>Ich täusche den Magen mit Geschmack, nähre aber nicht.</item>
+        <item>Ich bin dein Doppelgänger, kann aber nicht sprechen.</item>
+        <item>Meine Saiten dienen nicht zum Fesseln.</item>
+        <item>Die Schwerkraft unterscheidet das Material nicht.</item>
+        <item>Mein Herz ist aus Kohle und mein Körper aus Holz.</item>
+        <item>Meine Ohren hören die Gefahr, bevor sie ankommt.</item>
+        <item>Ich strecke mich unendlich bei Sonnenuntergang.</item>
+        <item>Füttere mich, ich lebe; gib mir Wasser, ich sterbe.</item>
+        <item>Ich bin das heiße Auge des Himmels.</item>
+        <item>Ich bin die Hoffnung auf das, was noch nicht ist.</item>
+        <item>Ohne uns könntest du nichts greifen.</item>
+        <item>Ich trage eine Krone, lebe aber in der Erde.</item>
+        <item>Meine Träne erschafft einen festen Berg.</item>
+        <item>Ich bin die umgekehrte Wahrheit im See.</item>
+        <item>Ich bin eine immaterielle Projektion.</item>
+        <item>Meine Flügel schlagen nicht mehr, aber mein Geschmack wird besser.</item>
+        <item>Ich reinige die Welt, aber nicht mich selbst.</item>
+        <item>Ich bin die Stimme des Berges.</item>
+        <item>Auf den Lippen vieler verliere ich meinen Wert.</item>
+        <item>Ich löse das Rätsel der Sphinx.</item>
+        <item>Ich bin in der Mitte des "Moments".</item>
+        <item>Ich gebe deinen Blick zurück, ohne zu urteilen.</item>
+        <item>Ich habe ein Bett, ruhe aber nie.</item>
+        <item>Luft ist mein Leben, Wasser mein Tod.</item>
+        <item>Ich bin der Weg nach oben und unten.</item>
+        <item>Ich lebe im Meer oder in deiner Küche.</item>
+        <item>Mein Kopf ist hart, aber mein Stiel ist weich.</item>
+        <item>Ich trage Weiß und heile den Schmerz.</item>
+        <item>Vogel aus Metall, der Wolken durchquert.</item>
+        <item>Du addierst eins mehr zu deinem Lebenskonto.</item>
+        <item>Ich bin eine zweite Haut für deine Hände.</item>
+        <item>Ich vertrage Tinte, aber kein Wasser.</item>
+        <item>Ich bewahre ganze Welten in meinen Seiten.</item>
+        <item>Ich sehe mit meinen Ohren in der Dunkelheit.</item>
+        <item>Ich zähle die Zeit Korn für Korn.</item>
+        <item>Ich bezahle die Reise, ohne mich zu bewegen.</item>
+        <item>Ich berühre den Himmel, ohne die Füße zu heben.</item>
+        <item>Ich schließe das Leben im Inneren ein.</item>
+        <item>Ich enthalte die gesamte geschriebene Sprache.</item>
+        <item>Ich bringe die Suppe zu deinem Mund.</item>
+        <item>Ich bin der Träger geschriebener Ideen.</item>
+    </string-array>
+
+    <string-array name="riddle_answers">
+        <item>Der Buchstabe E.</item>
+        <item>Die Zwiebel.</item>
+        <item>Der Wind.</item>
+        <item>Eine Uhr.</item>
+        <item>Das Alter.</item>
+        <item>Ein Ring.</item>
+        <item>Eine Münze.</item>
+        <item>Der Schatten.</item>
+        <item>Eine Landkarte.</item>
+        <item>Die Stille.</item>
+        <item>Ein Handtuch.</item>
+        <item>Ein Kamm.</item>
+        <item>Eine Banane.</item>
+        <item>Ein Buch.</item>
+        <item>Dein Name.</item>
+        <item>Ein Fluss.</item>
+        <item>Eine Flasche.</item>
+        <item>Deine Mutter.</item>
+        <item>Die Dunkelheit.</item>
+        <item>Kaugummi.</item>
+        <item>Das Spiegelbild.</item>
+        <item>Ein Klavier.</item>
+        <item>Sie wiegen gleich viel.</item>
+        <item>Ein Bleistift.</item>
+        <item>Ein Hase.</item>
+        <item>Der Schatten.</item>
+        <item>Feuer.</item>
+        <item>Die Sonne.</item>
+        <item>Die Zukunft.</item>
+        <item>Die Finger.</item>
+        <item>Eine Ananas.</item>
+        <item>Eine Kerze.</item>
+        <item>Ein Spiegelbild.</item>
+        <item>Ein Schatten.</item>
+        <item>Ein Brathähnchen.</item>
+        <item>Wasser.</item>
+        <item>Ein Echo.</item>
+        <item>Ein Geheimnis.</item>
+        <item>Der Mensch.</item>
+        <item>Der Buchstabe M.</item>
+        <item>Ein Spiegel.</item>
+        <item>Ein Fluss.</item>
+        <item>Feuer.</item>
+        <item>Eine Treppe.</item>
+        <item>Ein Schwamm.</item>
+        <item>Ein Hammer.</item>
+        <item>Eine Krankenschwester / Ein Krankenpfleger.</item>
+        <item>Ein Flugzeug.</item>
+        <item>Dein Geburtstag.</item>
+        <item>Ein Handschuh.</item>
+        <item>Papier.</item>
+        <item>Ein Buch.</item>
+        <item>Eine Fledermaus.</item>
+        <item>Sand.</item>
+        <item>Eine Briefmarke.</item>
+        <item>Ein Berg.</item>
+        <item>Ein Ei.</item>
+        <item>Das Alphabet.</item>
+        <item>Ein Löffel.</item>
+        <item>Papier.</item>
+    </string-array>
+
+    <string-array name="lateral_text">
+        <item>Ein Mann geht in eine Bar und bittet um ein Glas Wasser. Der Barkeeper zieht eine falsche Waffe und richtet sie auf ihn; der Mann sagt "Danke" und geht. Was war los?</item>
+        <item>"Ich habe keine Geschwister, aber der Vater dieses Mannes ist meines Vaters Sohn." Wen sieht der Sprecher auf dem Porträt?</item>
+        <item>Ein Mann schiebt sein Auto zu einem Hotel und als er ankommt, stellt er fest, dass er bankrott ist. Was ist passiert?</item>
+        <item>Zwei Väter und zwei Söhne gehen angeln. Sie fangen drei Fische und jeder bekommt einen ganzen Fisch. Wie ist das möglich?</item>
+        <item>Ein Bauer hatte 15 Schafe und alle bis auf 9 liefen weg. Wie viele hat er noch?</item>
+        <item>Es gibt drei Schalter draußen und drei Glühbirnen in einem geschlossenen Raum. Du darfst nur einmal hineingehen. Woher weißt du, welcher welcher ist?</item>
+        <item>Ein Junge hat einen Unfall; der Chirurg sagt: "Ich kann ihn nicht operieren: Er ist mein Sohn", aber der Chirurg ist nicht der Vater. Wer ist es?</item>
+        <item>In einem Rennen überholst du den Zweiten. Auf welchem Platz bist du?</item>
+        <item>Ein Mann wohnt im 10. Stock. Er nimmt den Aufzug nach unten, aber wenn er nach oben fährt und alleine ist, fährt er bis zum 7. Stock und läuft den Rest. Wenn es regnet oder er begleitet wird, fährt er bis zum 10. Warum?</item>
+        <item>Ein Mann verlässt sein Haus (das 4 Wände hat, die nach Süden zeigen), sieht einen Bären. Welche Farbe hat der Bär?</item>
+        <item>Einige Monate haben 31 Tage, andere 30. Wie viele haben 28 Tage?</item>
+        <item>Ein Mann fährt einen schwarzen Lastwagen, ohne Licht und ohne Mond. Eine Dame überquert die Straße und er bremst gerade noch rechtzeitig. Wie hat er sie gesehen?</item>
+        <item>Eine Frau hat zwei Kinder, die zur gleichen Stunde, am gleichen Tag des gleichen Jahres geboren wurden, aber keine Zwillinge sind. Wie ist das möglich?</item>
+        <item>Wie kannst du ein rohes Ei gegen einen Betonboden werfen, ohne ihn zu zerbrechen?</item>
+        <item>Ein Mann wird 1995 geboren und stirbt 1950. Wie ist das möglich?</item>
+        <item>Es sind 6 Eier in einem Korb. 6 Personen nehmen je ein Ei. Wie kann noch ein Ei im Korb sein?</item>
+        <item>Ein Busfahrer fährt eine Einbahnstraße in falscher Richtung hinunter und passiert einen Polizisten. Der Polizist gibt ihm keinen Strafzettel. Warum?</item>
+        <item>Welches Tier läuft mit den Füßen auf dem Kopf?</item>
+        <item>Ein Hund ist am Hals an einem 2 Meter langen Seil festgebunden. Trotzdem erreicht er einen Knochen, der 4 Meter entfernt ist. Wie?</item>
+        <item>Du hast zwei Krüge: einen mit 3 Litern und einen mit 5 Litern. Wie misst du genau 4 Liter mit unbegrenzt Wasser?</item>
+        <item>Wie lange würden wir brauchen, um einen Holzstamm in 10 Stücke zu schneiden, wenn wir 1 Minute pro Schnitt brauchen?</item>
+        <item>Du läufst ein Rennen und überholst den Letzten. Auf welcher Position bist du?</item>
+        <item>Ein Bauer muss einen Fluss mit einem Fuchs, einem Huhn und Mais überqueren. Er kann nur einen mitnehmen. Wenn er den Fuchs mit dem Huhn lässt, frisst er es. Wenn er das Huhn mit dem Mais lässt, frisst es ihn. Wie überquert er den Fluss?</item>
+        <item>Antonius und Kleopatra werden tot auf dem Boden einer Villa in Ägypten gefunden. In der Nähe gibt es Glasscherben und Wasser. Sie haben keine Wunden. Wer sind sie?</item>
+        <item>Ein Mann betrachtet ein Porträt und sagt: "Ich habe keine Geschwister, aber der Vater dieses Mannes ist meines Vaters Sohn". Wer ist auf dem Porträt?</item>
+        <item>Eine Katze ist in einem Tunnel. Der Zug kommt und die Katze hat keinen Ausweg, aber sie stirbt nicht. Warum?</item>
+        <item>Eine Digitaluhr zeigt 12:00 an und läuft nicht weiter, es liegt nicht an der Batterie und sie ist nicht kaputt. Was ist los?</item>
+        <item>Forme mit 6 Streichhölzern 4 gleichseitige Dreiecke, ohne sie zu zerbrechen.</item>
+        <item>Mitten auf einem verschneiten Feld liegen eine Karotte, ein Haufen Kohle und ein alter Schal. Niemand hat sie kürzlich dorthin gelegt. Was ist passiert?</item>
+        <item>Ein Mann betritt einen Raum voller Gas mit einem brennenden Streichholz, und es gibt keine Explosion. Warum?</item>
+    </string-array>
+
+    <string-array name="lateral_hints_1">
+        <item>Der Mann war nicht durstig, er hatte ein lästiges körperliches Problem.</item>
+        <item>Analysiere genau, wer "meines Vaters Sohn" ist.</item>
+        <item>Es ist kein echtes Auto.</item>
+        <item>Denk an den Stammbaum, nicht an vier verschiedene Personen.</item>
+        <item>Es ist ein Wortspiel, lies wörtlich.</item>
+        <item>Glühbirnen geben Licht ab, aber auch etwas anderes.</item>
+        <item>Es ist vielleicht nicht der Vater.</item>
+        <item>Stell dir das Rennen im Kopf vor.</item>
+        <item>Es ist kein Aberglaube oder Sport, es ist eine körperliche Einschränkung.</item>
+        <item>Es gibt nur einen Ort auf der Erde, wo alle Wände nach Süden zeigen.</item>
+        <item>Lies die Frage wörtlich, wir fragen nicht, welcher "nur" 28 hat.</item>
+        <item>Das Problem nimmt an, dass es Nacht ist. Ist es das?</item>
+        <item>Wenn es nur zwei wären, wären sie Zwillinge.</item>
+        <item>Beton ist sehr hart.</item>
+        <item>1995 und 1950 sind keine Jahreszahlen.</item>
+        <item>Die letzte Person hat etwas anderes gemacht, als sie ihr Ei nahm.</item>
+        <item>Dass er ein Fahrer ist, bedeutet nicht viel.</item>
+        <item>Es ist kein seltenes Tier, es ist ein sehr häufiges und kleines.</item>
+        <item>Er hat sich nicht angestrengt.</item>
+        <item>Benutze die Krüge, um Mengen zu subtrahieren.</item>
+        <item>Zähle die Schnitte, die nötig sind, um 10 Stücke zu erhalten, nicht die Stücke.</item>
+        <item>Es ist eine Frage mit einer logischen Falle. Ist das möglich?</item>
+        <item>Der Schlüssel ist, zuerst das Huhn zu nehmen und dann einen Tausch zu machen.</item>
+        <item>Es sind keine Menschen.</item>
+        <item>Es ist dasselbe Rätsel wie #2, aber anders formuliert.</item>
+        <item>Der Zug bewegt sich nicht gefährlich auf die Katze zu.</item>
+        <item>Die Uhr hat ihre Hauptstromquelle verloren.</item>
+        <item>Du musst in 3 Dimensionen denken.</item>
+        <item>Sie waren vorher dort und bildeten etwas.</item>
+        <item>Das Streichholz hatte keine Flamme mehr.</item>
+    </string-array>
+
+    <string-array name="lateral_hints_2">
+        <item>Der Schreck durch die Waffe diente als Heilmittel.</item>
+        <item>Meines Vaters Sohn bin "Ich".</item>
+        <item>Sie spielen ein Spiel.</item>
+        <item>Sie sind Großvater... Was noch?</item>
+        <item>Wenn alle weglaufen bis auf 9, wie viele bleiben?</item>
+        <item>Die Restwärme verrät dir, welche an war.</item>
+        <item>Frauen sind auch Chirurgen.</item>
+        <item>Wenn du den Zweiten überholst, nimmst du seinen Platz ein.</item>
+        <item>Es ist eine Person von kleiner Statur (ein Kind oder Kleinwüchsiger).</item>
+        <item>Du bist an einem Pol.</item>
+        <item>Vielleicht ist es nicht nur einer.</item>
+        <item>Es hat nichts mit dem Fahrzeug zu tun.</item>
+        <item>Man kann mehr als 2 Kinder auf einmal bekommen.</item>
+        <item>Der Betonboden wird durch ein Ei nicht zerbrechen.</item>
+        <item>Bezieht sich auf ein Krankenhaus.</item>
+        <item>Die letzte Person nahm den Korb mit dem Ei darin mit.</item>
+        <item>Er benutzte nicht die Steuerungen seines Fahrzeugs.</item>
+        <item>Die Laus.</item>
+        <item>Das Seil war robust.</item>
+        <item>Fülle den 5er, gieße in den 3er. Du hast 2 im 5er übrig.</item>
+        <item>Um 2 Stücke zu haben, machst du 1 Schnitt. Für 10 Stücke...</item>
+        <item>Du kannst den Letzten nicht überholen; wenn du es tust, warst du der Letzte.</item>
+        <item>Nimm Huhn. Zurück. Nimm Fuchs. Bring Huhn zurück. Nimm Mais...</item>
+        <item>Sie lebten in einem Glas, das zerbrach.</item>
+        <item>Der Vater dieses Mannes ist "Ich".</item>
+        <item>Die Katze ist oben auf dem Zug.</item>
+        <item>Der Strom ist ausgefallen.</item>
+        <item>Forme eine Pyramide (Tetraeder).</item>
+        <item>Es war ein Schneemann, der geschmolzen ist.</item>
+        <item>Das Streichholz war vor dem Eintreten an, ging aber aus.</item>
+    </string-array>
+
+    <string-array name="lateral_hints_3">
+        <item>Er wollte einen plötzlichen Schreck, keinen Drink.</item>
+        <item>Der Vater des Jungen ist der Sprecher.</item>
+        <item>Das Auto ist ein kleines Metallstück auf einem Spielbrett.</item>
+        <item>Einer der Väter ist auch der Sohn eines der Anwesenden.</item>
+        <item>Die, die weglaufen, gelten als verloren.</item>
+        <item>Der Tastsinn enthüllt, was das Auge nicht sieht.</item>
+        <item>Es ist nicht der Vater, aber ein Elternteil.</item>
+        <item>Du nimmst den genauen Platz der Person ein, die du überholt hast.</item>
+        <item>Er kommt ohne Hilfe nicht an die hohen Knöpfe.</item>
+        <item>Der Kompass zeigt hier seltsam an.</item>
+        <item>Es ist eine Frage der Inklusion, nicht der Exklusivität.</item>
+        <item>Der Begleiter des Tages war da.</item>
+        <item>Jemand wurde nicht erwähnt.</item>
+        <item>Der Fall des Eis reicht nicht aus, um den Zement zu beschädigen.</item>
+        <item>Die Nummern identifizieren etwas.</item>
+        <item>Der Letzte nahm den Behälter zusammen mit dem Objekt.</item>
+        <item>Viele können zu verschiedenen Zeiten Fahrer sein.</item>
+        <item>Es ist ein häufiger Parasit bei Kindern.</item>
+        <item>Die Leine war an keiner Wand oder Pfosten befestigt.</item>
+        <item>Umschütten und Leeren, um die Differenz von einem Liter zu erhalten.</item>
+        <item>Der letzte Schnitt trennt zwei Stücke gleichzeitig.</item>
+        <item>Niemand läuft in einem Rennen hinter dem Letzten.</item>
+        <item>Das Huhn reist oft hin und her.</item>
+        <item>Das Wasser auf dem Boden war ihr lebenswichtiges Zuhause.</item>
+        <item>Der Sprecher ist der Vater der Person auf dem Bild.</item>
+        <item>Sie war auf dem Dach, nicht auf den Gleisen.</item>
+        <item>Es gab einen allgemeinen Stromausfall im Gebäude.</item>
+        <item>Baue nach oben, nicht nur flach.</item>
+        <item>Die Wärme der Sonne hat die Struktur aufgelöst.</item>
+        <item>Es fehlte ein Element des Feuerdreiecks für die Explosion.</item>
+    </string-array>
+
+    <string-array name="lateral_answers">
+        <item>Er hatte Schluckauf; der Schreck heilte ihn.</item>
+        <item>Seinen Sohn.</item>
+        <item>Er spielte Monopoly.</item>
+        <item>Es sind der Großvater, der Vater und der Sohn (3 Personen).</item>
+        <item>Neun Schafe.</item>
+        <item>Schalte eine für eine Weile an und dann aus. Geh rein: Die heiße ist diejenige, die an war, die brennende ist eine andere.</item>
+        <item>Es ist seine Mutter.</item>
+        <item>Zweiter Platz.</item>
+        <item>Er ist zu klein, um den Knopf für den 10. Stock zu erreichen.</item>
+        <item>Weiß, es ist ein Eisbär.</item>
+        <item>Alle 12 Monate.</item>
+        <item>Es war Tag.</item>
+        <item>Es sind Drillinge.</item>
+        <item>Er meinte, den Beton nicht zu zerbrechen, also wirf das Ei einfach.</item>
+        <item>Es sind Krankenhauszimmernummern, keine Jahre.</item>
+        <item>Die letzte Person nahm den Korb mit dem Ei.</item>
+        <item>Er ging zu Fuß.</item>
+        <item>Eine Laus.</item>
+        <item>Das Seil war nicht an der Wand befestigt.</item>
+        <item>Volumen kombinieren: 5-3=2; die 2 in den 3er geben; 5 füllen; den fehlenden 1 in den 3er füllen. 4 bleiben im 5er.</item>
+        <item>9 Minuten (der letzte Schnitt trennt zwei Stücke).</item>
+        <item>Unmöglich, du kannst den Letzten nicht überholen.</item>
+        <item>Nimm Huhn, zurück, nimm Fuchs, zurück mit Huhn, nimm Mais, zurück, nimm Huhn.</item>
+        <item>Es sind Fische (Goldfische).</item>
+        <item>Es ist sein Sohn.</item>
+        <item>Die Katze ist oben auf dem Zug.</item>
+        <item>Der Strom ist ausgefallen.</item>
+        <item>Indem man ein Tetraeder (Pyramide) formt.</item>
+        <item>Ein Schneemann ist geschmolzen.</item>
+        <item>Es gab keinen Sauerstoff oder das Streichholz ging aus.</item>
+    </string-array>
+</resources>

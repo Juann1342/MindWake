@@ -1,0 +1,501 @@
+<resources>
+    <string name="app_name">MindWake</string>
+
+    <string name="content_desc_logo">App logo</string>
+    <string name="home_subtitle">Your morning dose of mental sharpness.</string>
+    <string name="btn_start">Start</string>
+
+    <string name="type_riddle">RIDDLE</string>
+    <string name="type_lateral">LATERAL THINKING</string>
+    <string name="label_hints_remaining">HINTS REMAINING: %1$d</string>
+    <string name="btn_view_hint">View hint</string>
+    <string name="btn_view_answer">View answer</string>
+
+    <string name="dialog_title_answer">Answer</string>
+    <string name="btn_finish">Finish</string>
+    <string name="btn_next">Next</string>
+
+    <string name="dialog_title_ready">Ready to start!</string>
+    <string name="dialog_msg_ready">You are now ready to start the day with a sharp mind!</string>
+    <string name="btn_back_home">Back to home</string>
+
+    <string-array name="riddle_text">
+        <item>I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every place. What am I?</item>
+        <item>I have layer upon layer. If you take them off, you will cry, even though I won\'t hurt you. What am I?</item>
+        <item>I fly without wings, I whistle without a mouth, I strike without hands, and you cannot touch me. What am I?</item>
+        <item>I have a face and hands, but no arms or legs. What am I?</item>
+        <item>It always goes up and never comes down. It is the one thing we all share without trying. What is it?</item>
+        <item>Round, round, a barrel without a bottom. What is it?</item>
+        <item>I have a head and a tail that never meet. Having too many of me is always a treat. What am I?</item>
+        <item>I follow you everywhere, copy your movements, but if there is no light, I die. What am I?</item>
+        <item>I have cities but no houses, mountains but no trees, and water but no fish. What am I?</item>
+        <item>I am so fragile that if you say my name, you break me. What am I?</item>
+        <item>The more I dry, the wetter I get. What am I?</item>
+        <item>I have teeth but cannot bite. I detangle but I don\'t exist without hair. What am I?</item>
+        <item>Yellow on the outside, white on the inside. If you step on my peel, you might slide. What am I?</item>
+        <item>I have leaves but I am not a tree. I have a spine but I am not an animal. I tell you stories without speaking. What am I?</item>
+        <item>It belongs to you, but others use it more than you do. What is it?</item>
+        <item>I am born in the mountains, I die in the sea, and I never stop walking. What am I?</item>
+        <item>I have a neck but no head, I have a body but no arms. What am I?</item>
+        <item>Two sisters, it is no lie, one is my aunt, the other is not. Who is she?</item>
+        <item>What is something that, the bigger it is, the less you see?</item>
+        <item>It goes in hard and big, and comes out soft and small. What is it?</item>
+        <item>I am in the water and do not get wet, I am in the fire and do not burn. What am I?</item>
+        <item>I have keys but no locks, I have space but no rooms. What am I?</item>
+        <item>Which weighs more, a pound of lead or a pound of feathers?</item>
+        <item>Taken from a mine and shut up in a wooden case, from which I am never released, and yet I am used by almost everyone. What am I?</item>
+        <item>I have long ears, a short tail, I run and jump very lightly. What am I?</item>
+        <item>I have only one color, but I can have many sizes. I stick to the sun, but I disappear with the rain. What am I?</item>
+        <item>I grow without being alive, I breathe without lungs, and I consume without a mouth. What am I?</item>
+        <item>I come out every morning and hide in the afternoon. I give light and heat, and I am round. What am I?</item>
+        <item>I am always in front of you, but you cannot see me. What am I?</item>
+        <item>Five brothers very united who cannot look at each other. What are they?</item>
+        <item>I have eyes but cannot see, I have a crown but I am not a king, I have scales but I am not a fish. What am I?</item>
+        <item>I am tall when I am young, and I am short when I am old. I light up your life and cry wax. What am I?</item>
+        <item>You see me in the water, but if you try to catch me, I disappear. What am I?</item>
+        <item>I pass through water without getting wet, I pass through fire without getting burned. What am I?</item>
+        <item>What has legs but cannot walk, has wings but cannot fly, has eyes but cannot see?</item>
+        <item>The more you wash it, the dirtier it looks. What is it?</item>
+        <item>I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?</item>
+        <item>If you have me, you want to share me; if you share me, you haven\'t got me. What am I?</item>
+        <item>What has four legs in the morning, two at noon, and three in the evening?</item>
+        <item>You can see me once in a minute, twice in a moment, and never in a thousand years. What am I?</item>
+        <item>I am pretty in front and somewhat ugly in back. I transform every instant as I imitate others. What am I?</item>
+        <item>What runs but has no feet, and murmurs but has no mouth?</item>
+        <item>If you feed me I live, if you give me a drink I die. What am I?</item>
+        <item>What goes up and down but never moves?</item>
+        <item>I am full of holes, yet I hold water. What am I?</item>
+        <item>I have an iron head and a wooden body. If I hit your finger, you scream in pain. What am I?</item>
+        <item>Who goes from bed to bed but never sleeps, and sometimes pokes you?</item>
+        <item>I am not a bird, but I can fly. I carry people in my belly. What am I?</item>
+        <item>Only once a year do you celebrate me, with cake and candles, and the number grows at last. What is it?</item>
+        <item>I have fingers but no flesh, bone, or blood. What am I?</item>
+        <item>I tear when I fall on the ground, but I bounce on the water. What am I not?</item>
+        <item>What has a heart that doesn\'t beat, leaves that don\'t fall, and a spine that doesn\'t hurt?</item>
+        <item>I fly at night, sleep by day, and you will never see feathers on my wing. What am I?</item>
+        <item>It has been in the sea for years and still doesn\'t know how to swim. What is it?</item>
+        <item>I travel all over the world but I always stay in the corner. What am I?</item>
+        <item>I have roots that nobody sees, I am taller than a tree, and I never move. What am I?</item>
+        <item>A small box, white as lime, that everyone knows how to open and no one knows how to close. What is it?</item>
+        <item>Which word contains 26 letters but has only three syllables?</item>
+        <item>It goes in dry and arrogant, comes out wet and dripping. What is it?</item>
+        <item>Falls from the tower and doesn\'t die, falls in the water and dissolves. What is it?</item>
+    </string-array>
+
+    <string-array name="riddle_hints_2">
+        <item>Look at the spelling of the words.</item>
+        <item>It is a very common food in the kitchen.</item>
+        <item>It is a weather phenomenon.</item>
+        <item>It is a mechanical or digital object.</item>
+        <item>Accumulates experience, not objects.</item>
+        <item>Usually made of shiny metal.</item>
+        <item>It is a small metal object.</item>
+        <item>It is a dark projection.</item>
+        <item>It is a graphic representation.</item>
+        <item>It is the absence of something.</item>
+        <item>Used in the bathroom.</item>
+        <item>It is a personal grooming object.</item>
+        <item>Monkeys love this fruit.</item>
+        <item>It is an object made of paper.</item>
+        <item>It is a word that identifies you.</item>
+        <item>It is a moving body of water.</item>
+        <item>It is a container.</item>
+        <item>Think about the family.</item>
+        <item>It is the absence of light.</item>
+        <item>It is something you chew.</item>
+        <item>It is something immaterial related to light.</item>
+        <item>It is a musical instrument.</item>
+        <item>It is a trick question about physics.</item>
+        <item>Used to create art or text.</item>
+        <item>It is a farm or field animal.</item>
+        <item>Appears when there is an obstacle and light.</item>
+        <item>It is an energetic chemical reaction.</item>
+        <item>It is a star.</item>
+        <item>It is a temporal concept.</item>
+        <item>They are part of your body.</item>
+        <item>It is yellow inside and has leaves on top.</item>
+        <item>Used for lighting or scent.</item>
+        <item>It is an optical phenomenon.</item>
+        <item>You see it but cannot touch it.</item>
+        <item>It is an animal, but not alive in this context.</item>
+        <item>It is the liquid itself.</item>
+        <item>It is a repeated sound.</item>
+        <item>It is hidden information.</item>
+        <item>It is a classic enigma from mythology.</item>
+        <item>It is a letter of the alphabet.</item>
+        <item>It is a household object.</item>
+        <item>It is a natural current.</item>
+        <item>It is a dangerous but useful element.</item>
+        <item>It is an architectural construction.</item>
+        <item>It is a cleaning object.</item>
+        <item>It is a construction tool.</item>
+        <item>It is a health professional.</item>
+        <item>It is a mode of transport.</item>
+        <item>It is a special date for you.</item>
+        <item>It is an article of clothing.</item>
+        <item>It is a trick question about the material.</item>
+        <item>It is a reading object.</item>
+        <item>It is a flying mammal.</item>
+        <item>It is a heavy material.</item>
+        <item>Used in postal mail.</item>
+        <item>It is part of the natural landscape.</item>
+        <item>It is a fragile food.</item>
+        <item>It is a word game about letters.</item>
+        <item>It is a utensil (or cookie in milk).</item>
+        <item>It is a daily material.</item>
+    </string-array>
+
+    <string-array name="riddle_hints_3">
+        <item>It is a vowel.</item>
+        <item>It makes you cry when you cut it.</item>
+        <item>Moves trees but cannot be seen.</item>
+        <item>It marks the hours.</item>
+        <item>It is the years you have.</item>
+        <item>Found in chests or on the hand.</item>
+        <item>Used to pay.</item>
+        <item>Only appears when there is sun or artificial light.</item>
+        <item>Used for orientation.</item>
+        <item>Breaks with sound.</item>
+        <item>Absorbs water from your skin.</item>
+        <item>Tidies your hair.</item>
+        <item>It is long and curved.</item>
+        <item>It has a cover and a back cover.</item>
+        <item>People use it to call you.</item>
+        <item>It flows into the ocean.</item>
+        <item>Usually made of glass or plastic.</item>
+        <item>Starts with M.</item>
+        <item>Does not let you see anything.</item>
+        <item>It dissolves in the mouth.</item>
+        <item>You can see something in it.</item>
+        <item>It has white and black keys.</item>
+        <item>The mass is identical in both.</item>
+        <item>It has graphite inside.</item>
+        <item>It likes carrots.</item>
+        <item>It is your dark silhouette.</item>
+        <item>Produces heat and light, but is extinguished by water.</item>
+        <item>Gives us heat during the day.</item>
+        <item>It is what will come tomorrow.</item>
+        <item>They are on your hands.</item>
+        <item>It is a tropical fruit.</item>
+        <item>It has a wick that is lit.</item>
+        <item>It is your own image returned.</item>
+        <item>It starts with S.</item>
+        <item>It is a roasted chicken.</item>
+        <item>It is the water itself.</item>
+        <item>Bounces off the walls of a cave.</item>
+        <item>Stops being one if you tell someone.</item>
+        <item>Crawls, walks, and uses a cane.</item>
+        <item>Count the letters in the words.</item>
+        <item>You look at yourself in it every morning.</item>
+        <item>Carries water to the sea.</item>
+        <item>Needs oxygen to burn.</item>
+        <item>It has steps.</item>
+        <item>Absorbs liquids.</item>
+        <item>Used to drive nails.</item>
+        <item>Gives you shots.</item>
+        <item>It has metal wings.</item>
+        <item>You celebrate being born.</item>
+        <item>You put it on your hands.</item>
+        <item>We are not talking about glass.</item>
+        <item>It is a book.</item>
+        <item>Sleeps hanging upside down.</item>
+        <item>Slips through your hands.</item>
+        <item>Sticks to the envelope.</item>
+        <item>It is a mountain.</item>
+        <item>Impossible to close once opened.</item>
+        <item>The set of all letters.</item>
+        <item>It is a spoon.</item>
+        <item>It is paper.</item>
+    </string-array>
+
+    <string-array name="riddle_hints_1">
+        <item>Think about the letter \'E\'.</item>
+        <item>I have a thousand skins but no body.</item>
+        <item>I move ships without hands.</item>
+        <item>I walk without moving from the spot.</item>
+        <item>I only know how to advance, never retreat.</item>
+        <item>I symbolize an eternal union with no beginning or end.</item>
+        <item>I am money.</item>
+        <item>I only exist where light does not reach.</item>
+        <item>I guide the lost without saying a word.</item>
+        <item>I am the sound of nothing.</item>
+        <item>I sacrifice myself for your dryness.</item>
+        <item>I pass through hair but have no brain.</item>
+        <item>A fruit.</item>
+        <item>My leaves don\'t need autumn to fall.</item>
+        <item>Given to you at birth and stays with you until the end.</item>
+        <item>I run fast but have no feet.</item>
+        <item>I have a mouth but cannot speak.</item>
+        <item>She gave me life.</item>
+        <item>Without light, I am the absolute queen.</item>
+        <item>I trick the stomach with flavor, but do not feed.</item>
+        <item>I am your double, but I cannot speak.</item>
+        <item>My strings are not for tying.</item>
+        <item>Gravity does not distinguish material.</item>
+        <item>My heart is charcoal and my body wood.</item>
+        <item>My ears hear danger before it arrives.</item>
+        <item>I stretch infinitely at sunset.</item>
+        <item>Feed me, I live; give me water, I die.</item>
+        <item>I am the hot eye of the sky.</item>
+        <item>I am the hope of what is not yet.</item>
+        <item>Without us, you could not grab anything.</item>
+        <item>I wear a crown but live in the dirt.</item>
+        <item>My tear creates a solid mountain.</item>
+        <item>I am the inverted truth in the lake.</item>
+        <item>I am an immaterial projection.</item>
+        <item>My wings no longer beat, but my taste improves.</item>
+        <item>I clean the world but not myself.</item>
+        <item>I am the voice of the mountain.</item>
+        <item>On the lips of many, I lose my value.</item>
+        <item>I solve the riddle of the Sphinx.</item>
+        <item>I am in the center of the "moment".</item>
+        <item>I return your gaze without judging.</item>
+        <item>I have a bed but never rest.</item>
+        <item>Air is my life, water my death.</item>
+        <item>I am the way up and down.</item>
+        <item>I live in the sea or in your kitchen.</item>
+        <item>My head is hard, but my handle is soft.</item>
+        <item>I dress in white and cure pain.</item>
+        <item>Metal bird crossing clouds.</item>
+        <item>You add one more to your life count.</item>
+        <item>I am a second skin for your hands.</item>
+        <item>I endure ink but not water.</item>
+        <item>I keep whole worlds in my pages.</item>
+        <item>I see with my ears in the dark.</item>
+        <item>I count time grain by grain.</item>
+        <item>I pay for the trip without moving.</item>
+        <item>I touch the sky without lifting my feet.</item>
+        <item>I close life inside.</item>
+        <item>I contain all written language.</item>
+        <item>I bring the soup to your mouth.</item>
+        <item>I am the support of written ideas.</item>
+    </string-array>
+
+    <string-array name="riddle_answers">
+        <item>The Letter E.</item>
+        <item>The onion.</item>
+        <item>The wind.</item>
+        <item>A clock.</item>
+        <item>Age.</item>
+        <item>A ring.</item>
+        <item>A coin.</item>
+        <item>A shadow.</item>
+        <item>A map.</item>
+        <item>Silence.</item>
+        <item>A towel.</item>
+        <item>A comb.</item>
+        <item>A banana.</item>
+        <item>A book.</item>
+        <item>Your name.</item>
+        <item>A river.</item>
+        <item>A bottle.</item>
+        <item>Your mother.</item>
+        <item>Darkness.</item>
+        <item>Chewing gum.</item>
+        <item>A reflection.</item>
+        <item>A piano.</item>
+        <item>They weigh the same.</item>
+        <item>A pencil.</item>
+        <item>A rabbit.</item>
+        <item>A shadow.</item>
+        <item>Fire.</item>
+        <item>The Sun.</item>
+        <item>The future.</item>
+        <item>Fingers.</item>
+        <item>A pineapple.</item>
+        <item>A candle.</item>
+        <item>A reflection.</item>
+        <item>A shadow.</item>
+        <item>A roasted chicken.</item>
+        <item>Water.</item>
+        <item>An echo.</item>
+        <item>A secret.</item>
+        <item>A human being.</item>
+        <item>The Letter M.</item>
+        <item>A mirror.</item>
+        <item>A river.</item>
+        <item>Fire.</item>
+        <item>Stairs.</item>
+        <item>A sponge.</item>
+        <item>A hammer.</item>
+        <item>A nurse.</item>
+        <item>An airplane.</item>
+        <item>Your birthday.</item>
+        <item>A glove.</item>
+        <item>Paper.</item>
+        <item>A book.</item>
+        <item>A bat.</item>
+        <item>Sand.</item>
+        <item>A stamp.</item>
+        <item>A mountain.</item>
+        <item>An egg.</item>
+        <item>The Alphabet.</item>
+        <item>A spoon.</item>
+        <item>Paper.</item>
+    </string-array>
+
+    <string-array name="lateral_text">
+        <item>A man walks into a bar and asks for a glass of water. The bartender pulls out a fake gun and points it at him; the man says "thank you" and leaves. What was wrong?</item>
+        <item>"I have no brothers or sisters, but that man\'s father is my father\'s son." Who is the speaker looking at in the portrait?</item>
+        <item>A man pushes his car to a hotel and upon arriving realizes he is bankrupt. What happened?</item>
+        <item>Two fathers and two sons go fishing. They catch three fish and there is one whole fish for each. How is this possible?</item>
+        <item>A farmer had 15 sheep and all but 9 ran away. How many does he have left?</item>
+        <item>There are three switches outside and three light bulbs inside a closed room. You can only enter once. How do you know which is which?</item>
+        <item>A boy has an accident; the surgeon says "I cannot operate on him: he is my son", but the surgeon is not the father. Who is it?</item>
+        <item>In a race, you overtake the person in second place. What place are you in?</item>
+        <item>A man lives on the 10th floor. He takes the elevator down, but when going up, if he is alone, he goes to the 7th and walks the rest. If it rains or he is not alone, he goes to the 10th. Why?</item>
+        <item>A man leaves his house (which has 4 walls facing south), sees a bear. What color is the bear?</item>
+        <item>Some months have 31 days, others have 30. How many have 28 days?</item>
+        <item>A man drives a black truck, with the lights off and no moon. A lady crosses the street and he brakes just in time. How did he see her?</item>
+        <item>A woman has two children who were born at the same hour, on the same day of the same year, but they are not twins. How is this possible?</item>
+        <item>How can you throw a raw egg against a concrete floor and not crack it?</item>
+        <item>A man is born in 1995 and dies in 1950. How is this possible?</item>
+        <item>There are 6 eggs in a basket. 6 people take one egg each. How is there still one egg left in the basket?</item>
+        <item>A bus driver goes down a one-way street in the opposite direction and passes a police officer. The officer does not ticket him. Why?</item>
+        <item>What animal walks with its legs on its head?</item>
+        <item>A dog is tied by the neck to a 2-meter rope. However, it manages to reach a bone that is 4 meters away. How?</item>
+        <item>You have two jugs: one of 3 liters and one of 5 liters. How do you measure exactly 4 liters with unlimited water?</item>
+        <item>How long would it take to cut a wooden log into 10 pieces if it takes 1 minute per cut?</item>
+        <item>You are running a race and you overtake the last person. What position are you in?</item>
+        <item>A farmer must cross a river with a fox, a chicken, and corn. He can only carry one. If he leaves the fox with the chicken, it eats it. If he leaves the chicken with corn, it eats it. How does he cross?</item>
+        <item>Anthony and Cleopatra are found dead on the floor of a villa in Egypt. Nearby there is broken glass and water. They have no wounds. Who are they?</item>
+        <item>A man looks at a portrait and says: "Brothers and sisters I have none, but that man\'s father is my father\'s son". Who is in the portrait?</item>
+        <item>There is a cat in a tunnel. The train is coming and the cat has no escape, but it does not die. Why?</item>
+        <item>A digital clock reads 12:00 and does not advance, it is not the battery nor is it broken. What is happening?</item>
+        <item>With 6 matches, form 4 equilateral triangles without breaking them.</item>
+        <item>In the middle of a snowy field appear a carrot, a pile of coal, and an old scarf. No one put them there recently. What happened?</item>
+        <item>A man enters a room full of gas, with a lit match, and there is no explosion. Why?</item>
+    </string-array>
+
+    <string-array name="lateral_hints_1">
+        <item>The man was not thirsty, he had an annoying physical problem.</item>
+        <item>Analyze well who "my father\'s son" is.</item>
+        <item>It is not a real car.</item>
+        <item>Think about the family tree, not four different people.</item>
+        <item>It is a word game, read literally.</item>
+        <item>Light bulbs emit light, but also something else.</item>
+        <item>It might not be the father.</item>
+        <item>Visualize the race mentally.</item>
+        <item>It is not superstition or exercise, it is a physical limitation.</item>
+        <item>There is only one place on Earth where all walls face South.</item>
+        <item>Read the question literally, we are not asking which one has "only" 28.</item>
+        <item>The problem assumes it is night, is it?</item>
+        <item>If there were only two, they would be twins.</item>
+        <item>Concrete is very hard.</item>
+        <item>1995 and 1950 are not years.</item>
+        <item>The last person did something different when taking their egg.</item>
+        <item>That he is a driver does not mean much.</item>
+        <item>It is not a rare animal, it is a very common and small one.</item>
+        <item>He made no effort.</item>
+        <item>Use the jugs to subtract quantities.</item>
+        <item>Count the cuts needed to get 10 pieces, not the pieces.</item>
+        <item>It is a question with a logical trap. Is that possible?</item>
+        <item>The key is to take the chicken first and then make a swap.</item>
+        <item>They are not human beings.</item>
+        <item>It is the same riddle as #2, but phrased differently.</item>
+        <item>The train is not moving towards the cat dangerously.</item>
+        <item>The clock lost its main power source.</item>
+        <item>You have to think in 3 dimensions.</item>
+        <item>They were there before, forming something.</item>
+        <item>The match no longer had a flame.</item>
+    </string-array>
+
+    <string-array name="lateral_hints_2">
+        <item>The scare from the gun served as a remedy.</item>
+        <item>My father\'s son is "Me".</item>
+        <item>They are playing a game.</item>
+        <item>They are grandfather... What else?</item>
+        <item>If all ran away but 9, how many stay?</item>
+        <item>Residual heat tells you which one was on.</item>
+        <item>Women are also surgeons.</item>
+        <item>If you pass the second, you take their place.</item>
+        <item>He is a person of short stature (a child or dwarf).</item>
+        <item>You are at a pole.</item>
+        <item>Maybe it is not just one.</item>
+        <item>It has nothing to do with the vehicle.</item>
+        <item>You can have more than 2 children at once.</item>
+        <item>The concrete floor will not break with an egg.</item>
+        <item>Relates to a hospital.</item>
+        <item>The last person took the basket with the egg inside.</item>
+        <item>He was not using the controls of his vehicle.</item>
+        <item>A louse.</item>
+        <item>The rope was robust.</item>
+        <item>Fill the 5, pour into the 3. You have 2 left in the 5.</item>
+        <item>To have 2 pieces you make 1 cut. For 10 pieces...</item>
+        <item>You cannot overtake the last person, if you do, you were the last.</item>
+        <item>Take chicken. Return. Take fox. Bring chicken back. Take corn...</item>
+        <item>They lived in a bowl that broke.</item>
+        <item>The father of that man is "Me".</item>
+        <item>The cat is on top of the train.</item>
+        <item>The lights went out (electricity).</item>
+        <item>Form a pyramid (tetrahedron).</item>
+        <item>It was a snowman that melted.</item>
+        <item>The match was lit before entering, but it went out.</item>
+    </string-array>
+
+    <string-array name="lateral_hints_3">
+        <item>He was looking for a sudden scare, not a drink.</item>
+        <item>The boy\'s father is the speaker.</item>
+        <item>The car is a small metal piece on a board.</item>
+        <item>One of the fathers is also the son of one of those present.</item>
+        <item>The ones that run away are considered lost.</item>
+        <item>Touch reveals what sight does not see.</item>
+        <item>It is not the father, but it is a parent.</item>
+        <item>You occupy the exact place of the person you passed.</item>
+        <item>He cannot reach the high buttons without help.</item>
+        <item>The compass points strangely here.</item>
+        <item>It is a question of inclusion, not exclusivity.</item>
+        <item>The daytime companion was there.</item>
+        <item>Missing mentioning someone.</item>
+        <item>The fall of the egg is not enough to damage the cement.</item>
+        <item>The numbers identify something.</item>
+        <item>The last one took the container along with the object.</item>
+        <item>Many can be drivers at different times.</item>
+        <item>It is a common parasite in children.</item>
+        <item>The tie was not fixed to any wall or post.</item>
+        <item>Transfer and empty to get the difference of one liter.</item>
+        <item>The last cut separates two pieces simultaneously.</item>
+        <item>No one runs behind the last person in a race.</item>
+        <item>The chicken travels many times back and forth.</item>
+        <item>The water on the floor was their vital home.</item>
+        <item>The speaker is the father of the person in the picture.</item>
+        <item>It was on the roof, not on the track.</item>
+        <item>There was a general power cut in the building.</item>
+        <item>Build upwards, not just flat.</item>
+        <item>The heat of the sun undid the structure.</item>
+        <item>Missing an element of the fire triangle for the explosion.</item>
+    </string-array>
+
+    <string-array name="lateral_answers">
+        <item>He had hiccups; the scare cured them.</item>
+        <item>His son.</item>
+        <item>He was playing Monopoly.</item>
+        <item>They are the grandfather, the father, and the son (3 people).</item>
+        <item>Nine sheep.</item>
+        <item>Turn one on for a while and turn it off. Enter: the hot one is that one, the lit one is another.</item>
+        <item>It is his mother.</item>
+        <item>Second place.</item>
+        <item>He is too short to reach the button for the 10th floor.</item>
+        <item>White, it is a polar bear.</item>
+        <item>All 12 months.</item>
+        <item>It was daytime.</item>
+        <item>They are triplets.</item>
+        <item>He meant not breaking the concrete, so simply throw the egg.</item>
+        <item>They are hospital room numbers, not years.</item>
+        <item>The last person took the basket with the egg.</item>
+        <item>He was walking.</item>
+        <item>A louse.</item>
+        <item>The rope was not tied to the wall.</item>
+        <item>Combining volumes: 5-3=2; move 2 to the 3; fill 5; fill the missing 1 in the 3. 4 remain in the 5.</item>
+        <item>9 minutes (the last cut separates two pieces).</item>
+        <item>Impossible, you cannot overtake the last person.</item>
+        <item>Take chicken, return, take fox, return with chicken, take corn, return, take chicken.</item>
+        <item>They are fish (goldfish).</item>
+        <item>It is his son.</item>
+        <item>The cat is on top of the train.</item>
+        <item>The electricity went out.</item>
+        <item>Forming a tetrahedron (pyramid).</item>
+        <item>A snowman melted.</item>
+        <item>There was no oxygen or the match went out.</item>
+    </string-array>
+</resources>

@@ -1,26 +1,24 @@
 <resources>
-    <string name="app_name">MindWake</string>
+        <string name="app_name">MindWake: Daily Challenge</string>
+        <string name="content_desc_logo">Logo do MindWake</string>
+        <string name="home_subtitle">Sua dose diária de agudeza mental.</string>
+        <string name="btn_start">Começar o desafio</string>
+        <string name="welcome_title">Sua mente vai te agradecer!</string>
+        <string name="welcome_body">Todos os dias, 2 charadas e 1 exercício de pensamento lateral esperam por você para tirar seu cérebro do piloto automático.\n\nA consistência é a chave: um pequeno esforço hoje, uma mente mais ágil amanhã.</string>
+        <string name="welcome_btn_accept">Aceito o desafio de hoje!</string>
+        <string name="type_riddle">CHARADA DO DIA</string>
+        <string name="type_lateral">DESAFIO LATERAL</string>
+        <string name="label_hints_remaining">DICAS DISPONÍVEIS: %1$d</string>
+        <string name="btn_view_hint">Me dê uma dica</string>
+        <string name="btn_view_answer">Revelar resposta</string>
+        <string name="dialog_title_answer">A solução é…</string>
+        <string name="btn_finish">Finalizar</string>
+        <string name="btn_next">Próximo desafio</string>
+        <string name="dialog_title_ready">Missão cumprida!</string>
+        <string name="dialog_msg_ready">Seu cérebro está acordado e pronto para encarar o mundo. Até amanhã para o próximo desafio!</string>
+        <string name="btn_back_home">Voltar ao início</string>
 
-    <string name="content_desc_logo">Logótipo da app</string>
-    <string name="home_subtitle">A tua dose matinal de agudeza mental.</string>
-    <string name="btn_start">Começar</string>
 
-    <string name="type_riddle">ENIGMA</string>
-    <string name="type_lateral">PENSAMENTO LATERAL</string>
-    <string name="label_hints_remaining">PISTAS RESTANTES: %1$d</string>
-    <string name="btn_view_hint">Ver pista</string>
-    <string name="btn_view_answer">Ver resposta</string>
-
-    <string name="dialog_title_answer">Resposta</string>
-    <string name="btn_finish">Finalizar</string>
-    <string name="btn_next">Seguinte</string>
-
-    <string name="welcome_title">Desperta a tua Mente</string>
-    <string name="welcome_body">O teu cérebro funciona como um músculo: precisa de aquecimento.\n\nO objetivo não é apenas acertar, mas esforçares-te. Tenta resolver cada enigma por conta própria antes de ver a resposta.\n\nEsse pequeno esforço mental tira o teu cérebro do \'piloto automático\' e prepara-te para um dia produtivo.</string>
-    <string name="welcome_btn_accept">Aceito o desafio!</string>
-
-    <string name="dialog_title_ready">Pronto para começar!</string>
-    <string name="dialog_msg_ready">Já estás pronto para começar o dia com a mente desperta!</string>
     <string-array name="motivational_phrases">
         <item>A tua mente está ativada!</item>
         <item>Melhor que uma chávena de café!</item>
@@ -43,7 +41,6 @@
         <item>Estás imparável!</item>
         <item>Sai e brilha.</item>
     </string-array>
-    <string name="btn_back_home">Voltar ao início</string>
 
     <string-array name="riddle_text">
         <item>O que é que a água tem no começo e a terra no fim?</item>

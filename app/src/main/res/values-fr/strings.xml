@@ -1,26 +1,23 @@
 <resources>
-    <string name="app_name">MindWake</string>
+        <string name="app_name">MindWake: Daily Challenge</string>
+        <string name="content_desc_logo">Logo de MindWake</string>
+        <string name="home_subtitle">Votre dose quotidienne d\'acuité mentale.</string>
+        <string name="btn_start">Commencer le défi</string>
+        <string name="welcome_title">Votre esprit vous remerciera !</string>
+        <string name="welcome_body">Chaque jour, 2 énigmes et 1 exercice de pensée latérale vous attendent pour sortir votre cerveau du pilote automatique.\n\nLa persévérance est la clé : un petit effort aujourd\'hui, un esprit plus vif demain.</string>
+        <string name="welcome_btn_accept">J\'accepte le défi d\'aujourd\'hui !</string>
+        <string name="type_riddle">ÉNIGME DU JOUR</string>
+        <string name="type_lateral">DÉFI LATÉRAL</string>
+        <string name="label_hints_remaining">INDICES DISPONIBLES : %1$d</string>
+        <string name="btn_view_hint">Donnez-moi un indice</string>
+        <string name="btn_view_answer">Révéler la réponse</string>
+        <string name="dialog_title_answer">La solution est…</string>
+        <string name="btn_finish">Terminer</string>
+        <string name="btn_next">Défi suivant</string>
+        <string name="dialog_title_ready">Mission accomplie !</string>
+        <string name="dialog_msg_ready">Votre cerveau est maintenant réveillé et prêt à conquérir le monde. À demain pour le prochain défi !</string>
+        <string name="btn_back_home">Retour au début</string>
 
-    <string name="content_desc_logo">Logo de l\'application</string>
-    <string name="home_subtitle">Votre dose matinale d\'acuité mentale.</string>
-    <string name="btn_start">Commencer</string>
-
-    <string name="type_riddle">ÉNIGME</string>
-    <string name="type_lateral">PENSÉE LATÉRALE</string>
-    <string name="label_hints_remaining">INDICES RESTANTS : %1$d</string>
-    <string name="btn_view_hint">Voir l\'indice</string>
-    <string name="btn_view_answer">Voir la réponse</string>
-
-    <string name="dialog_title_answer">Réponse</string>
-    <string name="btn_finish">Terminer</string>
-    <string name="btn_next">Suivant</string>
-
-    <string name="welcome_title">Réveille ton esprit</string>
-    <string name="welcome_body">Ton cerveau fonctionne comme un muscle : il a besoin d\'échauffement.\n\nL\'objectif n\'est pas seulement de trouver la bonne réponse, mais de faire un effort. Essaie de résoudre chaque énigme par toi-même avant de voir la réponse.\n\nCe petit effort mental sort ton cerveau du \'pilote automatique\' et te prépare pour une journée productive.</string>
-    <string name="welcome_btn_accept">J\'accepte le défi !</string>
-
-    <string name="dialog_title_ready">Prêt à commencer !</string>
-    <string name="dialog_msg_ready">Vous êtes maintenant prêt à commencer la journée avec l\'esprit vif !</string>
     <string-array name="motivational_phrases">
         <item>Votre esprit est activé !</item>
         <item>Mieux qu\'une tasse de café !</item>
@@ -43,7 +40,6 @@
         <item>Vous êtes inarrêtable !</item>
         <item>Sortez et brillez.</item>
     </string-array>
-    <string name="btn_back_home">Retour à l\'accueil</string>
 
     <string-array name="riddle_text">
         <item>Je suis au début de l\'éternité, à la fin de l\'espace et du temps, au commencement de chaque fin, et à la fin de chaque lieu. Que suis-je ?</item>

@@ -1,26 +1,23 @@
 <resources>
-    <string name="app_name">MindWake</string>
+        <string name="app_name">MindWake: Daily Challenge</string>
+        <string name="content_desc_logo">Логотип MindWake</string>
+        <string name="home_subtitle">Ваша щоденна доза гостроти розуму.</string>
+        <string name="btn_start">Почати виклик</string>
+        <string name="welcome_title">Ваш розум подякує вам!</string>
+        <string name="welcome_body">Щодня на вас чекають 2 загадки та 1 вправа на латеральне мислення, щоб вивести мозок із режиму автопілота.\n\nПослідовність — це ключ: невелике зусилля сьогодні, гострий розум завтра.</string>
+        <string name="welcome_btn_accept">Приймаю сьогоднішній виклик!</string>
+        <string name="type_riddle">ЗАГАДКА ДНЯ</string>
+        <string name="type_lateral">ЛАТЕРАЛЬНИЙ ВИКЛИК</string>
+        <string name="label_hints_remaining">ДОСТУПНО ПІДКАЗОК: %1$d</string>
+        <string name="btn_view_hint">Дайте підказку</string>
+        <string name="btn_view_answer">Показати відповідь</string>
+        <string name="dialog_title_answer">Рішення…</string>
+        <string name="btn_finish">Завершити</string>
+        <string name="btn_next">Наступне завдання</string>
+        <string name="dialog_title_ready">Місію виконано!</string>
+        <string name="dialog_msg_ready">Ваш мозок прокинувся і готовий підкорювати світ. До зустрічі завтра!</string>
+        <string name="btn_back_home">На головну</string>
 
-    <string name="content_desc_logo">Логотип додатка</string>
-    <string name="home_subtitle">Ваша ранкова доза гостроти розуму.</string>
-    <string name="btn_start">Почати</string>
-
-    <string name="type_riddle">ЗАГАДКА</string>
-    <string name="type_lateral">ЛАТЕРАЛЬНЕ МИСЛЕННЯ</string>
-    <string name="label_hints_remaining">ЗАЛИШИЛОСЯ ПІДКАЗОК: %1$d</string>
-    <string name="btn_view_hint">Подивитися підказку</string>
-    <string name="btn_view_answer">Подивитися відповідь</string>
-
-    <string name="dialog_title_answer">Відповідь</string>
-    <string name="btn_finish">Завершити</string>
-    <string name="btn_next">Далі</string>
-
-    <string name="welcome_title">Пробуди свій розум</string>
-    <string name="welcome_body">Твій мозок працює як м\'яз: йому потрібна розминка.\n\nМета не лише в тому, щоб вгадати, а й у тому, щоб докласти зусиль. Спробуй вирішити кожну загадку самостійно, перш ніж дивитися відповідь.\n\nЦе невелике розумове зусилля виводить твій мозок з \'автопілота\' і готує тебе до продуктивного дня.</string>
-    <string name="welcome_btn_accept">Я приймаю виклик!</string>
-
-    <string name="dialog_title_ready">Готові почати!</string>
-    <string name="dialog_msg_ready">Тепер ви готові почати день з ясним розумом!</string>
     <string-array name="motivational_phrases">
         <item>Твій розум активовано!</item>
         <item>Краще, ніж чашка кави!</item>
@@ -43,7 +40,6 @@
         <item>Ти нестримний!</item>
         <item>Йди і сяй.</item>
     </string-array>
-    <string name="btn_back_home">Повернутися додому</string>
 
     <string-array name="riddle_text">
         <item>Я на початку Океану і всередині Моря. Без мене немає Острова. Що я?</item>

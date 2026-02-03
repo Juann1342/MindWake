@@ -1,26 +1,28 @@
 <resources>
-    <string name="app_name">MindWake</string>
+    <string name="app_name">MindWake: Daily Challenge</string>
 
-    <string name="content_desc_logo">App logo</string>
-    <string name="home_subtitle">Your morning dose of mental sharpness.</string>
-    <string name="btn_start">Start</string>
+    <string name="content_desc_logo">MindWake Logo</string>
+    <string name="home_subtitle">Your daily dose of mental sharpness.</string>
+    <string name="btn_start">Start Today\'s Challenge</string>
 
-    <string name="type_riddle">RIDDLE</string>
-    <string name="type_lateral">LATERAL THINKING</string>
-    <string name="label_hints_remaining">HINTS REMAINING: %1$d</string>
-    <string name="btn_view_hint">View hint</string>
-    <string name="btn_view_answer">View answer</string>
+    <string name="welcome_title">Wake Up Your Mind!</string>
+    <string name="welcome_body">Every day, 2 riddles and 1 lateral thinking exercise are waiting to take your brain out of autopilot.\n\nConsistency is key: a small effort today, a sharper mind tomorrow.</string>
+    <string name="welcome_btn_accept">Challenge Accepted!</string>
 
-    <string name="dialog_title_answer">Answer</string>
+    <string name="type_riddle">DAILY RIDDLE</string>
+    <string name="type_lateral">LATERAL CHALLENGE</string>
+    <string name="label_hints_remaining">HINTS LEFT: %1$d</string>
+    <string name="btn_view_hint">Give me a hint</string>
+    <string name="btn_view_answer">Show answer</string>
+
+    <string name="dialog_title_answer">The solution is…</string>
     <string name="btn_finish">Finish</string>
-    <string name="btn_next">Next</string>
+    <string name="btn_next">Next challenge</string>
 
-    <string name="welcome_title">Wake Up Your Mind</string>
-    <string name="welcome_body">Your brain works like a muscle: it needs a warm-up.\n\nThe goal isn\'t just to get it right, but to make an effort. Try to solve each riddle on your own before seeing the answer.\n\nThat small mental effort takes your brain out of \'autopilot\' and prepares you for a productive day.</string>
-    <string name="welcome_btn_accept">I accept the challenge!</string>
+    <string name="dialog_title_ready">Daily Challenge Complete!</string>
+    <string name="dialog_msg_ready">Your brain is now awake and ready for the day. See you tomorrow for your next challenge!</string>
+    <string name="btn_back_home">Back Home</string>
 
-    <string name="dialog_title_ready">Ready to start!</string>
-    <string name="dialog_msg_ready">You are now ready to start the day with a sharp mind!</string>
     <string-array name="motivational_phrases">
         <item>Your mind is activated!</item>
         <item>Better than a cup of coffee!</item>
@@ -43,7 +45,6 @@
         <item>You are unstoppable!</item>
         <item>Go out and shine.</item>
     </string-array>
-    <string name="btn_back_home">Back to home</string>
 
     <string-array name="riddle_text">
         <item>I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every place. What am I?</item>

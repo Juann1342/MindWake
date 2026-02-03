@@ -1,26 +1,28 @@
 <resources>
-    <string name="app_name">MindWake</string>
+    <string name="app_name">MindWake: Daily Challenge</string>
 
-    <string name="content_desc_logo">Logo de la aplicación</string>
-    <string name="home_subtitle">Tu dosis matutina de agudeza mental.</string>
-    <string name="btn_start">Comenzar</string>
+    <string name="content_desc_logo">Logo de MindWake</string>
+    <string name="home_subtitle">Tu dosis diaria de agudeza mental.</string>
+    <string name="btn_start">Empezar el Desafío</string>
 
-    <string name="welcome_title">Despierta tu Mente</string>
-    <string name="welcome_body">Tu cerebro funciona como un músculo: necesita calentamiento.\n\nEl objetivo no es solo acertar, sino esforzarte. Intenta resolver cada acertijo por tu cuenta antes de ver la respuesta.\n\nEse pequeño esfuerzo mental saca a tu cerebro del \'piloto automático\' y te prepara para un día productivo.</string>
-    <string name="welcome_btn_accept">¡Acepto el reto!</string>
+    <string name="welcome_title">¡Tu mente te lo agradecerá!</string>
+    <string name="welcome_body">Cada día te esperan 2 acertijos y 1 ejercicio de pensamiento lateral para sacar a tu cerebro del piloto automático.\n\nLa constancia es la clave: un pequeño esfuerzo hoy, una mente más ágil mañana.</string>
+    <string name="welcome_btn_accept">¡Acepto el reto de hoy!</string>
 
-    <string name="type_riddle">ACERTIJO</string>
-    <string name="type_lateral">PENSAMIENTO LATERAL</string>
-    <string name="label_hints_remaining">PISTAS RESTANTES: %1$d</string>
-    <string name="btn_view_hint">Ver pista</string>
-    <string name="btn_view_answer">Ver respuesta</string>
+    <string name="type_riddle">ACERTIJO DEL DÍA</string>
+    <string name="type_lateral">DESAFÍO LATERAL</string>
+    <string name="label_hints_remaining">PISTAS DISPONIBLES: %1$d</string>
+    <string name="btn_view_hint">Dame una pista</string>
+    <string name="btn_view_answer">Revelar respuesta</string>
 
-    <string name="dialog_title_answer">Respuesta</string>
-    <string name="btn_finish">Finalizar</string>
-    <string name="btn_next">Siguiente</string>
+    <string name="dialog_title_answer">La solución es…</string>
+    <string name="btn_finish">Terminar</string>
+    <string name="btn_next">Siguiente reto</string>
 
-    <string name="dialog_title_ready">¡Listo para comenzar!</string>
-    <string name="dialog_msg_ready">¡Ya estás listo para comenzar el día con la mente despierta!</string>
+    <string name="dialog_title_ready">¡Misión cumplida!</string>
+    <string name="dialog_msg_ready">Tu cerebro ya está despierto y listo para comerse el mundo. ¡Nos vemos mañana para el siguiente desafío!</string>
+    <string name="btn_back_home">Volver al inicio</string>
+
     <string-array name="motivational_phrases">
         <item>¡Tu mente está activada!</item>
         <item>¡Mejor que una taza de café!</item>
@@ -43,7 +45,7 @@
         <item>¡Estás imparable!</item>
         <item>A salir y brillar.</item>
     </string-array>
-    <string name="btn_back_home">Volver al inicio</string>
+
 
     <string-array name="riddle_text">
         <item>Redondo como el mundo, sin mí no puede haber Dios. Papas y cardenales sí, pero obispos no. ¿Qué soy?</item>

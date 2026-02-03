@@ -1,26 +1,23 @@
 <resources>
-    <string name="app_name">MindWake</string>
-
-    <string name="content_desc_logo">App-Logo</string>
-    <string name="home_subtitle">Deine morgendliche Dosis geistiger Schärfe.</string>
-    <string name="btn_start">Starten</string>
-
-    <string name="type_riddle">RÄTSEL</string>
-    <string name="type_lateral">LATERALES DENKEN</string>
-    <string name="label_hints_remaining">VERBLEIBENDE HINWEISE: %1$d</string>
-    <string name="btn_view_hint">Hinweis anzeigen</string>
-    <string name="btn_view_answer">Antwort anzeigen</string>
-
-    <string name="dialog_title_answer">Antwort</string>
+    <string name="app_name">MindWake: Daily Challenge</string>
+    <string name="content_desc_logo">MindWake-Logo</string>
+    <string name="home_subtitle">Deine tägliche Dosis geistiger Fitness.</string>
+    <string name="btn_start">Herausforderung starten</string>
+    <string name="welcome_title">Dein Geist wird es dir danken!</string>
+    <string name="welcome_body">Jeden Tag warten 2 Rätsel und 1 laterales Denktraining darauf, dein Gehirn aus dem Autopiloten zu holen.\n\nBeständigkeit ist der Schlüssel: eine kleine Anstrengung heute, ein schärferer Geist morgen.</string>
+    <string name="welcome_btn_accept">Ich nehme die heutige Herausforderung an!</string>
+    <string name="type_riddle">RÄTSEL DES TAGES</string>
+    <string name="type_lateral">LATERALE HERAUSFORDERUNG</string>
+    <string name="label_hints_remaining">VERFÜGBARE HINWEISE: %1$d</string>
+    <string name="btn_view_hint">Gib mir einen Hinweis</string>
+    <string name="btn_view_answer">Antwort enthüllen</string>
+    <string name="dialog_title_answer">Die Lösung ist…</string>
     <string name="btn_finish">Beenden</string>
-    <string name="btn_next">Weiter</string>
+    <string name="btn_next">Nächste Aufgabe</string>
+    <string name="dialog_title_ready">Mission erfüllt!</string>
+    <string name="dialog_msg_ready">Dein Gehirn ist nun wach und bereit, die Welt zu erobern. Bis morgen zur nächsten Herausforderung!</string>
+    <string name="btn_back_home">Zurück zum Start</string>
 
-    <string name="welcome_title">Weck deinen Geist auf</string>
-    <string name="welcome_body">Dein Gehirn funktioniert wie ein Muskel: Es braucht Aufwärmung.\n\nDas Ziel ist nicht nur, richtig zu liegen, sondern sich anzustrengen. Versuche, jedes Rätsel selbst zu lösen, bevor du dir die Antwort ansiehst.\n\nDiese kleine mentale Anstrengung holt dein Gehirn aus dem \'Autopiloten\' und bereitet dich auf einen produktiven Tag vor.</string>
-    <string name="welcome_btn_accept">Ich nehme die Herausforderung an!</string>
-
-    <string name="dialog_title_ready">Bereit zum Start!</string>
-    <string name="dialog_msg_ready">Du bist jetzt bereit, den Tag mit einem wachen Geist zu beginnen!</string>
     <string-array name="motivational_phrases">
         <item>Dein Geist ist aktiviert!</item>
         <item>Besser als eine Tasse Kaffee!</item>
@@ -43,7 +40,6 @@
         <item>Du bist nicht zu stoppen!</item>
         <item>Geh raus und strahle.</item>
     </string-array>
-    <string name="btn_back_home">Zurück zum Start</string>
 
     <string-array name="riddle_text">
         <item>Ich bin der Anfang der Ewigkeit, das Ende von Raum und Zeit, der Beginn jedes Endes und das Ende jedes Ortes. Was bin ich?</item>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@array/riddle_text, @array/riddle_hints_1, @array/riddle_hints_2, @array/riddle_hints_3, @array/riddle_answers, @array/lateral_text, @array/lateral_hints_1, @array/lateral_hints_2, @array/lateral_hints_3, @array/lateral_answers" />

@@ -12,15 +12,16 @@ android {
         applicationId = "com.chifuz.mindwake"
         minSdk = 24
         targetSdk = 36
-        versionCode = 11
-        versionName = "1.1"
+        versionCode = 12
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true // Activa la ofuscación de código
+            isShrinkResources = true // Elimina recursos gráficos y XML que no se usan (requiere minifyEnabled)
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
